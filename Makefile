@@ -5,15 +5,15 @@ FLAGS=-Wall -Wextra -std=c++2a
 
 all : probas.out
 
-probas.out : main.o
-	$(CC) $(FLAGS) -o $@ $^
+probas.out : obj/main.o
+	$(CC) $(FLAGS) -o bin/$@ $^
 
-main.o : main.c
+obj/main.o : src/main.c
 	$(CC) $(FLAGS) -c -o $@ $<
 
 clean:
-	rm -f *.o
-	rm -f *.out
+	rm -r -i -f -v *.out
+	rm -r -i -f -v *.o
 
 doc :
 	doxygen Doxyfile

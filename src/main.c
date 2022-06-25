@@ -9,6 +9,8 @@
  * 
  */
 
+#define VERSION "0.1"
+
 #include <stdio.h>
 
 /**
@@ -29,7 +31,7 @@ void showHelp()
  */
 int main(int argc, char *argv[])
 {
-	printf("-----Probabilty tools and calculation-----\n");
+	printf("-----Probabilty tools and calculation v%s-----\n",VERSION);
 
 	if (argc == 1)
 	{
