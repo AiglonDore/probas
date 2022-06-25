@@ -12,6 +12,8 @@
 #define VERSION "0.1"
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * @brief Displays help about all available functions.
@@ -19,7 +21,8 @@
  */
 void showHelp()
 {
-
+	printf("Usage: probas");
+	printf("Calculus\n");
 }
 
 /**
@@ -36,6 +39,11 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		showHelp();
+		return 0;
+	}
+	if (!strcmp(argv[1],"--version") || !strcmp(argv[1],"version") || !strcmp(argv[1],"-v"))
+	{
+		printf("Version : %s\n",VERSION);
 		return 0;
 	}
 
