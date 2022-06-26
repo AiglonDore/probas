@@ -22,7 +22,8 @@
 void showHelp()
 {
 	printf("Usage: probas");
-	printf("Calculus\n");
+	printf("Calculus: calc\n");
+	printf("bern p x: probability of x using a Bernoulli law\n");
 }
 
 /**
