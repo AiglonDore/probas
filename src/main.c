@@ -24,6 +24,7 @@ void showHelp()
 	printf("Usage: probas");
 	printf("Calculus: calc\n");
 	printf("bern p x: probability of x using a Bernoulli law\n");
+	printf("bin n p x: probaility of x using a binomial law\n");
 }
 
 /**
