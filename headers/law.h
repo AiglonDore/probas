@@ -20,12 +20,10 @@ class Law
 {
 public:
     virtual double proba(double x)=0;
-    virtual double proba(long long unsigned int x)=0;
+    virtual double proba(long long int x)=0;
     virtual double mean()=0;
     virtual double stdDev()=0;
     virtual ~Law();
 };
-
-double computeProbability(double X, const Law& law);
 
 #endif //LAW_H
