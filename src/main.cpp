@@ -16,6 +16,7 @@
 
 #include <iostream>
 #include <string>
+#include <cstring> //Provides strcmp.
 
 using namespace std;
 
