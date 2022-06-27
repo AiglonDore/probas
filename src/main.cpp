@@ -14,9 +14,10 @@
  */
 #define VERSION "0.1"
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <iostream>
+#include <string>
+
+using namespace std;
 
 #include "../headers/help.h"
 
@@ -38,7 +39,7 @@ int main(int argc, char *argv[])
 	}
 	if (!strcmp(argv[1],"--version") || !strcmp(argv[1],"version") || !strcmp(argv[1],"-v"))
 	{
-		printf("Version : %s\n",VERSION);
+		printf("Version : %s, made by AiglonDore and HoudaAib with love!\n",VERSION);
 		return 0;
 	}
 
