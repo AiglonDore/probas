@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['help_2ecpp_1',['help.cpp',['../help_8cpp.html',1,'']]],
-  ['help_2eh_2',['help.h',['../help_8h.html',1,'']]]
+  ['expectancy_1',['expectancy',['../class_law.html#a3e002f2837184a3145166e26944d6aea',1,'Law']]]
 ];

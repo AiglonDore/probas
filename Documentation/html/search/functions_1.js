@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['showhelp_14',['showHelp',['../help_8h.html#aec315d77f5c38417289a0e311d2a9d31',1,'showHelp():&#160;help.cpp'],['../help_8cpp.html#aec315d77f5c38417289a0e311d2a9d31',1,'showHelp():&#160;help.cpp']]]
+  ['main_24',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
+  ['moment_25',['moment',['../class_law.html#ada2875061f3e8844156729eacdfdccf0',1,'Law']]]
 ];
