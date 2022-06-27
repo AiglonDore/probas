@@ -1,7 +1,7 @@
 #This file is licenced under the GNU General Public License v3.0
 
-CC=gcc
-FLAGS=-Wall -Wextra -std=c99
+CC=g++
+FLAGS=-Wall -Wextra -std=c++2a
 
 all : probas.out
 
