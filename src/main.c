@@ -9,23 +9,16 @@
  * 
  */
 
+/**
+ * @brief Macro that holds the version of the program.
+ */
 #define VERSION "0.1"
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-/**
- * @brief Displays help about all available functions.
- * 
- */
-void showHelp()
-{
-	printf("Usage: probas");
-	printf("Calculus: calc\n");
-	printf("bern p x: probability of x using a Bernoulli law\n");
-	printf("bin n p x: probaility of x using a binomial law\n");
-}
+#include "../headers/help.h"
 
 /**
  * @brief Main function.
