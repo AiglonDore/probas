@@ -8,7 +8,10 @@ all : probas.out
 probas.out : obj/main.o
 	$(CC) $(FLAGS) -o bin/$@ $^
 
-obj/main.o : src/main.c
+obj/main.o : src/main.c headers/help.h
+	$(CC) $(FLAGS) -c -o $@ $<
+
+obj/help.o : src/help.c headers/help.h
 	$(CC) $(FLAGS) -c -o $@ $<
 
 clean:
