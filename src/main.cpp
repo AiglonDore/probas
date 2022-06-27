@@ -21,6 +21,7 @@
 using namespace std;
 
 #include "../headers/help.h"
+#include "../headers/law.h"
 
 /**
  * @brief Main function.
