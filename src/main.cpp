@@ -1,5 +1,5 @@
 /**
- * @file main.c
+ * @file main.cpp
  * @author AiglonDore
  * @brief Main file.
  * @version 0.1

@@ -1,5 +1,5 @@
 /**
- * @file help.c
+ * @file help.cpp
  * @author AiglonDore
  * @brief Implements {@link help.h}.
  * @version 0.1
@@ -9,8 +9,7 @@
  * 
  */
 
-#include <stdio.h>
-#include <stdlib.h>
+
 
 #include "../headers/help.h"
 
