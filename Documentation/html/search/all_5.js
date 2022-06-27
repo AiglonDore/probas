@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['version_7',['VERSION',['../main_8c.html#a1c6d5de492ac61ad29aec7aa9a436bbf',1,'main.c']]]
+  ['showhelp_7',['showHelp',['../help_8h.html#aec315d77f5c38417289a0e311d2a9d31',1,'showHelp():&#160;help.cpp'],['../help_8cpp.html#aec315d77f5c38417289a0e311d2a9d31',1,'showHelp():&#160;help.cpp']]]
 ];

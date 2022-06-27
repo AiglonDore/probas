@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['help_2ec_8',['help.c',['../help_8c.html',1,'']]],
-  ['help_2eh_9',['help.h',['../help_8h.html',1,'']]]
+  ['bernoulli_2eh_9',['bernoulli.h',['../bernoulli_8h.html',1,'']]]
 ];

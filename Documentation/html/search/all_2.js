@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main_3',['main',['../main_8c.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.c']]],
-  ['main_2ec_4',['main.c',['../main_8c.html',1,'']]]
+  ['license_3',['LICENSE',['../md__l_i_c_e_n_s_e.html',1,'']]]
 ];
