@@ -5,13 +5,13 @@ FLAGS=-Wall -Wextra -std=c++2a
 
 all : probas.out
 
-probas.out : obj/main.o
+probas.out : obj/main.o obj/help.o
 	$(CC) $(FLAGS) -o bin/$@ $^
 
-obj/main.o : src/main.c headers/help.h
+obj/main.o : src/main.cpp headers/help.h
 	$(CC) $(FLAGS) -c -o $@ $<
 
-obj/help.o : src/help.c headers/help.h
+obj/help.o : src/help.cpp headers/help.h
 	$(CC) $(FLAGS) -c -o $@ $<
 
 clean:
