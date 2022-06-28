@@ -2,7 +2,7 @@
  * @file law.h
  * @author AiglonDore
  * @brief Provides the abstract class {@link Law}.
- * @version 0.1
+ * @version 0.2
  * @date 2022-06-27
  * 
  * @copyright Copyright (c) 2022
@@ -25,7 +25,7 @@ public:
      * @brief Destroys the Law object.
      * 
      */
-    virtual ~Law();
+    virtual ~Law() {};
     /**
      * @brief Computes the probability.
      * 
@@ -55,14 +55,6 @@ public:
      * @return double Variance.
      */
     virtual double variance()=0;
-
-    /**
-     * @brief Computes the m-moment.
-     * 
-     * @param m Moment.
-     * @return double Value of the moment.
-     */
-    virtual double moment(long long unsigned int m = 1) = 0;
 
     /**
      * @brief Computes the standard deviation.
