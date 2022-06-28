@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['law_4',['Law',['../class_law.html',1,'']]],
-  ['law_2eh_5',['law.h',['../law_8h.html',1,'']]],
-  ['license_6',['LICENSE',['../md__l_i_c_e_n_s_e.html',1,'']]]
+  ['getp_7',['getP',['../class_bernoulli_law.html#acd57da033953d760e37271c353cce082',1,'BernoulliLaw']]]
 ];

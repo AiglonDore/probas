@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['law_17',['Law',['../class_law.html',1,'']]]
+  ['bernoullilaw_24',['BernoulliLaw',['../class_bernoulli_law.html',1,'']]]
 ];

@@ -75,9 +75,40 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef BERNOULLI_H</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define BERNOULLI_H</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif //BERNOULLI_H</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="discretelaw_8h.html">discretelaw.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_bernoulli_law.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_bernoulli_law.html">BernoulliLaw</a> : <span class="keyword">public</span> <a class="code" href="class_discrete_law.html">DiscreteLaw</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">double</span> p;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_bernoulli_law.html#ae1b6e9fb1914ab70ba594e721518f70e">BernoulliLaw</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_bernoulli_law.html#ae1b6e9fb1914ab70ba594e721518f70e">BernoulliLaw</a>(<span class="keywordtype">double</span> p);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_bernoulli_law.html#a68b60539eae80ffaa2ee6a298e638d4a">~BernoulliLaw</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_bernoulli_law.html#acd57da033953d760e37271c353cce082">   51</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_bernoulli_law.html#acd57da033953d760e37271c353cce082">getP</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> p; };</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_bernoulli_law.html#ad5b0f1258efc0262d4ef1fc4fa36bb96">proba</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> X) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_bernoulli_law.html#addc7865f6589617696a12b5eff698fc3">expectancy</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_bernoulli_law.html#a3a6ad684a5ade2b98d9fb010cb6ccd50">variance</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif //BERNOULLI_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="adiscretelaw_8h_html"><div class="ttname"><a href="discretelaw_8h.html">discretelaw.h</a></div><div class="ttdoc">Provides the discrete law class to deal with discrete laws.</div></div>
+<div class="ttc" id="aclass_bernoulli_law_html_ae1b6e9fb1914ab70ba594e721518f70e"><div class="ttname"><a href="class_bernoulli_law.html#ae1b6e9fb1914ab70ba594e721518f70e">BernoulliLaw::BernoulliLaw</a></div><div class="ttdeci">BernoulliLaw()</div><div class="ttdoc">Constructs a new Bernoulli Law object with p = 0.5.</div><div class="ttdef"><b>Definition:</b> <a href="bernoulli_8cpp_source.html#l00016">bernoulli.cpp:16</a></div></div>
+<div class="ttc" id="aclass_discrete_law_html"><div class="ttname"><a href="class_discrete_law.html">DiscreteLaw</a></div><div class="ttdoc">The Discrete Law blocks the domains of Law to the relative numbers.</div><div class="ttdef"><b>Definition:</b> <a href="discretelaw_8h_source.html#l00021">discretelaw.h:21</a></div></div>
+<div class="ttc" id="aclass_bernoulli_law_html_acd57da033953d760e37271c353cce082"><div class="ttname"><a href="class_bernoulli_law.html#acd57da033953d760e37271c353cce082">BernoulliLaw::getP</a></div><div class="ttdeci">double getP() const</div><div class="ttdoc">Gets the Bernoulli law parameter.</div><div class="ttdef"><b>Definition:</b> <a href="bernoulli_8h_source.html#l00051">bernoulli.h:51</a></div></div>
+<div class="ttc" id="aclass_bernoulli_law_html_ad5b0f1258efc0262d4ef1fc4fa36bb96"><div class="ttname"><a href="class_bernoulli_law.html#ad5b0f1258efc0262d4ef1fc4fa36bb96">BernoulliLaw::proba</a></div><div class="ttdeci">virtual double proba(long long int X) override</div><div class="ttdoc">Overrides Law function.</div><div class="ttdef"><b>Definition:</b> <a href="bernoulli_8cpp_source.html#l00032">bernoulli.cpp:32</a></div></div>
+<div class="ttc" id="aclass_bernoulli_law_html_a3a6ad684a5ade2b98d9fb010cb6ccd50"><div class="ttname"><a href="class_bernoulli_law.html#a3a6ad684a5ade2b98d9fb010cb6ccd50">BernoulliLaw::variance</a></div><div class="ttdeci">virtual double variance() override</div><div class="ttdoc">Overrides Law function.</div><div class="ttdef"><b>Definition:</b> <a href="bernoulli_8cpp_source.html#l00046">bernoulli.cpp:46</a></div></div>
+<div class="ttc" id="aclass_bernoulli_law_html"><div class="ttname"><a href="class_bernoulli_law.html">BernoulliLaw</a></div><div class="ttdoc">The class BernoulliLaw provides tools to dela with Bernoulli laws.</div><div class="ttdef"><b>Definition:</b> <a href="bernoulli_8h_source.html#l00021">bernoulli.h:21</a></div></div>
+<div class="ttc" id="aclass_bernoulli_law_html_addc7865f6589617696a12b5eff698fc3"><div class="ttname"><a href="class_bernoulli_law.html#addc7865f6589617696a12b5eff698fc3">BernoulliLaw::expectancy</a></div><div class="ttdeci">virtual double expectancy() override</div><div class="ttdoc">Overrides Law function.</div><div class="ttdef"><b>Definition:</b> <a href="bernoulli_8cpp_source.html#l00041">bernoulli.cpp:41</a></div></div>
+<div class="ttc" id="aclass_bernoulli_law_html_a68b60539eae80ffaa2ee6a298e638d4a"><div class="ttname"><a href="class_bernoulli_law.html#a68b60539eae80ffaa2ee6a298e638d4a">BernoulliLaw::~BernoulliLaw</a></div><div class="ttdeci">~BernoulliLaw()</div><div class="ttdoc">Destroys the Bernoulli Law object.</div><div class="ttdef"><b>Definition:</b> <a href="bernoulli_8cpp_source.html#l00028">bernoulli.cpp:28</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
