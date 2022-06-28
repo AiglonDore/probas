@@ -89,9 +89,13 @@ $(function() {
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_discrete_law.html#a0d4f72908c004ec426e434b8532b7ffd">variance</a>()=0;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_discrete_law.html#a9c3ee96e1591d9fb92d9a0e0db7df942">proba</a>(<span class="keywordtype">double</span> X) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif //DISCRETELAW_H</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_discrete_law.html#a9c3ee96e1591d9fb92d9a0e0db7df942">proba</a>(<span class="keywordtype">double</span> lowerBound, <span class="keywordtype">double</span> upperBound) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_discrete_law.html#a9c3ee96e1591d9fb92d9a0e0db7df942">proba</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> lowerBound, <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> upperBound) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif //DISCRETELAW_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_discrete_law_html_a0d4f72908c004ec426e434b8532b7ffd"><div class="ttname"><a href="class_discrete_law.html#a0d4f72908c004ec426e434b8532b7ffd">DiscreteLaw::variance</a></div><div class="ttdeci">virtual double variance()=0</div><div class="ttdoc">Computes the expectancy.</div></div>
 <div class="ttc" id="aclass_discrete_law_html"><div class="ttname"><a href="class_discrete_law.html">DiscreteLaw</a></div><div class="ttdoc">The Discrete Law blocks the domains of Law to the relative numbers.</div><div class="ttdef"><b>Definition:</b> <a href="discretelaw_8h_source.html#l00021">discretelaw.h:21</a></div></div>

@@ -56,6 +56,24 @@ public:
      * @return double Probability.
      */
     virtual double proba(double X) override;
+
+    /**
+     * @brief Overrides {@link Law} function.
+     * 
+     * @param lowerBound Lower value.
+     * @param upperBound Upper value.
+     * @return double Probability.
+     */
+    virtual double proba(double lowerBound, double upperBound) override;
+
+    /**
+     * @brief Overrides {@link Law} function.
+     * 
+     * @param lowerBound Lower value.
+     * @param upperBound Upper value.
+     * @return double Probability.
+     */
+    virtual double proba(long long int lowerBound, long long int upperBound) override;
 };
 
 #endif //DISCRETELAW_H
