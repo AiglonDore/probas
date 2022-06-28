@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['showhelp_40',['showHelp',['../help_8h.html#aec315d77f5c38417289a0e311d2a9d31',1,'showHelp():&#160;help.cpp'],['../help_8cpp.html#aec315d77f5c38417289a0e311d2a9d31',1,'showHelp():&#160;help.cpp']]],
-  ['stddev_41',['stdDev',['../class_law.html#a4e9f95ed88bafb8048ad0daf9ca69c17',1,'Law']]]
+  ['ncr_54',['nCr',['../binomial_8cpp.html#a1471e5bcadb25fa9dac8a761e286702f',1,'binomial.cpp']]]
 ];

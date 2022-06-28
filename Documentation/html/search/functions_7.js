@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['_7ebernoullilaw_43',['~BernoulliLaw',['../class_bernoulli_law.html#a68b60539eae80ffaa2ee6a298e638d4a',1,'BernoulliLaw']]],
-  ['_7ediscretelaw_44',['~DiscreteLaw',['../class_discrete_law.html#a40db937dd1dae00d96ce13981640ca0b',1,'DiscreteLaw']]],
-  ['_7elaw_45',['~Law',['../class_law.html#a4fa6f0fb61285152c8c6d7a17b51a82b',1,'Law']]]
+  ['showhelp_56',['showHelp',['../help_8h.html#aec315d77f5c38417289a0e311d2a9d31',1,'showHelp():&#160;help.cpp'],['../help_8cpp.html#aec315d77f5c38417289a0e311d2a9d31',1,'showHelp():&#160;help.cpp']]],
+  ['stddev_57',['stdDev',['../class_law.html#a4e9f95ed88bafb8048ad0daf9ca69c17',1,'Law']]]
 ];
