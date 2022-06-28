@@ -16,4 +16,6 @@
 
 void execute(const std::string& command);
 
+void execute (int argc, char *argv[]);
+
 #endif //INTERFACE_H

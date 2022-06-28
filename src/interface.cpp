@@ -13,3 +13,13 @@
 #include <string>
 
 using namespace std;
+
+void execute(const string& command)
+{
+
+}
+
+void execute (int argc, char *argv[])
+{
+    
+}
