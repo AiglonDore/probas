@@ -61,7 +61,6 @@ public:
      * @param X Value.
      * @return double Probability.
      * @throws -2 if X is negative.
-     * @todo Write the function.
      */
     virtual double proba(long long int X) override;
 
