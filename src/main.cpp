@@ -34,26 +34,7 @@ int main(int argc, char *argv[])
 {
 	printf("-----Probabilty tools and calculation v%s-----\n",VERSION);
 
-	if (argc == 1)
-	{
-		string initialInput("");
-
-		getline(cin,initialInput);
-
-		if (initialInput == "--help" || initialInput == "help" || initialInput == "-h")
-		{
-			showHelp();
-		}
-		else if (initialInput == "--version" || initialInput == "version" || initialInput == "-v")
-		{
-			cout << "Version : " << VERSION << ", made by AiglonDore and HoudaAib with love!" << endl;
-		}
-		else
-		{
-			execute(initialInput);
-		}
-	}
-	else if (!strcmp(argv[1],"--help") || !strcmp(argv[1],"help") || !strcmp(argv[1],"-h"))
+	if (argc == 1 || !strcmp(argv[1],"--help") || !strcmp(argv[1],"help") || !strcmp(argv[1],"-h"))
 	{
 		showHelp();
 	}

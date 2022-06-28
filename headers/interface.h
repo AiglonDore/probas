@@ -12,10 +12,13 @@
 #ifndef INTERFACE_H
 #define INTERFACE_H
 
-#include <string>
-
-void execute(const std::string& command);
-
-void execute (int argc, char *argv[]);
+/**
+ * @brief Executes the specified command.
+ * 
+ * @param argc Number of arguments.
+ * @param argv Vector of arguments.
+ * @warning The first argument is the name of the program. It should be avoided.
+ */
+void execute(int argc, char *argv[]);
 
 #endif //INTERFACE_H
