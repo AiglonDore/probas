@@ -5,7 +5,7 @@ FLAGS=-Wall -Wextra -std=c++2a
 
 all : probas.out
 
-probas.out : obj/main.o obj/help.o obj/discretelaw.o obj/bernoulli.o obj/binomial.o
+probas.out : obj/main.o obj/help.o obj/discretelaw.o obj/bernoulli.o obj/binomial.o obj/interface.o
 	$(CC) $(FLAGS) -o bin/$@ $^
 
 obj/main.o : src/main.cpp headers/help.h headers/law.h
@@ -21,6 +21,9 @@ obj/discretelaw.o : src/discretelaw.cpp headers/law.h headers/discretelaw.h
 	$(CC) $(FLAGS) -c -o $@ $<
 
 obj/binomial.o : src/binomial.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h
+	$(CC) $(FLAGS) -c -o $@ $<
+
+obj/interface.o : src/interface.cpp headers/interface.h
 	$(CC) $(FLAGS) -c -o $@ $<
 
 clean:

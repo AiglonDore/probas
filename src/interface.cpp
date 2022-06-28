@@ -11,10 +11,17 @@
 
 #include <iostream>
 #include <string>
+#include <cstring>
 
 using namespace std;
 
-void execute (int argc, char *argv[])
+void execute(int argc, char *argv[])
 {
-
+    if (!strcmp(argv[1],"calc"))
+    {
+        if (argc >= 3 && argv[2])
+        {
+            
+        }
+    }
 }

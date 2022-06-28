@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['uniform_5fdiscrete_2ecpp_53',['uniform_discrete.cpp',['../uniform__discrete_8cpp.html',1,'']]],
-  ['uniform_5fdiscrete_2eh_54',['uniform_discrete.h',['../uniform__discrete_8h.html',1,'']]]
+  ['main_2ecpp_57',['main.cpp',['../main_8cpp.html',1,'']]]
 ];

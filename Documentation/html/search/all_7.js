@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['main_20',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
-  ['main_2ecpp_21',['main.cpp',['../main_8cpp.html',1,'']]]
+  ['law_20',['Law',['../class_law.html',1,'']]],
+  ['law_2eh_21',['law.h',['../law_8h.html',1,'']]],
+  ['license_22',['LICENSE',['../md__l_i_c_e_n_s_e.html',1,'']]]
 ];
