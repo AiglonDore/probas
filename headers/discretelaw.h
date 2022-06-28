@@ -26,6 +26,29 @@ public:
      * 
      */
     virtual ~DiscreteLaw() {};
+
+/**
+     * @brief Computes the probability.
+     * 
+     * @param x Value.
+     * @return double Probability.
+     */
+    virtual double proba(long long int x)=0;
+
+    /**
+     * @brief Computes the expectancy.
+     * 
+     * @return double Expectancy.
+     */
+    virtual double expectancy()=0;
+
+    /**
+     * @brief Computes the expectancy.
+     * 
+     * @return double Variance.
+     */
+    virtual double variance()=0;
+
     /**
      * @brief Overrides {@link Law} function.
      * 
