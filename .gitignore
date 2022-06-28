@@ -9,8 +9,8 @@
 
 # Linker output
 *.ilk
-*.map
 *.exp
+bin/*.map
 
 # Precompiled Headers
 *.gch

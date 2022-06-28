@@ -1,0 +1,5 @@
+<map id="headers/help.h" name="headers/help.h">
+<area shape="rect" id="node1" title="Help header provides functions that prints help about commands." alt="" coords="59,5,177,32"/>
+<area shape="rect" id="node2" href="$help_8cpp.html" title="Implements help.h." alt="" coords="5,80,105,107"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="Main file." alt="" coords="129,80,235,107"/>
+</map>

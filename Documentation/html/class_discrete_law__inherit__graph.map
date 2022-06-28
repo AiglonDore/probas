@@ -1,0 +1,7 @@
+<map id="DiscreteLaw" name="DiscreteLaw">
+<area shape="rect" id="node1" title="The Discrete Law blocks the domains of Law to the relative numbers." alt="" coords="85,80,187,107"/>
+<area shape="rect" id="node3" href="$class_bernoulli_law.html" title="The class BernoulliLaw provides tools to dela with Bernoulli laws." alt="" coords="5,155,112,181"/>
+<area shape="rect" id="node5" href="$class_uniform_discrete_law.html" title="This class provides tools for uniform discrete laws." alt="" coords="136,155,291,181"/>
+<area shape="rect" id="node2" href="$class_law.html" title="The class Law provides a generic class that will hold all the sub&#45;classes relative to specific laws." alt="" coords="112,5,160,32"/>
+<area shape="rect" id="node4" href="$class_binomial_law.html" title="The BinomialLaw class extends the BernoulliLaw to provide binomial law tools." alt="" coords="5,229,112,256"/>
+</map>

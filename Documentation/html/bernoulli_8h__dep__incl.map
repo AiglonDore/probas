@@ -1,0 +1,6 @@
+<map id="headers/bernoulli.h" name="headers/bernoulli.h">
+<area shape="rect" id="node1" title="Provides functions relted to the Bernoulli law." alt="" coords="87,5,233,32"/>
+<area shape="rect" id="node2" href="$binomial_8h.html" title="Provides the binomial law class." alt="" coords="5,80,152,107"/>
+<area shape="rect" id="node4" href="$bernoulli_8cpp.html" title="Implements bernoulli.h." alt="" coords="177,80,306,107"/>
+<area shape="rect" id="node3" href="$binomial_8cpp.html" title="Implements binomial.h." alt="" coords="14,155,143,181"/>
+</map>
