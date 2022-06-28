@@ -35,7 +35,7 @@ public:
     virtual double proba(double x)=0;
 
     /**
-     * @brief Computes the probability.
+     * @brief Computes the probability. Exactly, it will return the value of the density function at this point.
      * 
      * @param x Value.
      * @return double Probability.
