@@ -15,7 +15,7 @@
 #include "bernoulli.h"
 
 /**
- * @brief The BinomialLaw class extends the {@link BernoulliLAw} to provide binomial law tools.
+//  * @brief The BinomialLaw class extends the {@link BernoulliLaw} to provide binomial law tools.
  * 
  */
 class BinomialLaw : public BernoulliLaw
