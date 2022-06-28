@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getp_7',['getP',['../class_bernoulli_law.html#acd57da033953d760e37271c353cce082',1,'BernoulliLaw']]]
+  ['fact_10',['fact',['../binomial_8cpp.html#afb761288ee5286d9fb07a5b137c1fa48',1,'binomial.cpp']]]
 ];

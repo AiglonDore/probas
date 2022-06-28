@@ -20,7 +20,11 @@
  */
 class BernoulliLaw : public DiscreteLaw
 {
-private:
+protected:
+/**
+ * @brief Law parameter.
+ * 
+ */
     double p;
 public:
     /**
