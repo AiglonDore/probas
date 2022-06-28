@@ -27,7 +27,7 @@ public:
      */
     virtual ~Law() {};
     /**
-     * @brief Computes the probability. Exactly, it will return the value of the density function at this point.
+     * @brief Computes the probability. For a discrete law, it will truncate the argument to an integer then returns the probability. For a continuous law, it will return the repartition function applied in x
      * 
      * @param x Value.
      * @return double Probability.
@@ -44,7 +44,7 @@ public:
     virtual double proba(double lowerBound, double upperBound) = 0;
 
     /**
-     * @brief Computes the probability. Exactly, it will return the value of the density function at this point.
+     * @brief Computes the probability. For a discrete law, it will return the probability. For a continuous law, it will return the repartition function applied in x
      * 
      * @param x Value.
      * @return double Probability.
