@@ -24,8 +24,11 @@ obj/binomial.o : src/binomial.cpp headers/law.h headers/discretelaw.h headers/di
 	$(CC) $(FLAGS) -c -o $@ $<
 
 clean:
-	rm -r -i -f -v *.out
-	rm -r -i -f -v *.o
+	cd obj
+	rm -f *.o
+	cd ../bin
+	rm -f *.out
+	cd ..
 
 doc :
 	doxygen Doxyfile
