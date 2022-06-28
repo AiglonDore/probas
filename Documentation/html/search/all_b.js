@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['variance_26',['variance',['../class_bernoulli_law.html#a3a6ad684a5ade2b98d9fb010cb6ccd50',1,'BernoulliLaw::variance()'],['../class_binomial_law.html#aef88190694a76386d8cd9368f47d29ed',1,'BinomialLaw::variance()'],['../class_discrete_law.html#a0d4f72908c004ec426e434b8532b7ffd',1,'DiscreteLaw::variance()'],['../class_law.html#aebdd078158a17d873b366f4d22bd9ce2',1,'Law::variance()']]],
-  ['version_27',['VERSION',['../main_8cpp.html#a1c6d5de492ac61ad29aec7aa9a436bbf',1,'main.cpp']]]
+  ['uniform_5fdiscrete_2ecpp_28',['uniform_discrete.cpp',['../uniform__discrete_8cpp.html',1,'']]],
+  ['uniform_5fdiscrete_2eh_29',['uniform_discrete.h',['../uniform__discrete_8h.html',1,'']]],
+  ['uniformdiscretelaw_30',['UniformDiscreteLaw',['../class_uniform_discrete_law.html',1,'UniformDiscreteLaw'],['../class_uniform_discrete_law.html#a557d503bbf0c25c139cf395dc8f6bea4',1,'UniformDiscreteLaw::UniformDiscreteLaw()'],['../class_uniform_discrete_law.html#aa9723a7d12b174b358a036e49d6a42cb',1,'UniformDiscreteLaw::UniformDiscreteLaw(long long int upperBound)'],['../class_uniform_discrete_law.html#affa631381c10056cd000f45b4452d10a',1,'UniformDiscreteLaw::UniformDiscreteLaw(long long int lowerBound, long long int upperBound)']]]
 ];
