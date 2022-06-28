@@ -21,7 +21,7 @@
 using namespace std;
 
 #include "../headers/help.h"
-#include "../headers/law.h"
+#include "../headers/interface.h"
 
 /**
  * @brief Main function.
@@ -34,15 +34,17 @@ int main(int argc, char *argv[])
 {
 	printf("-----Probabilty tools and calculation v%s-----\n",VERSION);
 
-	if (argc == 1)
+	if (argc == 1 || !strcmp(argv[1],"--help") || !strcmp(argv[1],"help") || !strcmp(argv[1],"-h"))
 	{
 		showHelp();
-		return 0;
 	}
-	if (!strcmp(argv[1],"--version") || !strcmp(argv[1],"version") || !strcmp(argv[1],"-v"))
+	else if (!strcmp(argv[1],"--version") || !strcmp(argv[1],"version") || !strcmp(argv[1],"-v"))
 	{
 		printf("Version : %s, made by AiglonDore and HoudaAib with love!\n",VERSION);
-		return 0;
+	}
+	else
+	{
+		execute(argc,argv);
 	}
 
 	return 0;
