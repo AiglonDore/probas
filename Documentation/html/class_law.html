@@ -80,9 +80,10 @@ Inheritance diagram for Law:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_law__inherit__graph.png" border="0" usemap="#_law_inherit__map" alt="Inheritance graph"/></div>
 <map name="_law_inherit__map" id="_law_inherit__map">
-<area shape="rect" title="The class Law provides a generic class that will hold all the sub&#45;classes relative to specific laws." alt="" coords="35,5,83,32"/>
-<area shape="rect" href="class_discrete_law.html" title="The Discrete Law blocks the domains of Law to the relative numbers." alt="" coords="7,80,110,107"/>
+<area shape="rect" title="The class Law provides a generic class that will hold all the sub&#45;classes relative to specific laws." alt="" coords="112,5,160,32"/>
+<area shape="rect" href="class_discrete_law.html" title="The Discrete Law blocks the domains of Law to the relative numbers." alt="" coords="85,80,187,107"/>
 <area shape="rect" href="class_bernoulli_law.html" title="The class BernoulliLaw provides tools to dela with Bernoulli laws." alt="" coords="5,155,112,181"/>
+<area shape="rect" href="class_uniform_discrete_law.html" title="This class provides tools for uniform discrete laws." alt="" coords="136,155,291,181"/>
 <area shape="rect" href="class_binomial_law.html" title="The BinomialLaw class extends the BernoulliLaw to provide binomial law tools." alt="" coords="5,229,112,256"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -93,11 +94,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4fa6f0fb61285152c8c6d7a17b51a82b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the <a class="el" href="class_law.html" title="The class Law provides a generic class that will hold all the sub-classes relative to specific laws.">Law</a> object.  <a href="class_law.html#a4fa6f0fb61285152c8c6d7a17b51a82b">More...</a><br /></td></tr>
 <tr class="separator:a4fa6f0fb61285152c8c6d7a17b51a82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdc0c8bdcc45bb60c82eeaabe174cf29"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_law.html#afdc0c8bdcc45bb60c82eeaabe174cf29">proba</a> (double x)=0</td></tr>
-<tr class="memdesc:afdc0c8bdcc45bb60c82eeaabe174cf29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the probability.  <a href="class_law.html#afdc0c8bdcc45bb60c82eeaabe174cf29">More...</a><br /></td></tr>
+<tr class="memdesc:afdc0c8bdcc45bb60c82eeaabe174cf29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the probability. Exactly, it will return the value of the density function at this point.  <a href="class_law.html#afdc0c8bdcc45bb60c82eeaabe174cf29">More...</a><br /></td></tr>
 <tr class="separator:afdc0c8bdcc45bb60c82eeaabe174cf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31489f26fd9cc4b949d975b8cb313a80"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_law.html#a31489f26fd9cc4b949d975b8cb313a80">proba</a> (double lowerBound, double upperBound)=0</td></tr>
+<tr class="memdesc:a31489f26fd9cc4b949d975b8cb313a80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the probability. Exactly, it will return the integral of the density function in the selected interval.  <a href="class_law.html#a31489f26fd9cc4b949d975b8cb313a80">More...</a><br /></td></tr>
+<tr class="separator:a31489f26fd9cc4b949d975b8cb313a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9918590de2a6567f5bf37c6bce904d0"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_law.html#ac9918590de2a6567f5bf37c6bce904d0">proba</a> (long long int x)=0</td></tr>
-<tr class="memdesc:ac9918590de2a6567f5bf37c6bce904d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the probability.  <a href="class_law.html#ac9918590de2a6567f5bf37c6bce904d0">More...</a><br /></td></tr>
+<tr class="memdesc:ac9918590de2a6567f5bf37c6bce904d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the probability. Exactly, it will return the value of the density function at this point.  <a href="class_law.html#ac9918590de2a6567f5bf37c6bce904d0">More...</a><br /></td></tr>
 <tr class="separator:ac9918590de2a6567f5bf37c6bce904d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a59cdfc71e2ee78f4e5dfb125e6461f"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_law.html#a6a59cdfc71e2ee78f4e5dfb125e6461f">proba</a> (long long int lowerBound, long long int upperBound)=0</td></tr>
+<tr class="memdesc:a6a59cdfc71e2ee78f4e5dfb125e6461f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the probability. Exactly, it will return the integral of the density function in the selected interval.  <a href="class_law.html#a6a59cdfc71e2ee78f4e5dfb125e6461f">More...</a><br /></td></tr>
+<tr class="separator:a6a59cdfc71e2ee78f4e5dfb125e6461f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e002f2837184a3145166e26944d6aea"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_law.html#a3e002f2837184a3145166e26944d6aea">expectancy</a> ()=0</td></tr>
 <tr class="memdesc:a3e002f2837184a3145166e26944d6aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the expectancy.  <a href="class_law.html#a3e002f2837184a3145166e26944d6aea">More...</a><br /></td></tr>
 <tr class="separator:a3e002f2837184a3145166e26944d6aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,8 +180,54 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a31489f26fd9cc4b949d975b8cb313a80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31489f26fd9cc4b949d975b8cb313a80">&#9670;&nbsp;</a></span>proba() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double Law::proba </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>lowerBound</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>upperBound</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the probability. Exactly, it will return the integral of the density function in the selected interval. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lowerBound</td><td>Lower value. </td></tr>
+    <tr><td class="paramname">upperBound</td><td>Upper value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double Probability. </dd></dl>
+
+</div>
+</div>
 <a id="afdc0c8bdcc45bb60c82eeaabe174cf29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdc0c8bdcc45bb60c82eeaabe174cf29">&#9670;&nbsp;</a></span>proba() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afdc0c8bdcc45bb60c82eeaabe174cf29">&#9670;&nbsp;</a></span>proba() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -197,7 +250,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Computes the probability. </p>
+<p>Computes the probability. Exactly, it will return the value of the density function at this point. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>Value. </td></tr>
@@ -210,8 +263,54 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6a59cdfc71e2ee78f4e5dfb125e6461f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a59cdfc71e2ee78f4e5dfb125e6461f">&#9670;&nbsp;</a></span>proba() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double Law::proba </td>
+          <td>(</td>
+          <td class="paramtype">long long int&#160;</td>
+          <td class="paramname"><em>lowerBound</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long long int&#160;</td>
+          <td class="paramname"><em>upperBound</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the probability. Exactly, it will return the integral of the density function in the selected interval. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lowerBound</td><td>Lower value. </td></tr>
+    <tr><td class="paramname">upperBound</td><td>Upper value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double Probability. </dd></dl>
+
+</div>
+</div>
 <a id="ac9918590de2a6567f5bf37c6bce904d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9918590de2a6567f5bf37c6bce904d0">&#9670;&nbsp;</a></span>proba() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9918590de2a6567f5bf37c6bce904d0">&#9670;&nbsp;</a></span>proba() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,7 +333,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Computes the probability. </p>
+<p>Computes the probability. Exactly, it will return the value of the density function at this point. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>Value. </td></tr>
@@ -273,7 +372,7 @@ Public Member Functions</h2></td></tr>
 <p>Computes the standard deviation. </p>
 <dl class="section return"><dt>Returns</dt><dd>double Standard deviation. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="law_8h_source.html#l00064">64</a> of file <a class="el" href="law_8h_source.html">law.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="law_8h_source.html#l00082">82</a> of file <a class="el" href="law_8h_source.html">law.h</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
