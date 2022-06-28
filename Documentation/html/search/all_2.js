@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['help_2ecpp_2',['help.cpp',['../help_8cpp.html',1,'']]],
-  ['help_2eh_3',['help.h',['../help_8h.html',1,'']]]
+  ['expectancy_6',['expectancy',['../class_bernoulli_law.html#addc7865f6589617696a12b5eff698fc3',1,'BernoulliLaw::expectancy()'],['../class_law.html#a3e002f2837184a3145166e26944d6aea',1,'Law::expectancy()']]]
 ];

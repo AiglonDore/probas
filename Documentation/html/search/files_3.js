@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_2ecpp_22',['main.cpp',['../main_8cpp.html',1,'']]]
+  ['law_2eh_33',['law.h',['../law_8h.html',1,'']]]
 ];

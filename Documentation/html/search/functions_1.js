@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main_24',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]],
-  ['moment_25',['moment',['../class_law.html#ada2875061f3e8844156729eacdfdccf0',1,'Law']]]
+  ['expectancy_36',['expectancy',['../class_bernoulli_law.html#addc7865f6589617696a12b5eff698fc3',1,'BernoulliLaw::expectancy()'],['../class_law.html#a3e002f2837184a3145166e26944d6aea',1,'Law::expectancy()']]]
 ];
