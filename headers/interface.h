@@ -17,8 +17,9 @@
  * 
  * @param argc Number of arguments.
  * @param argv Vector of arguments.
+ * @param loop Boolean that triggers a loop for continuous input.
  * @warning The first argument is the name of the program. It should be avoided.
  */
-void execute(int argc, char *argv[]);
+void execute(int argc, char *argv[], bool loop = false);
 
 #endif //INTERFACE_H

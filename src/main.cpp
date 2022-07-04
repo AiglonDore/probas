@@ -33,8 +33,11 @@ using namespace std;
 int main(int argc, char *argv[])
 {
 	printf("-----Probabilty tools and calculation v%s-----\n",VERSION);
-
-	if (argc == 1 || !strcmp(argv[1],"--help") || !strcmp(argv[1],"help") || !strcmp(argv[1],"-h"))
+	if (argc == 1)
+	{
+		execute(argc,argv,true);
+	}
+	else if (!strcmp(argv[1],"--help") || !strcmp(argv[1],"help") || !strcmp(argv[1],"-h"))
 	{
 		showHelp();
 	}
