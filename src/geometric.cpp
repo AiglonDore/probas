@@ -41,3 +41,15 @@ double GeometricLaw::variance()
 {
     return (1 - p) / (p * p);
 }
+
+HyperGeometricLaw::HyperGeometricLaw() : GeometricLaw(), n(0), A(1)
+{
+}
+
+HyperGeometricLaw::HyperGeometricLaw(long long int n,double p, long long int A) : GeometricLaw(p), n(n), A(A)
+{
+}
+
+HyperGeometricLaw::~HyperGeometricLaw()
+{
+}

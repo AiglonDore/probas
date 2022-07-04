@@ -64,4 +64,48 @@ public:
     virtual double variance() override;
 };
 
+/**
+ * @brief The HyperGeometriClaw class deals with hypergeometric laws.
+ * @todo Finish writing the class.
+ */
+class HyperGeometricLaw : public GeometricLaw
+{
+private:
+    long long int n;
+    long long int A;
+public:
+    /**
+     * @brief Construct a new Hyper Geometric Law object.
+     * 
+     */
+    explicit HyperGeometricLaw();
+    /**
+     * @brief Construct a new Hyper Geometric Law object
+     * 
+     * @param n First parameter of law.
+     * @param p Second law parameter.
+     * @param A Third law parameter.
+     */
+    explicit HyperGeometricLaw(long long int n, double p, long long int A);
+    /**
+     * @brief Destroy the Hyper Geometric Law object
+     * 
+     */
+    virtual ~HyperGeometricLaw();
+
+    /**
+     * @brief Returns n.
+     * 
+     * @return long long int n.
+     */
+    long long int getN() const { return n; };
+
+    /**
+     * @brief Returns A.
+     * 
+     * @return long long int A.
+     */
+    long long int getA() const { return A; };
+};
+
 #endif //GEOMETRIC_H
