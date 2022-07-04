@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ncr_28',['nCr',['../binomial_8cpp.html#a1471e5bcadb25fa9dac8a761e286702f',1,'binomial.cpp']]]
+  ['ncr_28',['nCr',['../namespace_utils.html#a270db5b73c4c5f27caeea91c6d62f15d',1,'Utils']]]
 ];

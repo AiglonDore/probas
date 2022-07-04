@@ -67,8 +67,6 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">binomial.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -77,15 +75,17 @@ $(function() {
 <p>Implements <a class="el" href="binomial_8h.html">binomial.h</a>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="binomial_8h_source.html">../headers/binomial.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="utils_8h_source.html">../headers/utils.h</a>&quot;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for binomial.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="binomial_8cpp__incl.png" border="0" usemap="#src_2binomial_8cpp" alt=""/></div>
 <map name="src_2binomial_8cpp" id="src_2binomial_8cpp">
-<area shape="rect" title="Implements binomial.h." alt="" coords="79,5,208,32"/>
+<area shape="rect" title="Implements binomial.h." alt="" coords="137,5,267,32"/>
 <area shape="rect" href="binomial_8h.html" title="Provides the binomial law class." alt="" coords="5,80,164,107"/>
 <area shape="rect" title=" " alt="" coords="117,379,180,405"/>
+<area shape="rect" href="utils_8h.html" title="Provides useful functions." alt="" coords="239,80,370,107"/>
 <area shape="rect" href="bernoulli_8h.html" title="Provides functions relted to the Bernoulli law." alt="" coords="43,155,134,181"/>
 <area shape="rect" href="discretelaw_8h.html" title="Provides the discrete law class to deal with discrete laws." alt="" coords="43,229,151,256"/>
 <area shape="rect" href="law_8h.html" title="Provides the abstract class Law." alt="" coords="37,304,161,331"/>
@@ -93,16 +93,6 @@ Include dependency graph for binomial.cpp:</div>
 </div>
 </div>
 <p><a href="binomial_8cpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:afb761288ee5286d9fb07a5b137c1fa48"><td class="memItemLeft" align="right" valign="top">long long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binomial_8cpp.html#afb761288ee5286d9fb07a5b137c1fa48">fact</a> (long long int n)</td></tr>
-<tr class="memdesc:afb761288ee5286d9fb07a5b137c1fa48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes n!.  <a href="binomial_8cpp.html#afb761288ee5286d9fb07a5b137c1fa48">More...</a><br /></td></tr>
-<tr class="separator:afb761288ee5286d9fb07a5b137c1fa48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1471e5bcadb25fa9dac8a761e286702f"><td class="memItemLeft" align="right" valign="top">long long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="binomial_8cpp.html#a1471e5bcadb25fa9dac8a761e286702f">nCr</a> (long long int n, long long int k)</td></tr>
-<tr class="memdesc:a1471e5bcadb25fa9dac8a761e286702f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binomial coefficient.  <a href="binomial_8cpp.html#a1471e5bcadb25fa9dac8a761e286702f">More...</a><br /></td></tr>
-<tr class="separator:a1471e5bcadb25fa9dac8a761e286702f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements <a class="el" href="binomial_8h.html">binomial.h</a>. </p>
 <dl class="section author"><dt>Author</dt><dd>AiglonDore </dd></dl>
@@ -111,105 +101,7 @@ Functions</h2></td></tr>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2022 </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="binomial_8cpp_source.html">binomial.cpp</a>.</p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="afb761288ee5286d9fb07a5b137c1fa48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb761288ee5286d9fb07a5b137c1fa48">&#9670;&nbsp;</a></span>fact()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">long long int fact </td>
-          <td>(</td>
-          <td class="paramtype">long long int&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Computes n!. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">n</td><td>Value. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int n!. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="binomial_8cpp_source.html#l00024">24</a> of file <a class="el" href="binomial_8cpp_source.html">binomial.cpp</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="binomial_8cpp_afb761288ee5286d9fb07a5b137c1fa48_icgraph.png" border="0" usemap="#binomial_8cpp_afb761288ee5286d9fb07a5b137c1fa48_icgraph" alt=""/></div>
-<map name="binomial_8cpp_afb761288ee5286d9fb07a5b137c1fa48_icgraph" id="binomial_8cpp_afb761288ee5286d9fb07a5b137c1fa48_icgraph">
-<area shape="rect" title="Computes n!." alt="" coords="296,5,343,32"/>
-<area shape="rect" href="binomial_8cpp.html#a1471e5bcadb25fa9dac8a761e286702f" title="Returns the binomial coefficient." alt="" coords="204,5,248,32"/>
-<area shape="rect" href="class_binomial_law.html#aca904009a14cda640087113de5b24fb7" title="Overrides BernoulliLaw function." alt="" coords="5,5,156,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a1471e5bcadb25fa9dac8a761e286702f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1471e5bcadb25fa9dac8a761e286702f">&#9670;&nbsp;</a></span>nCr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">long long int nCr </td>
-          <td>(</td>
-          <td class="paramtype">long long int&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">long long int&#160;</td>
-          <td class="paramname"><em>k</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the binomial coefficient. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">n</td><td>Number of items. </td></tr>
-    <tr><td class="paramname">k</td><td>Number of slices. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int Binomial coefficient. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="binomial_8cpp_source.html#l00041">41</a> of file <a class="el" href="binomial_8cpp_source.html">binomial.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="binomial_8cpp_a1471e5bcadb25fa9dac8a761e286702f_cgraph.png" border="0" usemap="#binomial_8cpp_a1471e5bcadb25fa9dac8a761e286702f_cgraph" alt=""/></div>
-<map name="binomial_8cpp_a1471e5bcadb25fa9dac8a761e286702f_cgraph" id="binomial_8cpp_a1471e5bcadb25fa9dac8a761e286702f_cgraph">
-<area shape="rect" title="Returns the binomial coefficient." alt="" coords="5,5,49,32"/>
-<area shape="rect" href="binomial_8cpp.html#afb761288ee5286d9fb07a5b137c1fa48" title="Computes n!." alt="" coords="97,5,144,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="binomial_8cpp_a1471e5bcadb25fa9dac8a761e286702f_icgraph.png" border="0" usemap="#binomial_8cpp_a1471e5bcadb25fa9dac8a761e286702f_icgraph" alt=""/></div>
-<map name="binomial_8cpp_a1471e5bcadb25fa9dac8a761e286702f_icgraph" id="binomial_8cpp_a1471e5bcadb25fa9dac8a761e286702f_icgraph">
-<area shape="rect" title="Returns the binomial coefficient." alt="" coords="204,5,248,32"/>
-<area shape="rect" href="class_binomial_law.html#aca904009a14cda640087113de5b24fb7" title="Overrides BernoulliLaw function." alt="" coords="5,5,156,32"/>
-</map>
-</div>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

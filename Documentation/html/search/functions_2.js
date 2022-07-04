@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fact_71',['fact',['../binomial_8cpp.html#afb761288ee5286d9fb07a5b137c1fa48',1,'binomial.cpp']]]
+  ['fact_77',['fact',['../namespace_utils.html#aba6605ca68f7fe302aefa6be4195f839',1,'Utils']]]
 ];
