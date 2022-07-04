@@ -12,7 +12,7 @@ endif
 all : probas.out probas.exe
 
 #Linux
-probas.out : obj/main.o obj/help.o obj/discretelaw.o obj/bernoulli.o obj/binomial.o obj/interface.o
+probas.out : obj/main.o obj/help.o obj/discretelaw.o obj/bernoulli.o obj/binomial.o obj/interface.o obj/geometric.o
 	$(LCC) $(FLAGS) -o bin/$@ $^
 
 obj/main.o : src/main.cpp headers/help.h headers/law.h
@@ -33,8 +33,11 @@ obj/binomial.o : src/binomial.cpp headers/law.h headers/discretelaw.h headers/di
 obj/interface.o : src/interface.cpp headers/interface.h
 	$(LCC) $(FLAGS) -c -o $@ $<
 
+obj/geometric.o : src/geometric.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h headers/geometric.h
+	$(LCC) $(FLAGS) -c -o $@ $<
+
 #Windows
-probas.exe : obj/main.obj obj/help.obj obj/discretelaw.obj obj/bernoulli.obj obj/binomial.obj obj/interface.obj
+probas.exe : obj/main.obj obj/help.obj obj/discretelaw.obj obj/bernoulli.obj obj/binomial.obj obj/interface.obj obj/geometric.obj
 	$(WCC) $(FLAGS) -o bin/$@ $^
 
 obj/main.obj : src/main.cpp headers/help.h headers/law.h
@@ -53,6 +56,9 @@ obj/binomial.obj : src/binomial.cpp headers/law.h headers/discretelaw.h headers/
 	$(WCC) $(FLAGS) -c -o $@ $<
 
 obj/interface.obj : src/interface.cpp headers/interface.h
+	$(WCC) $(FLAGS) -c -o $@ $<
+
+obj/geometric.obj : src/geometric.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h headers/geometric.h
 	$(WCC) $(FLAGS) -c -o $@ $<
 
 clean :
