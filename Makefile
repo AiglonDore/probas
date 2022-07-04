@@ -9,7 +9,7 @@ else
 	FLAGS=-Wall -Wextra -std=c++2a
 endif
 
-all : probas.out probas.exe
+all : probas.out probas.exe doc
 
 #Linux
 probas.out : obj/main.o obj/help.o obj/discretelaw.o obj/bernoulli.o obj/binomial.o obj/interface.o obj/geometric.o obj/utils.o
