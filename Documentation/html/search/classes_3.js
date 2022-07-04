@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['law_52',['Law',['../class_law.html',1,'']]]
+  ['hypergeometriclaw_56',['HyperGeometricLaw',['../class_hyper_geometric_law.html',1,'']]]
 ];

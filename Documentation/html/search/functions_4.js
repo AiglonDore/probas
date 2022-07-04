@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_83',['main',['../main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'main.cpp']]]
+  ['hypergeometriclaw_89',['HyperGeometricLaw',['../class_hyper_geometric_law.html#a2d4f2bd2fdf0ca10ecf5b4f3976961bd',1,'HyperGeometricLaw::HyperGeometricLaw()'],['../class_hyper_geometric_law.html#a1ef5c9db244a5d516bd885a2b5d1b61d',1,'HyperGeometricLaw::HyperGeometricLaw(long long int n, double p, long long int A)']]]
 ];
