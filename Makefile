@@ -11,6 +11,7 @@ endif
 
 all : probas.out probas.exe
 
+#Linux
 probas.out : obj/main.o obj/help.o obj/discretelaw.o obj/bernoulli.o obj/binomial.o obj/interface.o
 	$(LCC) $(FLAGS) -o bin/$@ $^
 
@@ -32,6 +33,7 @@ obj/binomial.o : src/binomial.cpp headers/law.h headers/discretelaw.h headers/di
 obj/interface.o : src/interface.cpp headers/interface.h
 	$(LCC) $(FLAGS) -c -o $@ $<
 
+#Windows
 probas.exe : obj/main.obj obj/help.obj obj/discretelaw.obj obj/bernoulli.obj obj/binomial.obj obj/interface.obj
 	$(WCC) $(FLAGS) -o bin/$@ $^
 
