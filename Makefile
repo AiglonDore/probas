@@ -9,7 +9,7 @@ else
 	FLAGS=-Wall -Wextra -std=c++2a
 endif
 
-all : probas.out
+all : probas.out probas.exe
 
 probas.out : obj/main.o obj/help.o obj/discretelaw.o obj/bernoulli.o obj/binomial.o obj/interface.o
 	$(LCC) $(FLAGS) -o bin/$@ $^
@@ -33,7 +33,7 @@ obj/interface.o : src/interface.cpp headers/interface.h
 	$(LCC) $(FLAGS) -c -o $@ $<
 
 probas.exe : obj/main.obj obj/help.obj obj/discretelaw.obj obj/bernoulli.obj obj/binomial.obj obj/interface.obj
-	$(LCC) $(FLAGS) -o bin/$@ $^
+	$(WCC) $(FLAGS) -o bin/$@ $^
 
 obj/main.obj : src/main.cpp headers/help.h headers/law.h
 	$(WCC) $(FLAGS) -c -o $@ $<
@@ -53,13 +53,14 @@ obj/binomial.obj : src/binomial.cpp headers/law.h headers/discretelaw.h headers/
 obj/interface.obj : src/interface.cpp headers/interface.h
 	$(WCC) $(FLAGS) -c -o $@ $<
 
-clean:
+clean :
 	rm -r -f -v obj
 	mkdir obj
 	touch obj/.gitkeep
 	rm -r -f -v bin
 	mkdir bin
 	touch bin/.gitkeep
+	@echo "Clean done"
 
 doc :
 	doxygen Doxyfile
