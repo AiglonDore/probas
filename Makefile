@@ -12,7 +12,7 @@ endif
 all : probas.out probas.exe
 
 #Linux
-probas.out : obj/main.o obj/help.o obj/discretelaw.o obj/bernoulli.o obj/binomial.o obj/interface.o obj/geometric.o
+probas.out : obj/main.o obj/help.o obj/discretelaw.o obj/bernoulli.o obj/binomial.o obj/interface.o obj/geometric.o obj/utils.o
 	$(LCC) $(FLAGS) -o bin/$@ $^
 
 obj/main.o : src/main.cpp headers/help.h headers/law.h
@@ -27,7 +27,7 @@ obj/bernoulli.o : src/bernoulli.cpp headers/discretelaw.h headers/bernoulli.h he
 obj/discretelaw.o : src/discretelaw.cpp headers/law.h headers/discretelaw.h
 	$(LCC) $(FLAGS) -c -o $@ $<
 
-obj/binomial.o : src/binomial.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h
+obj/binomial.o : src/binomial.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h headers/utils.h
 	$(LCC) $(FLAGS) -c -o $@ $<
 
 obj/interface.o : src/interface.cpp headers/interface.h
@@ -36,8 +36,11 @@ obj/interface.o : src/interface.cpp headers/interface.h
 obj/geometric.o : src/geometric.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h headers/geometric.h
 	$(LCC) $(FLAGS) -c -o $@ $<
 
+obj/utils.o : src/utils.cpp headers/utils.h
+	$(LCC) $(FLAGS) -c -o $@ $<
+
 #Windows
-probas.exe : obj/main.obj obj/help.obj obj/discretelaw.obj obj/bernoulli.obj obj/binomial.obj obj/interface.obj obj/geometric.obj
+probas.exe : obj/main.obj obj/help.obj obj/discretelaw.obj obj/bernoulli.obj obj/binomial.obj obj/interface.obj obj/geometric.obj obj/utils.obj
 	$(WCC) $(FLAGS) -o bin/$@ $^
 
 obj/main.obj : src/main.cpp headers/help.h headers/law.h
@@ -52,13 +55,16 @@ obj/bernoulli.obj : src/bernoulli.cpp headers/discretelaw.h headers/bernoulli.h 
 obj/discretelaw.obj : src/discretelaw.cpp headers/law.h headers/discretelaw.h
 	$(WCC) $(FLAGS) -c -o $@ $<
 
-obj/binomial.obj : src/binomial.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h
+obj/binomial.obj : src/binomial.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h headers/utils.h
 	$(WCC) $(FLAGS) -c -o $@ $<
 
 obj/interface.obj : src/interface.cpp headers/interface.h
 	$(WCC) $(FLAGS) -c -o $@ $<
 
 obj/geometric.obj : src/geometric.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h headers/geometric.h
+	$(WCC) $(FLAGS) -c -o $@ $<
+
+obj/utils.obj : src/utils.cpp headers/utils.h
 	$(WCC) $(FLAGS) -c -o $@ $<
 
 clean :

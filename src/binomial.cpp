@@ -10,42 +10,11 @@
  */
 
 #include "../headers/binomial.h"
+#include "../headers/utils.h"
 
 #include <cmath>
 
 using namespace std;
-
-/**
- * @brief Computes n!.
- * 
- * @param n Value.
- * @return int n!.
- */
-long long int fact(long long int n)
-{
-    long long int p = 1;
-    for (long long int i = 1; i <= n; i++)
-    {
-        p *= i;
-    }
-    return p;
-}
-
-/**
- * @brief Returns the binomial coefficient.
- * 
- * @param n Number of items.
- * @param k Number of slices.
- * @return int Binomial coefficient.
- */
-long long int nCr(long long int n, long long int k)
-{
-    if (n < 0 || k < 0 || k > n)
-    {
-        return 0;
-    }
-    return fact(n) / (fact(k) * fact(n - k));
-}
 
 BinomialLaw::BinomialLaw() : BernoulliLaw(), n(1)
 {
@@ -71,7 +40,7 @@ double BinomialLaw::proba(long long int X)
         throw -2;
     }
     
-    return nCr(n,X) * pow(p,X) * pow(1-p,n-X);
+    return Utils::nCr(n,X) * pow(p,X) * pow(1-p,n-X);
 }
 
 double BinomialLaw::expectancy()
