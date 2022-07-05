@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['uniformdiscretelaw_90',['UniformDiscreteLaw',['../class_uniform_discrete_law.html#a557d503bbf0c25c139cf395dc8f6bea4',1,'UniformDiscreteLaw::UniformDiscreteLaw()'],['../class_uniform_discrete_law.html#aa9723a7d12b174b358a036e49d6a42cb',1,'UniformDiscreteLaw::UniformDiscreteLaw(long long int upperBound)'],['../class_uniform_discrete_law.html#affa631381c10056cd000f45b4452d10a',1,'UniformDiscreteLaw::UniformDiscreteLaw(long long int lowerBound, long long int upperBound)']]]
+  ['showhelp_94',['showHelp',['../help_8h.html#aec315d77f5c38417289a0e311d2a9d31',1,'showHelp():&#160;help.cpp'],['../help_8cpp.html#aec315d77f5c38417289a0e311d2a9d31',1,'showHelp():&#160;help.cpp']]],
+  ['stddev_95',['stdDev',['../class_law.html#a4e9f95ed88bafb8048ad0daf9ca69c17',1,'Law']]]
 ];
