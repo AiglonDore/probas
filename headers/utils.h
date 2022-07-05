@@ -42,5 +42,26 @@ namespace Utils {
      * @return long long int Number of permutations.
      */
     long long int nPr(long long int n, long long int k);
+    
+    /**
+     * @brief Gamma function.
+     * 
+     * @param x Value.
+     * @return double Gamma(x).
+     * @throws -1 if x < 0.
+     * @todo Write function.
+     */
+    double Gamma(double x);
+
+    /**
+     * @brief Incomplete Gamma function.
+     * 
+     * @param x Value.
+     * @param lambda Parameter.
+     * @return double Value of function.
+     * @throws -1 if x < 0 or lambda < 0
+     * @todo Write function.
+     */
+    double Gamma(double x, double lambda);
 }
 #endif //UTILS_H

@@ -62,10 +62,17 @@ public:
      * @return double Variance.
      */
     virtual double variance() override;
+
+    /**
+     * @brief Overrides {@link BernoulliLaw} function.
+     * 
+     * @return double Variance.
+     */
+    virtual double repartition(double X) override;
 };
 
 /**
- * @brief The HyperGeometriClaw class deals with hypergeometric laws.
+ * @brief The HyperGeometricLaw class deals with hypergeometric laws.
  */
 class HyperGeometricLaw : public GeometricLaw
 {
@@ -121,11 +128,17 @@ public:
     virtual double expectancy() override;
 
     /**
-     * @brief Overrides {@link BernoulliLaw} function.
+     * @brief Overrides {@link GeometricLaw} function.
      * 
      * @return double Variance.
      */
     virtual double variance() override;
+    /**
+     * @brief Overrides {@link GeometricLaw} function.
+     * @param X value.
+     * @return double F(X).
+     */
+    virtual double repartition(double X) override;
 };
 
 #endif //GEOMETRIC_H

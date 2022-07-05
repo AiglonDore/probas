@@ -43,6 +43,19 @@ double PoissonLaw::variance()
     return lambda;
 }
 
+double PoissonLaw::repartition(double X)
+{
+    if (X < 0)
+    {
+        return 0;
+    }
+    else
+    {
+        long long int tmp = X;
+        return Utils::Gamma(tmp + 1,lambda) / Utils::fact(tmp);
+    }
+}
+
 PoissonLaw& PoissonLaw::operator+=(const PoissonLaw& other)
 {
     lambda += other.getLambda();

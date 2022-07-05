@@ -69,6 +69,13 @@ public:
      * @return double Variance.
      */
     virtual double variance();
+    /**
+     * @brief Overrides {@link DiscreteLaw} function.
+     * 
+     * @param X Value.
+     * @return double F(X).
+     */
+    virtual double repartition(double X) override;
 
     /**
      * @brief Adds a PoissonLaw to the current one.

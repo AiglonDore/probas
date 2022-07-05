@@ -33,3 +33,13 @@ double DiscreteLaw::proba(long long int lowerBound, long long int upperBound)
     }
     return s;
 }
+
+double DiscreteLaw::density(double X)
+{
+    return proba(X);
+}
+
+double DiscreteLaw::repartition(double X)
+{
+    return proba(0.0,X);
+}
