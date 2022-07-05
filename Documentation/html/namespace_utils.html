@@ -81,6 +81,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a270db5b73c4c5f27caeea91c6d62f15d"><td class="memItemLeft" align="right" valign="top">long long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils.html#a270db5b73c4c5f27caeea91c6d62f15d">nCr</a> (long long int n, long long int k)</td></tr>
 <tr class="memdesc:a270db5b73c4c5f27caeea91c6d62f15d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the binomial coefficient.  <a href="namespace_utils.html#a270db5b73c4c5f27caeea91c6d62f15d">More...</a><br /></td></tr>
 <tr class="separator:a270db5b73c4c5f27caeea91c6d62f15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4444e936659728098be9aa2fc209475"><td class="memItemLeft" align="right" valign="top">long long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils.html#ac4444e936659728098be9aa2fc209475">nPr</a> (long long int n, long long int k)</td></tr>
+<tr class="memdesc:ac4444e936659728098be9aa2fc209475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of permutations.  <a href="namespace_utils.html#ac4444e936659728098be9aa2fc209475">More...</a><br /></td></tr>
+<tr class="separator:ac4444e936659728098be9aa2fc209475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Holds several useful functions. </p>
@@ -116,9 +119,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_utils_aba6605ca68f7fe302aefa6be4195f839_icgraph.png" border="0" usemap="#namespace_utils_aba6605ca68f7fe302aefa6be4195f839_icgraph" alt=""/></div>
 <map name="namespace_utils_aba6605ca68f7fe302aefa6be4195f839_icgraph" id="namespace_utils_aba6605ca68f7fe302aefa6be4195f839_icgraph">
-<area shape="rect" title="Computes n!." alt="" coords="335,5,420,32"/>
-<area shape="rect" href="namespace_utils.html#a270db5b73c4c5f27caeea91c6d62f15d" title="Returns the binomial coefficient." alt="" coords="204,5,287,32"/>
-<area shape="rect" href="class_binomial_law.html#aca904009a14cda640087113de5b24fb7" title="Overrides BernoulliLaw function." alt="" coords="5,5,156,32"/>
+<area shape="rect" title="Computes n!." alt="" coords="335,31,420,57"/>
+<area shape="rect" href="namespace_utils.html#a270db5b73c4c5f27caeea91c6d62f15d" title="Returns the binomial coefficient." alt="" coords="204,56,287,83"/>
+<area shape="rect" href="namespace_utils.html#ac4444e936659728098be9aa2fc209475" title="Number of permutations." alt="" coords="40,5,121,32"/>
+<area shape="rect" href="class_binomial_law.html#aca904009a14cda640087113de5b24fb7" title="Overrides BernoulliLaw function." alt="" coords="5,56,156,83"/>
 </map>
 </div>
 
@@ -175,8 +179,59 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_utils_a270db5b73c4c5f27caeea91c6d62f15d_icgraph.png" border="0" usemap="#namespace_utils_a270db5b73c4c5f27caeea91c6d62f15d_icgraph" alt=""/></div>
 <map name="namespace_utils_a270db5b73c4c5f27caeea91c6d62f15d_icgraph" id="namespace_utils_a270db5b73c4c5f27caeea91c6d62f15d_icgraph">
-<area shape="rect" title="Returns the binomial coefficient." alt="" coords="204,5,287,32"/>
-<area shape="rect" href="class_binomial_law.html#aca904009a14cda640087113de5b24fb7" title="Overrides BernoulliLaw function." alt="" coords="5,5,156,32"/>
+<area shape="rect" title="Returns the binomial coefficient." alt="" coords="204,31,287,57"/>
+<area shape="rect" href="namespace_utils.html#ac4444e936659728098be9aa2fc209475" title="Number of permutations." alt="" coords="40,5,121,32"/>
+<area shape="rect" href="class_binomial_law.html#aca904009a14cda640087113de5b24fb7" title="Overrides BernoulliLaw function." alt="" coords="5,56,156,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac4444e936659728098be9aa2fc209475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4444e936659728098be9aa2fc209475">&#9670;&nbsp;</a></span>nPr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long long int Utils::nPr </td>
+          <td>(</td>
+          <td class="paramtype">long long int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long long int&#160;</td>
+          <td class="paramname"><em>k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of permutations. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Number of itmes. </td></tr>
+    <tr><td class="paramname">k</td><td>Number of selected items. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>long long int Number of permutations. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="utils_8cpp_source.html#l00035">35</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_utils_ac4444e936659728098be9aa2fc209475_cgraph.png" border="0" usemap="#namespace_utils_ac4444e936659728098be9aa2fc209475_cgraph" alt=""/></div>
+<map name="namespace_utils_ac4444e936659728098be9aa2fc209475_cgraph" id="namespace_utils_ac4444e936659728098be9aa2fc209475_cgraph">
+<area shape="rect" title="Number of permutations." alt="" coords="5,5,87,32"/>
+<area shape="rect" href="namespace_utils.html#aba6605ca68f7fe302aefa6be4195f839" title="Computes n!." alt="" coords="265,5,351,32"/>
+<area shape="rect" href="namespace_utils.html#a270db5b73c4c5f27caeea91c6d62f15d" title="Returns the binomial coefficient." alt="" coords="135,31,217,57"/>
 </map>
 </div>
 
