@@ -1,0 +1,9 @@
+<map id="src/geometric.cpp" name="src/geometric.cpp">
+<area shape="rect" id="node1" title="Implements geometric.h." alt="" coords="57,5,196,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="23,379,86,405"/>
+<area shape="rect" id="node3" href="$geometric_8h.html" title="Provides tools for geometric laws." alt="" coords="43,80,211,107"/>
+<area shape="rect" id="node7" href="$utils_8h.html" title="Provides useful functions." alt="" coords="235,80,365,107"/>
+<area shape="rect" id="node4" href="$bernoulli_8h.html" title="Provides functions relted to the Bernoulli law." alt="" coords="79,155,169,181"/>
+<area shape="rect" id="node5" href="$discretelaw_8h.html" title="Provides the discrete law class to deal with discrete laws." alt="" coords="65,229,173,256"/>
+<area shape="rect" id="node6" href="$law_8h.html" title="Provides the abstract class Law." alt="" coords="54,304,178,331"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Utils::nCr" name="Utils::nCr">
+<area shape="rect" id="node1" title="Returns the binomial coefficient." alt="" coords="216,35,299,61"/>
+<area shape="rect" id="node2" href="$class_binomial_law.html#aca904009a14cda640087113de5b24fb7" title="Overrides BernoulliLaw function." alt="" coords="11,5,162,32"/>
+<area shape="rect" id="node3" href="$class_hyper_geometric_law.html#a3a91383fea119f1b3cec06fcd2b15b05" title="Overrides GeometricLaw function." alt="" coords="5,57,168,98"/>
+</map>
