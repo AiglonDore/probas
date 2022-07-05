@@ -84,6 +84,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ac4444e936659728098be9aa2fc209475"><td class="memItemLeft" align="right" valign="top">long long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils.html#ac4444e936659728098be9aa2fc209475">nPr</a> (long long int n, long long int k)</td></tr>
 <tr class="memdesc:ac4444e936659728098be9aa2fc209475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of permutations.  <a href="namespace_utils.html#ac4444e936659728098be9aa2fc209475">More...</a><br /></td></tr>
 <tr class="separator:ac4444e936659728098be9aa2fc209475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ba026efd5271209e70b2f4aaa183300"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils.html#a1ba026efd5271209e70b2f4aaa183300">Gamma</a> (double x)</td></tr>
+<tr class="memdesc:a1ba026efd5271209e70b2f4aaa183300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gamma function.  <a href="namespace_utils.html#a1ba026efd5271209e70b2f4aaa183300">More...</a><br /></td></tr>
+<tr class="separator:a1ba026efd5271209e70b2f4aaa183300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a093ad8221d79bd9a08e7f413122334c7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils.html#a093ad8221d79bd9a08e7f413122334c7">Gamma</a> (double x, double lambda)</td></tr>
+<tr class="memdesc:a093ad8221d79bd9a08e7f413122334c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Incomplete Gamma function.  <a href="namespace_utils.html#a093ad8221d79bd9a08e7f413122334c7">More...</a><br /></td></tr>
+<tr class="separator:a093ad8221d79bd9a08e7f413122334c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Holds several useful functions. </p>
@@ -119,14 +125,107 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_utils_aba6605ca68f7fe302aefa6be4195f839_icgraph.png" border="0" usemap="#namespace_utils_aba6605ca68f7fe302aefa6be4195f839_icgraph" alt=""/></div>
 <map name="namespace_utils_aba6605ca68f7fe302aefa6be4195f839_icgraph" id="namespace_utils_aba6605ca68f7fe302aefa6be4195f839_icgraph">
-<area shape="rect" title="Computes n!." alt="" coords="407,56,492,83"/>
-<area shape="rect" href="namespace_utils.html#a270db5b73c4c5f27caeea91c6d62f15d" title="Returns the binomial coefficient." alt="" coords="246,56,329,83"/>
+<area shape="rect" title="Computes n!." alt="" coords="437,81,523,108"/>
+<area shape="rect" href="namespace_utils.html#a270db5b73c4c5f27caeea91c6d62f15d" title="Returns the binomial coefficient." alt="" coords="261,56,344,83"/>
 <area shape="rect" href="namespace_utils.html#ac4444e936659728098be9aa2fc209475" title="Number of permutations." alt="" coords="46,5,127,32"/>
-<area shape="rect" href="class_poisson_law.html#a4ca8cc3d7f0cefe233d05ad8000c873f" title="Computes the probability." alt="" coords="216,107,359,133"/>
+<area shape="rect" href="class_poisson_law.html#a4ca8cc3d7f0cefe233d05ad8000c873f" title="Computes the probability." alt="" coords="231,107,374,133"/>
+<area shape="rect" href="class_poisson_law.html#a380246b9d4fa4df26873fedde4e28d4c" title="Overrides DiscreteLaw function." alt="" coords="216,157,389,184"/>
 <area shape="rect" href="class_binomial_law.html#aca904009a14cda640087113de5b24fb7" title="Overrides BernoulliLaw function." alt="" coords="11,56,162,83"/>
 <area shape="rect" href="class_hyper_geometric_law.html#a3a91383fea119f1b3cec06fcd2b15b05" title="Overrides GeometricLaw function." alt="" coords="5,107,168,149"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a1ba026efd5271209e70b2f4aaa183300"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba026efd5271209e70b2f4aaa183300">&#9670;&nbsp;</a></span>Gamma() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Utils::Gamma </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gamma function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double Gamma(x). </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">-1</td><td>if x &lt; 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Write function. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="utils_8cpp_source.html#l00040">40</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_utils_a1ba026efd5271209e70b2f4aaa183300_icgraph.png" border="0" usemap="#namespace_utils_a1ba026efd5271209e70b2f4aaa183300_icgraph" alt=""/></div>
+<map name="namespace_utils_a1ba026efd5271209e70b2f4aaa183300_icgraph" id="namespace_utils_a1ba026efd5271209e70b2f4aaa183300_icgraph">
+<area shape="rect" title="Gamma function." alt="" coords="227,5,339,32"/>
+<area shape="rect" href="class_poisson_law.html#a380246b9d4fa4df26873fedde4e28d4c" title="Overrides DiscreteLaw function." alt="" coords="5,5,179,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a093ad8221d79bd9a08e7f413122334c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a093ad8221d79bd9a08e7f413122334c7">&#9670;&nbsp;</a></span>Gamma() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Utils::Gamma </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>lambda</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Incomplete Gamma function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Value. </td></tr>
+    <tr><td class="paramname">lambda</td><td>Parameter. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double Value of function. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">-1</td><td>if x &lt; 0 or lambda &lt; 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Write function. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="utils_8cpp_source.html#l00050">50</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
 
 </div>
 </div>

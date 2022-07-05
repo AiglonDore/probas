@@ -119,6 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a76972b734a4ba633b6ef222c59f4c986"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poisson_law.html#a76972b734a4ba633b6ef222c59f4c986">variance</a> ()</td></tr>
 <tr class="memdesc:a76972b734a4ba633b6ef222c59f4c986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the expectancy.  <a href="class_poisson_law.html#a76972b734a4ba633b6ef222c59f4c986">More...</a><br /></td></tr>
 <tr class="separator:a76972b734a4ba633b6ef222c59f4c986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a380246b9d4fa4df26873fedde4e28d4c"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poisson_law.html#a380246b9d4fa4df26873fedde4e28d4c">repartition</a> (double X) override</td></tr>
+<tr class="memdesc:a380246b9d4fa4df26873fedde4e28d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides <a class="el" href="class_discrete_law.html">DiscreteLaw</a> function.  <a href="class_poisson_law.html#a380246b9d4fa4df26873fedde4e28d4c">More...</a><br /></td></tr>
+<tr class="separator:a380246b9d4fa4df26873fedde4e28d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60f65453b406f649e69f83a086f56e5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_poisson_law.html">PoissonLaw</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_poisson_law.html#a60f65453b406f649e69f83a086f56e5e">operator+=</a> (const <a class="el" href="class_poisson_law.html">PoissonLaw</a> &amp;other)</td></tr>
 <tr class="memdesc:a60f65453b406f649e69f83a086f56e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a <a class="el" href="class_poisson_law.html" title="The class PoissonLaw deals with Poisson laws.">PoissonLaw</a> to the current one.  <a href="class_poisson_law.html#a60f65453b406f649e69f83a086f56e5e">More...</a><br /></td></tr>
 <tr class="separator:a60f65453b406f649e69f83a086f56e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,15 +129,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a40db937dd1dae00d96ce13981640ca0b inherit pub_methods_class_discrete_law"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_discrete_law.html#a40db937dd1dae00d96ce13981640ca0b">~DiscreteLaw</a> ()</td></tr>
 <tr class="memdesc:a40db937dd1dae00d96ce13981640ca0b inherit pub_methods_class_discrete_law"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the Discrete <a class="el" href="class_law.html" title="The class Law provides a generic class that will hold all the sub-classes relative to specific laws.">Law</a> object.  <a href="class_discrete_law.html#a40db937dd1dae00d96ce13981640ca0b">More...</a><br /></td></tr>
 <tr class="separator:a40db937dd1dae00d96ce13981640ca0b inherit pub_methods_class_discrete_law"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61b329b6d52a60ed46c71fdc17f10acb inherit pub_methods_class_discrete_law"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_discrete_law.html#a61b329b6d52a60ed46c71fdc17f10acb">proba</a> (double X) override</td></tr>
-<tr class="memdesc:a61b329b6d52a60ed46c71fdc17f10acb inherit pub_methods_class_discrete_law"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides <a class="el" href="class_law.html">Law</a> function.  <a href="class_discrete_law.html#a61b329b6d52a60ed46c71fdc17f10acb">More...</a><br /></td></tr>
-<tr class="separator:a61b329b6d52a60ed46c71fdc17f10acb inherit pub_methods_class_discrete_law"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2a9b61cae4b81eb80ea8ffc05d13c56 inherit pub_methods_class_discrete_law"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_discrete_law.html#af2a9b61cae4b81eb80ea8ffc05d13c56">proba</a> (double lowerBound, double upperBound) override</td></tr>
-<tr class="memdesc:af2a9b61cae4b81eb80ea8ffc05d13c56 inherit pub_methods_class_discrete_law"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides <a class="el" href="class_law.html">Law</a> function.  <a href="class_discrete_law.html#af2a9b61cae4b81eb80ea8ffc05d13c56">More...</a><br /></td></tr>
-<tr class="separator:af2a9b61cae4b81eb80ea8ffc05d13c56 inherit pub_methods_class_discrete_law"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d4caf47532c6cd40b35cf4ecb7f72ef inherit pub_methods_class_discrete_law"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_discrete_law.html#a1d4caf47532c6cd40b35cf4ecb7f72ef">proba</a> (long long int lowerBound, long long int upperBound) override</td></tr>
-<tr class="memdesc:a1d4caf47532c6cd40b35cf4ecb7f72ef inherit pub_methods_class_discrete_law"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides <a class="el" href="class_law.html">Law</a> function.  <a href="class_discrete_law.html#a1d4caf47532c6cd40b35cf4ecb7f72ef">More...</a><br /></td></tr>
-<tr class="separator:a1d4caf47532c6cd40b35cf4ecb7f72ef inherit pub_methods_class_discrete_law"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41df851321e5a6f638a7647731abaed8 inherit pub_methods_class_discrete_law"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_discrete_law.html#a41df851321e5a6f638a7647731abaed8">proba</a> (double X) override final</td></tr>
+<tr class="memdesc:a41df851321e5a6f638a7647731abaed8 inherit pub_methods_class_discrete_law"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides <a class="el" href="class_law.html">Law</a> function.  <a href="class_discrete_law.html#a41df851321e5a6f638a7647731abaed8">More...</a><br /></td></tr>
+<tr class="separator:a41df851321e5a6f638a7647731abaed8 inherit pub_methods_class_discrete_law"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9761eaff81fbbbc068a0ef9313a6e015 inherit pub_methods_class_discrete_law"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_discrete_law.html#a9761eaff81fbbbc068a0ef9313a6e015">proba</a> (double lowerBound, double upperBound) override final</td></tr>
+<tr class="memdesc:a9761eaff81fbbbc068a0ef9313a6e015 inherit pub_methods_class_discrete_law"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides <a class="el" href="class_law.html">Law</a> function.  <a href="class_discrete_law.html#a9761eaff81fbbbc068a0ef9313a6e015">More...</a><br /></td></tr>
+<tr class="separator:a9761eaff81fbbbc068a0ef9313a6e015 inherit pub_methods_class_discrete_law"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a54924c13001a4396caf4a8f74114d5 inherit pub_methods_class_discrete_law"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_discrete_law.html#a0a54924c13001a4396caf4a8f74114d5">proba</a> (long long int lowerBound, long long int upperBound) override final</td></tr>
+<tr class="memdesc:a0a54924c13001a4396caf4a8f74114d5 inherit pub_methods_class_discrete_law"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides <a class="el" href="class_law.html">Law</a> function.  <a href="class_discrete_law.html#a0a54924c13001a4396caf4a8f74114d5">More...</a><br /></td></tr>
+<tr class="separator:a0a54924c13001a4396caf4a8f74114d5 inherit pub_methods_class_discrete_law"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97727fd7c7370911db2e4c02558e4244 inherit pub_methods_class_discrete_law"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_discrete_law.html#a97727fd7c7370911db2e4c02558e4244">density</a> (double X) override final</td></tr>
+<tr class="memdesc:a97727fd7c7370911db2e4c02558e4244 inherit pub_methods_class_discrete_law"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides <a class="el" href="class_law.html">Law</a> function.  <a href="class_discrete_law.html#a97727fd7c7370911db2e4c02558e4244">More...</a><br /></td></tr>
+<tr class="separator:a97727fd7c7370911db2e4c02558e4244 inherit pub_methods_class_discrete_law"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_law"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_law')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_law.html">Law</a></td></tr>
 <tr class="memitem:a4fa6f0fb61285152c8c6d7a17b51a82b inherit pub_methods_class_law"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_law.html#a4fa6f0fb61285152c8c6d7a17b51a82b">~Law</a> ()</td></tr>
 <tr class="memdesc:a4fa6f0fb61285152c8c6d7a17b51a82b inherit pub_methods_class_law"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the <a class="el" href="class_law.html" title="The class Law provides a generic class that will hold all the sub-classes relative to specific laws.">Law</a> object.  <a href="class_law.html#a4fa6f0fb61285152c8c6d7a17b51a82b">More...</a><br /></td></tr>
@@ -345,7 +351,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_poisson_law.html" title="The class PoissonLaw deals with Poisson laws.">PoissonLaw</a>&amp; This object, as a reference. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="poisson_8cpp_source.html#l00046">46</a> of file <a class="el" href="poisson_8cpp_source.html">poisson.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="poisson_8cpp_source.html#l00059">59</a> of file <a class="el" href="poisson_8cpp_source.html">poisson.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -401,6 +407,55 @@ Here is the call graph for this function:</div>
 <map name="class_poisson_law_a4ca8cc3d7f0cefe233d05ad8000c873f_cgraph" id="class_poisson_law_a4ca8cc3d7f0cefe233d05ad8000c873f_cgraph">
 <area shape="rect" title="Computes the probability." alt="" coords="5,5,148,32"/>
 <area shape="rect" href="namespace_utils.html#aba6605ca68f7fe302aefa6be4195f839" title="Computes n!." alt="" coords="196,5,281,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a380246b9d4fa4df26873fedde4e28d4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a380246b9d4fa4df26873fedde4e28d4c">&#9670;&nbsp;</a></span>repartition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double PoissonLaw::repartition </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>X</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overrides <a class="el" href="class_discrete_law.html">DiscreteLaw</a> function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">X</td><td>Value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double F(X). </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_discrete_law.html#a71fde3924c86ba2d32ac31f7f6277611">DiscreteLaw</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="poisson_8cpp_source.html#l00046">46</a> of file <a class="el" href="poisson_8cpp_source.html">poisson.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_poisson_law_a380246b9d4fa4df26873fedde4e28d4c_cgraph.png" border="0" usemap="#class_poisson_law_a380246b9d4fa4df26873fedde4e28d4c_cgraph" alt=""/></div>
+<map name="class_poisson_law_a380246b9d4fa4df26873fedde4e28d4c_cgraph" id="class_poisson_law_a380246b9d4fa4df26873fedde4e28d4c_cgraph">
+<area shape="rect" title="Overrides DiscreteLaw function." alt="" coords="5,31,179,57"/>
+<area shape="rect" href="namespace_utils.html#aba6605ca68f7fe302aefa6be4195f839" title="Computes n!." alt="" coords="240,5,325,32"/>
+<area shape="rect" href="namespace_utils.html#a1ba026efd5271209e70b2f4aaa183300" title="Gamma function." alt="" coords="227,56,339,83"/>
 </map>
 </div>
 

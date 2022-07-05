@@ -1,11 +1,4 @@
 var searchData=
 [
-  ['_7ebernoullilaw_112',['~BernoulliLaw',['../class_bernoulli_law.html#a68b60539eae80ffaa2ee6a298e638d4a',1,'BernoulliLaw']]],
-  ['_7ebinomiallaw_113',['~BinomialLaw',['../class_binomial_law.html#a31cc8fd16911e05eaf6d5f4d76406d1c',1,'BinomialLaw']]],
-  ['_7ediscretelaw_114',['~DiscreteLaw',['../class_discrete_law.html#a40db937dd1dae00d96ce13981640ca0b',1,'DiscreteLaw']]],
-  ['_7egeometriclaw_115',['~GeometricLaw',['../class_geometric_law.html#a3d3860f8732d9c1e1012f1ab03269661',1,'GeometricLaw']]],
-  ['_7ehypergeometriclaw_116',['~HyperGeometricLaw',['../class_hyper_geometric_law.html#a3699a633c36b29b004edf0b1efa0c00e',1,'HyperGeometricLaw']]],
-  ['_7elaw_117',['~Law',['../class_law.html#a4fa6f0fb61285152c8c6d7a17b51a82b',1,'Law']]],
-  ['_7epoissonlaw_118',['~PoissonLaw',['../class_poisson_law.html#a25fe32ae7a6b612bb787537a205cd645',1,'PoissonLaw']]],
-  ['_7euniformdiscretelaw_119',['~UniformDiscreteLaw',['../class_uniform_discrete_law.html#af75f45241c45a325b7d8b86e91045d8f',1,'UniformDiscreteLaw']]]
+  ['uniformdiscretelaw_117',['UniformDiscreteLaw',['../class_uniform_discrete_law.html#a557d503bbf0c25c139cf395dc8f6bea4',1,'UniformDiscreteLaw::UniformDiscreteLaw()'],['../class_uniform_discrete_law.html#aa9723a7d12b174b358a036e49d6a42cb',1,'UniformDiscreteLaw::UniformDiscreteLaw(long long int upperBound)'],['../class_uniform_discrete_law.html#affa631381c10056cd000f45b4452d10a',1,'UniformDiscreteLaw::UniformDiscreteLaw(long long int lowerBound, long long int upperBound)']]]
 ];

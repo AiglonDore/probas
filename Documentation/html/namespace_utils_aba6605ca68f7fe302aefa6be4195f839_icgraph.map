@@ -1,8 +1,9 @@
 <map id="Utils::fact" name="Utils::fact">
-<area shape="rect" id="node1" title="Computes n!." alt="" coords="407,56,492,83"/>
-<area shape="rect" id="node2" href="$namespace_utils.html#a270db5b73c4c5f27caeea91c6d62f15d" title="Returns the binomial coefficient." alt="" coords="246,56,329,83"/>
+<area shape="rect" id="node1" title="Computes n!." alt="" coords="437,81,523,108"/>
+<area shape="rect" id="node2" href="$namespace_utils.html#a270db5b73c4c5f27caeea91c6d62f15d" title="Returns the binomial coefficient." alt="" coords="261,56,344,83"/>
 <area shape="rect" id="node3" href="$namespace_utils.html#ac4444e936659728098be9aa2fc209475" title="Number of permutations." alt="" coords="46,5,127,32"/>
-<area shape="rect" id="node6" href="$class_poisson_law.html#a4ca8cc3d7f0cefe233d05ad8000c873f" title="Computes the probability." alt="" coords="216,107,359,133"/>
+<area shape="rect" id="node6" href="$class_poisson_law.html#a4ca8cc3d7f0cefe233d05ad8000c873f" title="Computes the probability." alt="" coords="231,107,374,133"/>
+<area shape="rect" id="node7" href="$class_poisson_law.html#a380246b9d4fa4df26873fedde4e28d4c" title="Overrides DiscreteLaw function." alt="" coords="216,157,389,184"/>
 <area shape="rect" id="node4" href="$class_binomial_law.html#aca904009a14cda640087113de5b24fb7" title="Overrides BernoulliLaw function." alt="" coords="11,56,162,83"/>
 <area shape="rect" id="node5" href="$class_hyper_geometric_law.html#a3a91383fea119f1b3cec06fcd2b15b05" title="Overrides GeometricLaw function." alt="" coords="5,107,168,149"/>
 </map>
