@@ -79,3 +79,8 @@ double HyperGeometricLaw::variance()
 {
     return n * p * (1 - p) * (A - n) / (A - 1);
 }
+
+double HyperGeometricLaw::repartition(double X)
+{
+    return DiscreteLaw::repartition(X);
+}

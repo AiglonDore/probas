@@ -133,6 +133,12 @@ public:
      * @return double Variance.
      */
     virtual double variance() override;
+    /**
+     * @brief Overrides {@link GeometricLaw} function.
+     * @param X value.
+     * @return double F(X).
+     */
+    virtual double repartition(double X) override;
 };
 
 #endif //GEOMETRIC_H
