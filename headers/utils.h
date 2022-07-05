@@ -41,6 +41,6 @@ namespace Utils {
      * @param k Number of selected items.
      * @return long long int Number of permutations.
      */
-    long long int nPr(long long int n, long long int k) { return nCr(n,k) * fact(k) ;};
+    long long int nPr(long long int n, long long int k);
 }
 #endif //UTILS_H

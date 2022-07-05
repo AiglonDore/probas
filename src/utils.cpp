@@ -31,3 +31,8 @@ long long int Utils::nCr(long long int n, long long int k)
     }
     return Utils::fact(n) / (Utils::fact(k) * Utils::fact(n - k));
 }
+
+long long int Utils::nPr(long long int n, long long int k)
+{
+    return nCr(n,k) * fact(k);
+}
