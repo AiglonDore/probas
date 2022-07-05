@@ -8,8 +8,10 @@
  * @copyright Copyright (c) 2022
  * 
  */
+#include <cmath>
 
 #include "../headers/geometric.h"
+#include "../headers/utils.h"
 
 GeometricLaw::GeometricLaw() : BernoulliLaw()
 {
@@ -52,4 +54,23 @@ HyperGeometricLaw::HyperGeometricLaw(long long int n,double p, long long int A) 
 
 HyperGeometricLaw::~HyperGeometricLaw()
 {
+}
+
+double HyperGeometricLaw::proba(long long int X)
+{
+    if (X < std::max(0.,n-(1 - p) * A) || X > std::min(p * A,double(n)))
+    {
+        return 0.0;
+    }
+    return double(Utils::nCr(int(p * A),X)) * Utils::nCr(int((1 - p) * A),n - X) /  Utils::nCr(A,n);
+}
+
+double HyperGeometricLaw::expectancy()
+{
+    return n * p;
+}
+
+double HyperGeometricLaw::variance()
+{
+    return n * p * (1 - p) * (A - n) / (A - 1);
 }

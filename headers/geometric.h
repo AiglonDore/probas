@@ -66,7 +66,6 @@ public:
 
 /**
  * @brief The HyperGeometriClaw class deals with hypergeometric laws.
- * @todo Finish writing the class.
  */
 class HyperGeometricLaw : public GeometricLaw
 {
@@ -106,6 +105,27 @@ public:
      * @return long long int A.
      */
     long long int getA() const { return A; };
+
+    /**
+     * @brief Overrides {@link GeometricLaw} function.
+     * 
+     * @return double Probability.
+     */
+    virtual double proba(long long int X) override;
+
+    /**
+     * @brief Overrides {@link GeometricLaw} function.
+     * 
+     * @return double Expectancy.
+     */
+    virtual double expectancy() override;
+
+    /**
+     * @brief Overrides {@link BernoulliLaw} function.
+     * 
+     * @return double Variance.
+     */
+    virtual double variance() override;
 };
 
 #endif //GEOMETRIC_H
