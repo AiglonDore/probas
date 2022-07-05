@@ -1,0 +1,13 @@
+<map id="headers/law.h" name="headers/law.h">
+<area shape="rect" id="node1" title="Provides the abstract class Law." alt="" coords="508,5,620,32"/>
+<area shape="rect" id="node2" href="$discretelaw_8h.html" title="Provides the discrete law class to deal with discrete laws." alt="" coords="482,80,646,107"/>
+<area shape="rect" id="node3" href="$bernoulli_8h.html" title="Provides functions relted to the Bernoulli law." alt="" coords="256,155,403,181"/>
+<area shape="rect" id="node9" href="$uniform__discrete_8h.html" title="Uniform discrete law." alt="" coords="464,155,664,181"/>
+<area shape="rect" id="node11" href="$discretelaw_8cpp.html" title="Implements discretelaw.h." alt="" coords="688,155,835,181"/>
+<area shape="rect" id="node4" href="$binomial_8h.html" title="Provides the binomial law class." alt="" coords="5,229,152,256"/>
+<area shape="rect" id="node6" href="$geometric_8h.html" title="Provides tools for geometric laws." alt="" coords="177,229,333,256"/>
+<area shape="rect" id="node8" href="$bernoulli_8cpp.html" title="Implements bernoulli.h." alt="" coords="357,229,486,256"/>
+<area shape="rect" id="node5" href="$binomial_8cpp.html" title="Implements binomial.h." alt="" coords="14,304,143,331"/>
+<area shape="rect" id="node7" href="$geometric_8cpp.html" title="Implements geometric.h." alt="" coords="185,304,324,331"/>
+<area shape="rect" id="node10" href="$uniform__discrete_8cpp.html" title="Implements uniform_discrete.h." alt="" coords="510,229,693,256"/>
+</map>

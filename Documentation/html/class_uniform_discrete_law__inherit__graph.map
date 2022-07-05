@@ -1,0 +1,5 @@
+<map id="UniformDiscreteLaw" name="UniformDiscreteLaw">
+<area shape="rect" id="node1" title="This class provides tools for uniform discrete laws." alt="" coords="5,155,160,181"/>
+<area shape="rect" id="node2" href="$class_discrete_law.html" title="The Discrete Law blocks the domains of Law to the relative numbers." alt="" coords="31,80,134,107"/>
+<area shape="rect" id="node3" href="$class_law.html" title="The class Law provides a generic class that will hold all the sub&#45;classes relative to specific laws." alt="" coords="59,5,107,32"/>
+</map>
