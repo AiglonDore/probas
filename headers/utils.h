@@ -12,11 +12,27 @@
 #ifndef UTILS_H
 #define UTILS_H
 
+#include <functional>
+
 /**
  * @brief Holds several useful functions.
  * 
  */
 namespace Utils {
+    /**
+     * @brief Provides several operators (integral,...);
+     * 
+     */
+    namespace Operators {
+        /**
+         * @brief Returns the integral of f between a and b.
+         * @param f Function.
+         * @param a Lower bound.
+         * @param b Upper bound.
+         * @return double Integral.
+         */
+        double integral(const std::function<double(double)>& f,double a, double b);
+    };
     /**
      * @brief Computes n!.
      * 
@@ -60,7 +76,6 @@ namespace Utils {
      * @param lambda Parameter.
      * @return double Value of function.
      * @throws -1 if x < 0 or lambda < 0
-     * @todo Write function.
      */
     double Gamma(double x, double lambda);
 }
