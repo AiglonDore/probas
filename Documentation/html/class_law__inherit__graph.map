@@ -1,8 +1,9 @@
 <map id="Law" name="Law">
-<area shape="rect" id="node1" title="The class Law provides a generic class that will hold all the sub&#45;classes relative to specific laws." alt="" coords="180,5,228,32"/>
-<area shape="rect" id="node2" href="$class_discrete_law.html" title="The Discrete Law blocks the domains of Law to the relative numbers." alt="" coords="153,80,255,107"/>
+<area shape="rect" id="node1" title="The class Law provides a generic class that will hold all the sub&#45;classes relative to specific laws." alt="" coords="229,5,277,32"/>
+<area shape="rect" id="node2" href="$class_discrete_law.html" title="The Discrete Law blocks the domains of Law to the relative numbers." alt="" coords="202,80,305,107"/>
 <area shape="rect" id="node3" href="$class_bernoulli_law.html" title="The class BernoulliLaw provides tools to dela with Bernoulli laws." alt="" coords="73,155,180,181"/>
-<area shape="rect" id="node7" href="$class_uniform_discrete_law.html" title="This class provides tools for uniform discrete laws." alt="" coords="204,155,359,181"/>
+<area shape="rect" id="node7" href="$class_poisson_law.html" title="The class PoissonLaw deals with Poisson laws." alt="" coords="204,155,303,181"/>
+<area shape="rect" id="node8" href="$class_uniform_discrete_law.html" title="This class provides tools for uniform discrete laws." alt="" coords="327,155,481,181"/>
 <area shape="rect" id="node4" href="$class_binomial_law.html" title="The BinomialLaw class extends the BernoulliLaw to provide binomial law tools." alt="" coords="5,229,112,256"/>
 <area shape="rect" id="node5" href="$class_geometric_law.html" title="The GeometricLaw class provides tools to deal with geometric laws." alt="" coords="137,229,253,256"/>
 <area shape="rect" id="node6" href="$class_hyper_geometric_law.html" title="The HyperGeometriClaw class deals with hypergeometric laws." alt="" coords="117,304,272,331"/>
