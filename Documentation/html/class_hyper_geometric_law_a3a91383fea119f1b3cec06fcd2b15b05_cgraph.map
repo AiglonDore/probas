@@ -1,0 +1,5 @@
+<map id="HyperGeometricLaw::proba" name="HyperGeometricLaw::proba">
+<area shape="rect" id="node1" title="Overrides GeometricLaw function." alt="" coords="5,5,168,47"/>
+<area shape="rect" id="node2" href="$namespace_utils.html#a270db5b73c4c5f27caeea91c6d62f15d" title="Returns the binomial coefficient." alt="" coords="216,13,299,39"/>
+<area shape="rect" id="node3" href="$namespace_utils.html#aba6605ca68f7fe302aefa6be4195f839" title="Computes n!." alt="" coords="347,13,432,39"/>
+</map>
