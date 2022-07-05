@@ -56,3 +56,10 @@ double UniformDiscreteLaw::variance()
 {
     return (n * n - 1.) / 12;
 }
+
+double UniformDiscreteLaw::repartition(double X)
+{
+    if (X < lowerBound) return 0;
+    if (X <= upperBound) return (std::floor(X) - lowerBound + 1) / n;
+    return 1;
+}

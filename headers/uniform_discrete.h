@@ -96,6 +96,12 @@ public:
      * @return double Variance.
      */
     virtual double variance() override;
+/**
+     * @brief Overrides {@link DiscreteLaw} function.
+     * @param X Value
+     * @return double F(X).
+     */
+    virtual double repartition(double X) override;
 };
 
 

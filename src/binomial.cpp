@@ -52,3 +52,8 @@ double BinomialLaw::variance()
 {
     return n * p * (1 - p);
 }
+
+double BinomialLaw::repartition(double X)
+{
+    return DiscreteLaw::proba(0,std::floor(X));
+}

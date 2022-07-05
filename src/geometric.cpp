@@ -44,6 +44,11 @@ double GeometricLaw::variance()
     return (1 - p) / (p * p);
 }
 
+double GeometricLaw::repartition(double X)
+{
+    return 1 - std::pow(1 - p,std::floor(X));
+}
+
 HyperGeometricLaw::HyperGeometricLaw() : GeometricLaw(), n(0), A(1)
 {
 }

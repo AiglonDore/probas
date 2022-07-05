@@ -36,3 +36,18 @@ long long int Utils::nPr(long long int n, long long int k)
 {
     return nCr(n,k) * fact(k);
 }
+
+double Utils::Gamma(double x)
+{
+    if (x <= 0)
+    {
+        throw -1;
+    }
+    
+    return 0.0;
+}
+
+double Utils::Gamma(double x, double lambda)
+{
+    return 0.0;
+}

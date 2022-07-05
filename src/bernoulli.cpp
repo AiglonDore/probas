@@ -45,5 +45,12 @@ double BernoulliLaw::expectancy()
 
 double BernoulliLaw::variance()
 {
-    return p * (1-p);
+    return p * (1 - p);
+}
+
+double BernoulliLaw::repartition(double X)
+{
+    if (X < 0) return 0;
+    if (X < 1) return 1 - p;
+    else return 1;
 }

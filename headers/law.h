@@ -80,6 +80,22 @@ public:
      * @return double Standard deviation.
      */
     virtual double stdDev() { return std::sqrt(this->variance()); };
+
+    /**
+     * @brief Returns the density function of the law, applied at X.
+     * 
+     * @param X Value.
+     * @return double f(X).
+     */
+    virtual double density(double X) =0;
+
+    /**
+     * @brief Returns the repartition function of the law, applied at X.
+     * 
+     * @param X Value.
+     * @return double F(X).
+     */
+    virtual double repartition(double X) =0;
 };
 
 #endif //LAW_H

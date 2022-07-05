@@ -62,6 +62,13 @@ public:
      * @return double Variance.
      */
     virtual double variance() override;
+
+    /**
+     * @brief Overrides {@link BernoulliLaw} function.
+     * 
+     * @return double Variance.
+     */
+    virtual double repartition(double X) override;
 };
 
 /**
@@ -121,7 +128,7 @@ public:
     virtual double expectancy() override;
 
     /**
-     * @brief Overrides {@link BernoulliLaw} function.
+     * @brief Overrides {@link GeometricLaw} function.
      * 
      * @return double Variance.
      */
