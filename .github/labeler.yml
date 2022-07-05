@@ -1,1 +1,17 @@
+repo:
+- '*'
 
+source:
+- any: ['src/*','!src/plot/*']
+
+plot:
+- 'src/plot/*'
+
+header:
+- 'header/*'
+
+documentation:
+- 'Documentation/*'
+
+github:
+- '.github/*'
