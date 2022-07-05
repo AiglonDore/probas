@@ -1,7 +1,8 @@
 <map id="DiscreteLaw::proba" name="DiscreteLaw::proba">
-<area shape="rect" id="node1" title="Computes the probability." alt="" coords="235,81,381,108"/>
-<area shape="rect" id="node2" href="$class_discrete_law.html#a97727fd7c7370911db2e4c02558e4244" title="Overrides Law function." alt="" coords="17,5,175,32"/>
-<area shape="rect" id="node3" href="$class_discrete_law.html#a41df851321e5a6f638a7647731abaed8" title="Overrides Law function." alt="" coords="23,56,169,83"/>
-<area shape="rect" id="node4" href="$class_binomial_law.html#a8ad05e7df6b57d6c92c5cf9ef2129ccd" title="Overrides BernoulliLaw function." alt="" coords="5,107,187,133"/>
-<area shape="rect" id="node5" href="$class_discrete_law.html#a71fde3924c86ba2d32ac31f7f6277611" title="Overrides Law function." alt="" coords="7,157,185,184"/>
+<area shape="rect" id="node1" title="Computes the probability." alt="" coords="445,81,592,108"/>
+<area shape="rect" id="node2" href="$class_discrete_law.html#a97727fd7c7370911db2e4c02558e4244" title="Overrides Law function." alt="" coords="228,5,385,32"/>
+<area shape="rect" id="node3" href="$class_discrete_law.html#a41df851321e5a6f638a7647731abaed8" title="Overrides Law function." alt="" coords="233,56,380,83"/>
+<area shape="rect" id="node4" href="$class_binomial_law.html#a8ad05e7df6b57d6c92c5cf9ef2129ccd" title="Overrides BernoulliLaw function." alt="" coords="216,107,397,133"/>
+<area shape="rect" id="node5" href="$class_discrete_law.html#a71fde3924c86ba2d32ac31f7f6277611" title="Overrides Law function." alt="" coords="218,157,395,184"/>
+<area shape="rect" id="node6" href="$class_hyper_geometric_law.html#a5895aa3bf1e51a8b5b7f140adb0626a1" title="Overrides GeometricLaw function." alt="" coords="5,150,168,191"/>
 </map>
