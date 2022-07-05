@@ -6,5 +6,5 @@
 <area shape="rect" id="node2" href="$class_law.html" title="The class Law provides a generic class that will hold all the sub&#45;classes relative to specific laws." alt="" coords="229,5,277,32"/>
 <area shape="rect" id="node4" href="$class_binomial_law.html" title="The BinomialLaw class extends the BernoulliLaw to provide binomial law tools." alt="" coords="5,229,112,256"/>
 <area shape="rect" id="node5" href="$class_geometric_law.html" title="The GeometricLaw class provides tools to deal with geometric laws." alt="" coords="137,229,253,256"/>
-<area shape="rect" id="node6" href="$class_hyper_geometric_law.html" title="The HyperGeometriClaw class deals with hypergeometric laws." alt="" coords="117,304,272,331"/>
+<area shape="rect" id="node6" href="$class_hyper_geometric_law.html" title="The HyperGeometricLaw class deals with hypergeometric laws." alt="" coords="117,304,272,331"/>
 </map>

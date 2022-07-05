@@ -72,7 +72,7 @@ public:
 };
 
 /**
- * @brief The HyperGeometriClaw class deals with hypergeometric laws.
+ * @brief The HyperGeometricLaw class deals with hypergeometric laws.
  */
 class HyperGeometricLaw : public GeometricLaw
 {
