@@ -12,8 +12,11 @@ endif
 all : probas.out probas.exe
 
 #Linux
-probas.out : obj/main.o obj/help.o obj/discretelaw.o obj/bernoulli.o obj/binomial.o obj/interface.o obj/geometric.o obj/utils.o
+probas.out : obj/main.o obj/help.o obj/discretelaw.o obj/bernoulli.o obj/binomial.o obj/interface.o obj/geometric.o obj/utils.o obj/poisson.o
 	$(LCC) $(FLAGS) -o bin/$@ $^
+
+obj/poisson.o : src/poisson.cpp headers/poisson.h headers/utils.h headers/discretelaw.h
+	$(LCC) $(FLAGS) -c -o $@ $<
 
 obj/main.o : src/main.cpp headers/help.h headers/law.h
 	$(LCC) $(FLAGS) -c -o $@ $<
@@ -40,8 +43,11 @@ obj/utils.o : src/utils.cpp headers/utils.h
 	$(LCC) $(FLAGS) -c -o $@ $<
 
 #Windows
-probas.exe : obj/main.obj obj/help.obj obj/discretelaw.obj obj/bernoulli.obj obj/binomial.obj obj/interface.obj obj/geometric.obj obj/utils.obj
+probas.exe : obj/main.obj obj/help.obj obj/discretelaw.obj obj/bernoulli.obj obj/binomial.obj obj/interface.obj obj/geometric.obj obj/utils.obj obj/poisson.obj
 	$(WCC) $(FLAGS) -o bin/$@ $^
+
+obj/poisson.obj : src/poisson.cpp headers/poisson.h headers/utils.h headers/discretelaw.h
+	$(WCC) $(FLAGS) -c -o $@ $<
 
 obj/main.obj : src/main.cpp headers/help.h headers/law.h
 	$(WCC) $(FLAGS) -c -o $@ $<
