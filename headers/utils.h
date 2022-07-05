@@ -33,5 +33,14 @@ namespace Utils {
      * @return int Binomial coefficient.
      */
     long long int nCr(long long int n, long long int k);
+
+    /**
+     * @brief Number of permutations.
+     * 
+     * @param n Number of itmes.
+     * @param k Number of selected items.
+     * @return long long int Number of permutations.
+     */
+    long long int nPr(long long int n, long long int k) { return nCr(n,k) * fact(k) ;};
 }
 #endif //UTILS_H
