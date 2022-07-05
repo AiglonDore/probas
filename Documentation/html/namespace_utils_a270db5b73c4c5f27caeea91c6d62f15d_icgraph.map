@@ -1,5 +1,0 @@
-<map id="Utils::nCr" name="Utils::nCr">
-<area shape="rect" id="node1" title="Returns the binomial coefficient." alt="" coords="204,31,287,57"/>
-<area shape="rect" id="node2" href="$namespace_utils.html#ac4444e936659728098be9aa2fc209475" title="Number of permutations." alt="" coords="40,5,121,32"/>
-<area shape="rect" id="node3" href="$class_binomial_law.html#aca904009a14cda640087113de5b24fb7" title="Overrides BernoulliLaw function." alt="" coords="5,56,156,83"/>
-</map>

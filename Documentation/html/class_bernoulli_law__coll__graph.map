@@ -1,5 +1,0 @@
-<map id="BernoulliLaw" name="BernoulliLaw">
-<area shape="rect" id="node1" title="The class BernoulliLaw provides tools to dela with Bernoulli laws." alt="" coords="5,155,112,181"/>
-<area shape="rect" id="node2" href="$class_discrete_law.html" title="The Discrete Law blocks the domains of Law to the relative numbers." alt="" coords="7,80,110,107"/>
-<area shape="rect" id="node3" href="$class_law.html" title="The class Law provides a generic class that will hold all the sub&#45;classes relative to specific laws." alt="" coords="35,5,83,32"/>
-</map>

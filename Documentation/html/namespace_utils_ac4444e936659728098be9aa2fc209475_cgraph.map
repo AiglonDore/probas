@@ -1,5 +1,0 @@
-<map id="Utils::nPr" name="Utils::nPr">
-<area shape="rect" id="node1" title="Number of permutations." alt="" coords="5,5,87,32"/>
-<area shape="rect" id="node2" href="$namespace_utils.html#aba6605ca68f7fe302aefa6be4195f839" title="Computes n!." alt="" coords="265,5,351,32"/>
-<area shape="rect" id="node3" href="$namespace_utils.html#a270db5b73c4c5f27caeea91c6d62f15d" title="Returns the binomial coefficient." alt="" coords="135,31,217,57"/>
-</map>
