@@ -11,6 +11,8 @@ endif
 
 all : probas.out probas.exe
 
+addon : doc docker
+
 #Linux
 probas.out : obj/main.o obj/help.o obj/discretelaw.o obj/bernoulli.o obj/binomial.o obj/interface.o obj/geometric.o obj/utils.o obj/poisson.o
 	$(LCC) $(FLAGS) -o bin/$@ $^
@@ -84,3 +86,6 @@ clean :
 
 doc :
 	doxygen Doxyfile
+
+docker :
+	docker build -t $(NAME) .
