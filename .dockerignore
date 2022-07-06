@@ -1,0 +1,12 @@
+.git
+.github
+.vscode
+.vs
+
+bin
+obj
+
+Documentation
+
+probas.cmd
+Doxyfile
