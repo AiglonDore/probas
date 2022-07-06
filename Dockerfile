@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 RUN apt-get update \
     apt-get upgrade -y \
-    apt install gcc make g++ gcc-mingw-w64 g++-mingw-w64
+    apt install gcc make g++ gcc-mingw-w64 g++-mingw-w64 -y
 
 ADD . /app
 
