@@ -84,6 +84,7 @@ clean :
 	touch bin/.gitkeep
 	@echo "Clean done"
 
+#Addon
 doc :
 	doxygen Doxyfile
 
