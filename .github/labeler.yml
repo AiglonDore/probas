@@ -1,5 +1,5 @@
 repo:
-- '*'
+- ['*','!Dockerfile','!.dockerignore']
 
 source:
 - any: ['src/*','!src/plot/*']
@@ -15,3 +15,6 @@ documentation:
 
 github:
 - '.github/*'
+
+docker:
+- ['Dockerfile','.dockerignore']
