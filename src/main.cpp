@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
 	printf("-----Probabilty tools and calculation v%s-----\n",VERSION);
 	if (argc == 1)
 	{
+		cout << "Choose the action to be made!" << endl;
 		execute(argc,argv,true);
 	}
 	else if (!strcmp(argv[1],"--help") || !strcmp(argv[1],"help") || !strcmp(argv[1],"-h"))
