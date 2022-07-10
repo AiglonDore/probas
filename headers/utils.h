@@ -32,6 +32,35 @@ namespace Utils {
          * @return double Integral.
          */
         double integral(const std::function<double(double)>& f,double a, double b);
+
+        /**
+         * @brief Returns the integral of f between a and b.
+         * @param f Function.
+         * @param a Lower bound.
+         * @param b Upper bound.
+         * @return double Integral.
+         */
+        double integral(std::function<double(double)>&& f, double a, double b);
+
+        /**
+         * @brief Returns the integral of f between -infinity and a, or between a and +infinity if positiveInfinite is true.
+         * 
+         * @param f Function.
+         * @param a Bound.
+         * @param positiveInfinite Determines the integration interval (]-infinity;a] if false or [a;+infinity[ if true).
+         * @return double INntegral of the selected interval.
+         */
+        double integral(const std::function<double(double)>& f, double a, bool positiveInfinite = false);
+
+        /**
+         * @brief Returns the integral of f between -infinity and a, or between a and +infinity if positiveInfinite is true.
+         * 
+         * @param f Function.
+         * @param a Bound.
+         * @param positiveInfinite Determines the integration interval (]-infinity;a] if false or [a;+infinity[ if true).
+         * @return double INntegral of the selected interval.
+         */
+        double integral(std::function<double(double)>&& f, double a, bool positiveInfinite = false);
     };
     /**
      * @brief Computes n!.

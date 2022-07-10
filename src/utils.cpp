@@ -46,7 +46,7 @@ double Utils::Gamma(double x)
     auto f = [&x](double t){
         return std::pow(t,x - 1) * std::exp(-t);
     };
-    return 0.0;
+    return Utils::Operators::integral(f,0,true);
 }
 
 double Utils::Gamma(double x, double lambda)
@@ -66,4 +66,28 @@ double Utils::Operators::integral(const std::function<double(double)>& f,double 
         s1 += f(a + (2 * (j + 1) - 1) * h / 2);
     }
     return h / 6 * (f(a) + 2 * s0 + 4 * s1 + f(b));
+}
+
+double Utils::Operators::integral(std::function<double(double)>&& f,double a, double b)
+{
+    int n = 100;
+    double h = (b - a) / n;
+    double s0 = 0.0;
+    double s1 = 0.0;
+    for (int j = 0; j < n; j++)
+    {
+        s0 += f(a + j * h);
+        s1 += f(a + (2 * (j + 1) - 1) * h / 2);
+    }
+    return h / 6 * (f(a) + 2 * s0 + 4 * s1 + f(b));
+}
+
+double Utils::Operators::integral(const std::function<double(double)>& f, double a, bool positiveInfinite)
+{
+    return 0;
+}
+
+double Utils::Operators::integral(std::function<double(double)>&& f, double a, bool positiveInfinite)
+{
+    return 0;
 }
