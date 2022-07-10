@@ -94,7 +94,6 @@ namespace Utils {
      * @param x Value.
      * @return double Gamma(x).
      * @throws -1 if x < 0.
-     * @todo Write function.
      */
     double Gamma(double x);
 
