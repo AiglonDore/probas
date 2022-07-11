@@ -1,0 +1,6 @@
+<map id="GeometricLaw" name="GeometricLaw">
+<area shape="rect" id="node1" title="The GeometricLaw class provides tools to deal with geometric laws." alt="" coords="5,229,121,256"/>
+<area shape="rect" id="node2" href="$class_bernoulli_law.html" title="The class BernoulliLaw provides tools to dela with Bernoulli laws." alt="" coords="10,155,117,181"/>
+<area shape="rect" id="node3" href="$class_discrete_law.html" title="The Discrete Law blocks the domains of Law to the relative numbers." alt="" coords="12,80,115,107"/>
+<area shape="rect" id="node4" href="$class_law.html" title="The class Law provides a generic class that will hold all the sub&#45;classes relative to specific laws." alt="" coords="39,5,87,32"/>
+</map>

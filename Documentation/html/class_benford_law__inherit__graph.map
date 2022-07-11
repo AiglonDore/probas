@@ -1,0 +1,5 @@
+<map id="BenfordLaw" name="BenfordLaw">
+<area shape="rect" id="node1" title="The class BenfordLaw deals with Benford laws." alt="" coords="7,155,106,181"/>
+<area shape="rect" id="node2" href="$class_discrete_law.html" title="The Discrete Law blocks the domains of Law to the relative numbers." alt="" coords="5,80,108,107"/>
+<area shape="rect" id="node3" href="$class_law.html" title="The class Law provides a generic class that will hold all the sub&#45;classes relative to specific laws." alt="" coords="33,5,81,32"/>
+</map>

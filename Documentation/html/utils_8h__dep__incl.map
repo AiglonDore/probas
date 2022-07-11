@@ -1,0 +1,8 @@
+<map id="headers/utils.h" name="headers/utils.h">
+<area shape="rect" id="node1" title="Provides useful functions." alt="" coords="253,5,372,32"/>
+<area shape="rect" id="node2" href="$poisson_8h.html" title="Provides tools for Poisson laws." alt="" coords="5,80,145,107"/>
+<area shape="rect" id="node4" href="$binomial_8cpp.html" title="Implements binomial.h." alt="" coords="169,80,299,107"/>
+<area shape="rect" id="node5" href="$geometric_8cpp.html" title="Implements geometric.h." alt="" coords="323,80,462,107"/>
+<area shape="rect" id="node6" href="$utils_8cpp.html" title="Implements utils.h." alt="" coords="487,80,587,107"/>
+<area shape="rect" id="node3" href="$poisson_8cpp.html" title="Implements poisson.h." alt="" coords="14,155,137,181"/>
+</map>
