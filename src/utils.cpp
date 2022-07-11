@@ -81,10 +81,22 @@ double Utils::Operators::integral(std::function<double(double)>&& f,double a, do
 
 double Utils::Operators::integral(const std::function<double(double)>& f, double a, bool positiveInfinite)
 {
-    return 0;
+    if (positiveInfinite)//Integral between a and +infinity
+    {
+        return 0.0;
+    }
+    //Integral between -infinity and a
+
+    return 0.0;
 }
 
 double Utils::Operators::integral(std::function<double(double)>&& f, double a, bool positiveInfinite)
 {
-    return 0;
+    if (positiveInfinite)//Integral between a and +infinity
+    {
+        return 0.0;
+    }
+    //Integral between -infinity and a
+
+    return 0.0;
 }
