@@ -100,3 +100,13 @@ double Utils::Operators::integral(std::function<double(double)>&& f, double a, b
 
     return 0.0;
 }
+
+double Utils::Operators::integral(const std::function<double(double)>& f)
+{
+    return Utils::Operators::integral(f,0) + Utils::Operators::integral(f,0,true);
+}
+
+double Utils::Operators::integral(std::function<double(double)>&& f)
+{
+    return Utils::Operators::integral(f,0) + Utils::Operators::integral(f,0,true);
+}

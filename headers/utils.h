@@ -44,7 +44,7 @@ namespace Utils {
 
         /**
          * @brief Returns the integral of f between -infinity and a, or between a and +infinity if positiveInfinite is true.
-         * 
+         * @throws false if integral is infinite.
          * @param f Function.
          * @param a Bound.
          * @param positiveInfinite Determines the integration interval (]-infinity;a] if false or [a;+infinity[ if true).
@@ -54,13 +54,28 @@ namespace Utils {
 
         /**
          * @brief Returns the integral of f between -infinity and a, or between a and +infinity if positiveInfinite is true.
-         * 
+         * @throws false if integral is infinite.
          * @param f Function.
          * @param a Bound.
          * @param positiveInfinite Determines the integration interval (]-infinity;a] if false or [a;+infinity[ if true).
          * @return double INntegral of the selected interval.
          */
         double integral(std::function<double(double)>&& f, double a, bool positiveInfinite = false);
+
+        /**
+         * @brief Integrates f on R.
+         * @throws false if integral is infinite.
+         * @param f Functio
+         * @return double Integral of f on R.
+         */
+        double integral(const std::function<double(double)>& f);
+        /**
+         * @brief Integrates f on R.
+         * @throws false if integral is infinite.
+         * @param f Functio
+         * @return double Integral of f on R.
+         */
+        double integral(std::function<double(double)>&& f);
     };
     /**
      * @brief Computes n!.
