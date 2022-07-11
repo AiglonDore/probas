@@ -65,14 +65,14 @@ namespace Utils {
         /**
          * @brief Integrates f on R.
          * @throws false if integral is infinite.
-         * @param f Functio
+         * @param f Function
          * @return double Integral of f on R.
          */
         double integral(const std::function<double(double)>& f);
         /**
          * @brief Integrates f on R.
          * @throws false if integral is infinite.
-         * @param f Functio
+         * @param f Function
          * @return double Integral of f on R.
          */
         double integral(std::function<double(double)>&& f);
