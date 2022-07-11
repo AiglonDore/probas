@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hypergeometriclaw_69',['HyperGeometricLaw',['../class_hyper_geometric_law.html',1,'']]]
+  ['hypergeometriclaw_75',['HyperGeometricLaw',['../class_hyper_geometric_law.html',1,'']]]
 ];
