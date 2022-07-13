@@ -11,6 +11,8 @@
 
 #include <cmath>
 
+#define CONVERGING_BOUND 10e-10
+
 #include "../headers/utils.h"
 
 long long int Utils::fact(long long int n)
@@ -81,24 +83,50 @@ double Utils::Operators::integral(std::function<double(double)>&& f,double a, do
 
 double Utils::Operators::integral(const std::function<double(double)>& f, double a, bool positiveInfinite)
 {
+    double b(a * pow(10,10)),deltaI,I;
     if (positiveInfinite)//Integral between a and +infinity
     {
-        return 0.0;
+        do
+        {
+            b *= 10;
+            deltaI = Utils::Operators::integral(f,b,2 * b);
+            I = Utils::Operators::integral(f,a,b);
+        } while (abs(deltaI / I) >= 10e-10);
+        return I;
     }
     //Integral between -infinity and a
-
-    return 0.0;
+    b *= -1;
+    do
+    {
+        b *= 10;
+        deltaI = Utils::Operators::integral(f,2 * b,b);
+        I = Utils::Operators::integral(f,b,a);
+    } while (abs(deltaI / I) >= 10e-10);
+    return I;
 }
 
 double Utils::Operators::integral(std::function<double(double)>&& f, double a, bool positiveInfinite)
 {
+    double b(a * pow(10,10)),deltaI,I;
     if (positiveInfinite)//Integral between a and +infinity
     {
-        return 0.0;
+        do
+        {
+            b *= 10;
+            deltaI = Utils::Operators::integral(f,b,2 * b);
+            I = Utils::Operators::integral(f,a,b);
+        } while (abs(deltaI / I) >= 10e-10);
+        return I;
     }
     //Integral between -infinity and a
-
-    return 0.0;
+    b *= -1;
+    do
+    {
+        b *= 10;
+        deltaI = Utils::Operators::integral(f,2 * b,b);
+        I = Utils::Operators::integral(f,b,a);
+    } while (abs(deltaI / I) >= 10e-10);
+    return I;
 }
 
 double Utils::Operators::integral(const std::function<double(double)>& f)
