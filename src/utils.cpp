@@ -45,7 +45,7 @@ double Utils::Gamma(double x)
     {
         throw -1;
     }
-    return Utils::Operators::integral([&x](double t){ return std::pow(t,x - 1) * std::exp(-t); },0,true);
+    return Utils::Operators::integral(true,[&x](double t){ return std::pow(t,x - 1) * std::exp(-t); },0);
 }
 
 double Utils::Gamma(double x, double lambda)
