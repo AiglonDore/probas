@@ -81,7 +81,7 @@ double Utils::Operators::integral(std::function<double(double)>&& f,double a, do
     return h / 6 * (f(a) + 2 * s0 + 4 * s1 + f(b));
 }
 
-double Utils::Operators::integral(const std::function<double(double)>& f, double a, bool positiveInfinite)
+double Utils::Operators::integral(bool positiveInfinite,const std::function<double(double)>& f, double a)
 {
     double b((a + 1) * pow(10,10)),deltaI,I;
     if (positiveInfinite)//Integral between a and +infinity
@@ -105,7 +105,7 @@ double Utils::Operators::integral(const std::function<double(double)>& f, double
     return I;
 }
 
-double Utils::Operators::integral(std::function<double(double)>&& f, double a, bool positiveInfinite)
+double Utils::Operators::integral(bool positiveInfinite,std::function<double(double)>&& f, double a)
 {
     double b((a + 1) * pow(10,10)),deltaI,I;
     if (positiveInfinite)//Integral between a and +infinity
@@ -131,10 +131,10 @@ double Utils::Operators::integral(std::function<double(double)>&& f, double a, b
 
 double Utils::Operators::integral(const std::function<double(double)>& f)
 {
-    return Utils::Operators::integral(f,0) + Utils::Operators::integral(f,0,true);
+    return Utils::Operators::integral(false,f,0) + Utils::Operators::integral(true,f,0);
 }
 
 double Utils::Operators::integral(std::function<double(double)>&& f)
 {
-    return Utils::Operators::integral(f,0) + Utils::Operators::integral(f,0,true);
+    return Utils::Operators::integral(false,f,0) + Utils::Operators::integral(true,f,0);
 }

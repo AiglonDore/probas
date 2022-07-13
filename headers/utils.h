@@ -50,7 +50,7 @@ namespace Utils {
          * @param positiveInfinite Determines the integration interval (]-infinity;a] if false or [a;+infinity[ if true).
          * @return double INntegral of the selected interval.
          */
-        double integral(const std::function<double(double)>& f, double a, bool positiveInfinite = false);
+        double integral(bool positiveInfinite,const std::function<double(double)>& f, double a);
 
         /**
          * @brief Returns the integral of f between -infinity and a, or between a and +infinity if positiveInfinite is true.
@@ -60,7 +60,7 @@ namespace Utils {
          * @param positiveInfinite Determines the integration interval (]-infinity;a] if false or [a;+infinity[ if true).
          * @return double INntegral of the selected interval.
          */
-        double integral(std::function<double(double)>&& f, double a, bool positiveInfinite = false);
+        double integral(bool positiveInfinite,std::function<double(double)>&& f, double a);
 
         /**
          * @brief Integrates f on R.
