@@ -107,7 +107,7 @@ double Utils::Operators::integral(const std::function<double(double)>& f, double
 
 double Utils::Operators::integral(std::function<double(double)>&& f, double a, bool positiveInfinite)
 {
-    double b(a * pow(10,10)),deltaI,I;
+    double b((a + 1) * pow(10,10)),deltaI,I;
     if (positiveInfinite)//Integral between a and +infinity
     {
         do
