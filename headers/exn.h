@@ -34,19 +34,19 @@ public:
      * @brief Construct a new Exception object. Its type will be Calculus and its message will be empty.
      * 
      */
-    Exception();
+    Exception() : type(ExceptionType::Calculus), message("") {} ;
     /**
      * @brief Construct a new Exception object.
      * 
      * @param type Type of the exception.
      * @param message Message to be displayed.
      */
-    Exception(ExceptionType type, const std::string& message = "");
+    Exception(ExceptionType type, const std::string& message = "") : type(type), message(message) {} ;
     /**
      * @brief Destroy the Exception object.
      * 
      */
-    virtual ~Exception();
+    virtual ~Exception() {};
     /**
      * @brief Get the Message object.
      * 
