@@ -13,6 +13,7 @@
 #define LAW_H
 
 #include <cmath>
+#include "exn.hpp"
 
 /**
  * @brief The class Law provides a generic class that will hold all the sub-classes relative to specific laws.

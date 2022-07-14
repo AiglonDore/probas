@@ -21,7 +21,7 @@ BernoulliLaw::BernoulliLaw(double p) : p(p)
 {
     if (p < 0 || p > 1)
     {
-        throw 0;
+        throw Exception(ExceptionType::Bernoulli,"Parameter must be bewteen 0 and 1.");
     }
 }
 
@@ -33,7 +33,7 @@ double BernoulliLaw::proba(long long int X)
 {
     if (X != 0 && X != 1)
     {
-        throw -1;
+        return 0.0;
     }
     return X?p:1-p;
 }

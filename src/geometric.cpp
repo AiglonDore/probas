@@ -29,7 +29,7 @@ double GeometricLaw::proba(long long int X)
 {
     if (X <= 0)
     {
-        throw -1;
+        return 0;
     }
     return pow(1-p,X-1) * p;
 }

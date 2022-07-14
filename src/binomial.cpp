@@ -26,7 +26,7 @@ BinomialLaw::BinomialLaw(double p) : BernoulliLaw(p), n(1)
 
 BinomialLaw::BinomialLaw(long long int n, double p) : BernoulliLaw(p), n(n)
 {
-    if (n < 0) throw -3;
+    if (n < 0) throw Exception(ExceptionType::Binomial,"Number of trials is positive.");
 }
 
 BinomialLaw::~BinomialLaw()
@@ -37,7 +37,7 @@ double BinomialLaw::proba(long long int X)
 {
     if (X < 0 || X > n)
     {
-        throw -2;
+        return 0.0;
     }
     
     return Utils::nCr(n,X) * pow(p,X) * pow(1-p,n-X);

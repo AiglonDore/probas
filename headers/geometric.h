@@ -20,8 +20,6 @@
  */
 class GeometricLaw : public BernoulliLaw
 {
-private:
-    /* data */
 public:
     /**
      * @brief Construct a new Geometric Law object
@@ -30,7 +28,7 @@ public:
     explicit GeometricLaw();
     /**
      * @brief Construct a new Geometric Law object.
-     * 
+     * @throws {@link Exception} if p is not between 0 and 1.
      * @param p Parameter.
      */
     explicit GeometricLaw(double p);
@@ -45,7 +43,6 @@ public:
      * 
      * @param X Value.
      * @return double Probability.
-     * @throws -1 if X is negative or null
      */
     virtual double proba(long long int X) override;
 

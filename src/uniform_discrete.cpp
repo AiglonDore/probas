@@ -21,16 +21,16 @@ UniformDiscreteLaw::UniformDiscreteLaw(long long int upperBound) : lowerBound(0)
     n = upperBound - lowerBound + 1;
     if (n <= 0)
     {
-        throw 1;
+        throw Exception(ExceptionType::UniformDiscrete,"Upper bound is negative or null.");
     }
 }
 
 UniformDiscreteLaw::UniformDiscreteLaw(long long int lowerBound, long long int upperBound) : lowerBound(lowerBound), upperBound(upperBound), n(0)
 {
     n = upperBound - lowerBound + 1;
-    if (n <= 0)
+    if (n <= 0 || upperBound <= 0)
     {
-        throw 1;
+        throw Exception(ExceptionType::UniformDiscrete,"Upper bound is lower than lower bound.");
     }
 }
 
@@ -42,7 +42,7 @@ double UniformDiscreteLaw::proba(long long int X)
 {
     if (X < lowerBound || X > upperBound)
     {
-        return 0;
+        return 0.0;
     }
     return 1. / n;
 }
