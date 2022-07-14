@@ -17,7 +17,7 @@ addon : doc docker
 probas.out : obj/main.o obj/help.o obj/discretelaw.o obj/bernoulli.o obj/binomial.o obj/interface.o obj/geometric.o obj/utils.o obj/poisson.o obj/benford.o
 	$(LCC) $(FLAGS) -o bin/$@ $^
 
-obj/poisson.o : src/poisson.cpp headers/poisson.h headers/utils.h headers/discretelaw.h
+obj/poisson.o : src/poisson.cpp headers/poisson.h headers/utils.h headers/discretelaw.h headers/exn.hpp
 	$(LCC) $(FLAGS) -c -o $@ $<
 
 obj/main.o : src/main.cpp headers/help.h headers/law.h
@@ -26,32 +26,32 @@ obj/main.o : src/main.cpp headers/help.h headers/law.h
 obj/help.o : src/help.cpp headers/help.h
 	$(LCC) $(FLAGS) -c -o $@ $<
 
-obj/bernoulli.o : src/bernoulli.cpp headers/discretelaw.h headers/bernoulli.h headers/law.h
+obj/bernoulli.o : src/bernoulli.cpp headers/discretelaw.h headers/bernoulli.h headers/law.h headers/exn.hpp
 	$(LCC) $(FLAGS) -c -o $@ $<
 
-obj/discretelaw.o : src/discretelaw.cpp headers/law.h headers/discretelaw.h
+obj/discretelaw.o : src/discretelaw.cpp headers/law.h headers/discretelaw.h headers/exn.hpp
 	$(LCC) $(FLAGS) -c -o $@ $<
 
-obj/binomial.o : src/binomial.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h headers/utils.h
+obj/binomial.o : src/binomial.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h headers/utils.h headers/exn.hpp
 	$(LCC) $(FLAGS) -c -o $@ $<
 
 obj/interface.o : src/interface.cpp headers/interface.h
 	$(LCC) $(FLAGS) -c -o $@ $<
 
-obj/geometric.o : src/geometric.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h headers/geometric.h
+obj/geometric.o : src/geometric.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h headers/geometric.h headers/exn.hpp
 	$(LCC) $(FLAGS) -c -o $@ $<
 
-obj/utils.o : src/utils.cpp headers/utils.h
+obj/utils.o : src/utils.cpp headers/utils.h headers/exn.hpp
 	$(LCC) $(FLAGS) -c -o $@ $<
 
-obj/benford.o : src/benford.cpp headers/benford.h headers/discretelaw.h
+obj/benford.o : src/benford.cpp headers/benford.h headers/discretelaw.h headers/exn.hpp
 	$(LCC) $(FLAGS) -c -o $@ $<
 
 #Windows
 probas.exe : obj/main.obj obj/help.obj obj/discretelaw.obj obj/bernoulli.obj obj/binomial.obj obj/interface.obj obj/geometric.obj obj/utils.obj obj/poisson.obj obj/benford.obj
 	$(WCC) $(FLAGS) -o bin/$@ $^
 
-obj/poisson.obj : src/poisson.cpp headers/poisson.h headers/utils.h headers/discretelaw.h
+obj/poisson.obj : src/poisson.cpp headers/poisson.h headers/utils.h headers/discretelaw.h headers/exn.hpp
 	$(WCC) $(FLAGS) -c -o $@ $<
 
 obj/main.obj : src/main.cpp headers/help.h headers/law.h
@@ -60,25 +60,25 @@ obj/main.obj : src/main.cpp headers/help.h headers/law.h
 obj/help.obj : src/help.cpp headers/help.h
 	$(WCC) $(FLAGS) -c -o $@ $<
 
-obj/bernoulli.obj : src/bernoulli.cpp headers/discretelaw.h headers/bernoulli.h headers/law.h
+obj/bernoulli.obj : src/bernoulli.cpp headers/discretelaw.h headers/bernoulli.h headers/law.h headers/exn.hpp
 	$(WCC) $(FLAGS) -c -o $@ $<
 
-obj/discretelaw.obj : src/discretelaw.cpp headers/law.h headers/discretelaw.h
+obj/discretelaw.obj : src/discretelaw.cpp headers/law.h headers/discretelaw.h headers/exn.hpp
 	$(WCC) $(FLAGS) -c -o $@ $<
 
-obj/binomial.obj : src/binomial.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h headers/utils.h
+obj/binomial.obj : src/binomial.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h headers/utils.h headers/exn.hpp
 	$(WCC) $(FLAGS) -c -o $@ $<
 
 obj/interface.obj : src/interface.cpp headers/interface.h
 	$(WCC) $(FLAGS) -c -o $@ $<
 
-obj/geometric.obj : src/geometric.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h headers/geometric.h
+obj/geometric.obj : src/geometric.cpp headers/law.h headers/discretelaw.h headers/discretelaw.h headers/geometric.h headers/exn.hpp
 	$(WCC) $(FLAGS) -c -o $@ $<
 
-obj/utils.obj : src/utils.cpp headers/utils.h
+obj/utils.obj : src/utils.cpp headers/utils.h headers/exn.hpp
 	$(WCC) $(FLAGS) -c -o $@ $<
 
-obj/benford.obj : src/benford.cpp headers/benford.h headers/discretelaw.h
+obj/benford.obj : src/benford.cpp headers/benford.h headers/discretelaw.h headers/exn.hpp
 	$(WCC) $(FLAGS) -c -o $@ $<
 
 clean :

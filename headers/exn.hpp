@@ -65,7 +65,7 @@ public:
      * 
      * @return ExceptionType Type of the exception.
      */
-    const ExceptionType getType() const { return type; };
+    ExceptionType getType() const { return type; };
 };
 
 

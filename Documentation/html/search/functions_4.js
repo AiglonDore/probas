@@ -9,6 +9,6 @@ var searchData=
   ['getmessage_122',['getMessage',['../class_exception.html#acddc608f0463722b5c55d4aa9bf4c20d',1,'Exception']]],
   ['getn_123',['getN',['../class_binomial_law.html#ad7803264f657d37686540cc5d7bf79ee',1,'BinomialLaw::getN()'],['../class_hyper_geometric_law.html#a6e7b8de95c188fb9b1aa9057d5438888',1,'HyperGeometricLaw::getN()'],['../class_uniform_discrete_law.html#a04b488094617af48dcd68123be68d3fc',1,'UniformDiscreteLaw::getN()']]],
   ['getp_124',['getP',['../class_bernoulli_law.html#acd57da033953d760e37271c353cce082',1,'BernoulliLaw']]],
-  ['gettype_125',['getType',['../class_exception.html#a803e2be10ba70c96b303fa86ca5cab12',1,'Exception']]],
+  ['gettype_125',['getType',['../class_exception.html#a8e655d531cd40ee45d7710143cf04aba',1,'Exception']]],
   ['getupperbound_126',['getUpperBound',['../class_uniform_discrete_law.html#a87e5cde1f838b6e677ba41dfb4109239',1,'UniformDiscreteLaw']]]
 ];
