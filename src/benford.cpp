@@ -22,7 +22,7 @@ BenfordLaw::BenfordLaw(unsigned long long int base) : DiscreteLaw(), base(base)
 {
     if (base == 0 || base  == 1)
     {
-        throw 1;
+        throw Exception(ExceptionType::Benford,"Base cannot be 0 or 1, or be negative.");
     }
 }
 

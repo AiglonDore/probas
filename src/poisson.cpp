@@ -19,7 +19,7 @@ PoissonLaw::PoissonLaw(double lambda) : DiscreteLaw(), lambda(lambda)
 {
     if (lambda < 0)
     {
-        throw -1;
+        throw Exception(ExceptionType::Poisson,"Parameter cannot be negative.");
     }
 }
 

@@ -37,7 +37,7 @@ public:
      * @brief Construct a new Bernoulli Law object
      * 
      * @param p Parameter of the law.
-     * @throws 0 if p not in [0;1].
+     * @throws {@link Exception} if p not in [0;1].
      */
     BernoulliLaw(double p);
 
@@ -59,7 +59,6 @@ public:
      * 
      * @param X Value.
      * @return double Probability.
-     * @throws -1 if X is not 0 or 1.
      */
     virtual double proba(long long int X) override;
 

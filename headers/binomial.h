@@ -39,7 +39,7 @@ public:
      * 
      * @param n Number of trials.
      * @param p Law parameter.
-     * @throws -3 if n is negative.
+     * @throws {@link Exception} if n is negative.
      */
     BinomialLaw(long long int n, double p);
     /**
@@ -60,7 +60,6 @@ public:
      * 
      * @param X Value.
      * @return double Probability.
-     * @throws -2 if X is negative.
      */
     virtual double proba(long long int X) override;
 

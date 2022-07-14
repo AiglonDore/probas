@@ -30,13 +30,13 @@ public:
      */
     explicit PoissonLaw();
     /**
-     * @brief Construct a new Poisson Law object
-     * @throws -1 if lambda < 0.
+     * @brief Construct a new Poisson Law object.
+     * @throws {@link Exception} if lambda is negative.
      * @param lambda Law parameter.
      */
     explicit PoissonLaw(double lambda);
     /**
-     * @brief Destroy the Poisson Law object
+     * @brief Destroy the Poisson Law object.
      * 
      */
     virtual ~PoissonLaw();
