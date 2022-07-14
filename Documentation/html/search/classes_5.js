@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['poissonlaw_77',['PoissonLaw',['../class_poisson_law.html',1,'']]]
+  ['law_81',['Law',['../class_law.html',1,'']]]
 ];

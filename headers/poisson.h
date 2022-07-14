@@ -31,7 +31,7 @@ public:
     explicit PoissonLaw();
     /**
      * @brief Construct a new Poisson Law object.
-     * @throws {@link Exception} if lambda is negative.
+     * @throws Exception if lambda is negative.
      * @param lambda Law parameter.
      */
     explicit PoissonLaw(double lambda);

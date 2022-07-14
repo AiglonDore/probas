@@ -39,7 +39,7 @@ public:
      * 
      * @param n Number of trials.
      * @param p Law parameter.
-     * @throws {@link Exception} if n is negative.
+     * @throws Exception if n is negative.
      */
     BinomialLaw(long long int n, double p);
     /**

@@ -28,7 +28,7 @@ public:
     explicit GeometricLaw();
     /**
      * @brief Construct a new Geometric Law object.
-     * @throws {@link Exception} if p is not between 0 and 1.
+     * @throws Exception if p is not between 0 and 1.
      * @param p Parameter.
      */
     explicit GeometricLaw(double p);

@@ -11,8 +11,6 @@
 
 #include <cmath>
 
-#define CONVERGING_BOUND 10e-10
-
 #include "../headers/utils.h"
 
 long long int Utils::fact(long long int n)
@@ -43,13 +41,15 @@ double Utils::Gamma(double x)
 {
     if (x <= 0)
     {
-        throw -1;
+        throw Exception(ExceptionType::Calculus,"Gamma function is defined on positive real numbers.");
     }
     return Utils::Operators::integral(true,[&x](double t){ return std::pow(t,x - 1) * std::exp(-t); },0);
 }
 
 double Utils::Gamma(double x, double lambda)
 {
+    if (x < 0) throw Exception(ExceptionType::Calculus,"Incomplete Gamma function is defined on positive real numbers.");
+    if (lambda < 0) throw Exception(ExceptionType::Calculus,"Undefined integration interval for incomplete Gamma function.");
     return Utils::Operators::integral([&x](double t){ return std::pow(t,x - 1) * std::exp(-t); },0,lambda);
 }
 

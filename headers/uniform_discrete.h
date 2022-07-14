@@ -35,7 +35,7 @@ public:
      * @brief Constructs a new Uniform Discrete Law object.
      * 
      * @param upperBound Value for upperbound.
-     * @throws {@link Exception} if upperBound is negative or null.
+     * @throws Exception if upperBound is negative or null.
      */
     UniformDiscreteLaw(long long int upperBound);
     
@@ -44,8 +44,8 @@ public:
      * 
      * @param lowerBound Value for lower bound.
      * @param upperBound Value for upperbound.
-     * @throws {@link Exception} if upperBound is lower than lowerBound.
-     * @throws {@link Exception} if upperBound is negative or null.
+     * @throws Exception if upperBound is lower than lowerBound.
+     * @throws Exception if upperBound is negative or null.
      */
     UniformDiscreteLaw(long long int lowerBound, long long int upperBound);
 

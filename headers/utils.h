@@ -14,6 +14,8 @@
 
 #include <functional>
 
+#include "exn.hpp"
+
 /**
  * @brief Holds several useful functions.
  * 
@@ -108,7 +110,7 @@ namespace Utils {
      * 
      * @param x Value.
      * @return double Gamma(x).
-     * @throws -1 if x < 0.
+     * @throws Exception if x < 0.
      */
     double Gamma(double x);
 
@@ -118,7 +120,7 @@ namespace Utils {
      * @param x Value.
      * @param lambda Parameter.
      * @return double Value of function.
-     * @throws -1 if x < 0 or lambda < 0
+     * @throws Exception if x < 0 or lambda < 0
      */
     double Gamma(double x, double lambda);
 }

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['geometriclaw_74',['GeometricLaw',['../class_geometric_law.html',1,'']]]
+  ['exception_78',['Exception',['../class_exception.html',1,'']]]
 ];

@@ -1,6 +1,8 @@
 <map id="headers/benford.h" name="headers/benford.h">
-<area shape="rect" id="node1" title="Provides the BenfordLaw class." alt="" coords="5,5,145,32"/>
-<area shape="rect" id="node2" href="$discretelaw_8h.html" title="Provides the discrete law class to deal with discrete laws." alt="" coords="21,80,129,107"/>
-<area shape="rect" id="node3" href="$law_8h.html" title="Provides the abstract class Law." alt="" coords="13,155,137,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="44,229,107,256"/>
+<area shape="rect" id="node1" title="Provides the BenfordLaw class." alt="" coords="13,5,153,32"/>
+<area shape="rect" id="node2" href="$discretelaw_8h.html" title="Provides the discrete law class to deal with discrete laws." alt="" coords="29,80,137,107"/>
+<area shape="rect" id="node3" href="$law_8h.html" title="Provides the abstract class Law." alt="" coords="21,155,145,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,229,68,256"/>
+<area shape="rect" id="node5" href="$exn_8hpp_source.html" title=" " alt="" coords="93,229,167,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="101,304,159,331"/>
 </map>

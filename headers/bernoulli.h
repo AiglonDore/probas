@@ -37,7 +37,7 @@ public:
      * @brief Construct a new Bernoulli Law object
      * 
      * @param p Parameter of the law.
-     * @throws {@link Exception} if p not in [0;1].
+     * @throws Exception if p not in [0;1].
      */
     BernoulliLaw(double p);
 

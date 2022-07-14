@@ -32,7 +32,7 @@ public:
      * @brief Construct a new Benford Law object.
      * 
      * @param base Base for the logarithm.
-     * @throws @{link Exception} if base < 2.
+     * @throws Exception if base < 2.
      */
     explicit BenfordLaw(unsigned long long int base);
     /**

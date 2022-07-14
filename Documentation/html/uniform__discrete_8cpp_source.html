@@ -84,16 +84,16 @@ $(function() {
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    n = upperBound - lowerBound + 1;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">if</span> (n &lt;= 0)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">throw</span> 1;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_exception.html">Exception</a>(ExceptionType::UniformDiscrete,<span class="stringliteral">&quot;Upper bound is negative or null.&quot;</span>);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_uniform_discrete_law.html#affa631381c10056cd000f45b4452d10a">   28</a></span>&#160;<a class="code" href="class_uniform_discrete_law.html#a557d503bbf0c25c139cf395dc8f6bea4">UniformDiscreteLaw::UniformDiscreteLaw</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> lowerBound, <span class="keywordtype">long</span> <span class="keywordtype">long</span> <span class="keywordtype">int</span> upperBound) : lowerBound(lowerBound), upperBound(upperBound), n(0)</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    n = upperBound - lowerBound + 1;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span> (n &lt;= 0)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span> (n &lt;= 0 || upperBound &lt;= 0)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">throw</span> 1;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_exception.html">Exception</a>(ExceptionType::UniformDiscrete,<span class="stringliteral">&quot;Upper bound is lower than lower bound.&quot;</span>);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
@@ -105,7 +105,7 @@ $(function() {
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (X &lt; lowerBound || X &gt; upperBound)</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> 0.0;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> 1. / n;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
@@ -130,6 +130,7 @@ $(function() {
 <div class="ttc" id="aclass_uniform_discrete_law_html_a557d503bbf0c25c139cf395dc8f6bea4"><div class="ttname"><a href="class_uniform_discrete_law.html#a557d503bbf0c25c139cf395dc8f6bea4">UniformDiscreteLaw::UniformDiscreteLaw</a></div><div class="ttdeci">UniformDiscreteLaw()</div><div class="ttdoc">Constructs a new Uniform Discrete Law object, between 0 and 1.</div><div class="ttdef"><b>Definition:</b> <a href="uniform__discrete_8cpp_source.html#l00014">uniform_discrete.cpp:14</a></div></div>
 <div class="ttc" id="aclass_uniform_discrete_law_html_af75f45241c45a325b7d8b86e91045d8f"><div class="ttname"><a href="class_uniform_discrete_law.html#af75f45241c45a325b7d8b86e91045d8f">UniformDiscreteLaw::~UniformDiscreteLaw</a></div><div class="ttdeci">virtual ~UniformDiscreteLaw()</div><div class="ttdoc">Destroys the Uniform Discrete Law object.</div><div class="ttdef"><b>Definition:</b> <a href="uniform__discrete_8cpp_source.html#l00037">uniform_discrete.cpp:37</a></div></div>
 <div class="ttc" id="aclass_uniform_discrete_law_html_a0b569636ca64b7a714a96224fc005160"><div class="ttname"><a href="class_uniform_discrete_law.html#a0b569636ca64b7a714a96224fc005160">UniformDiscreteLaw::repartition</a></div><div class="ttdeci">virtual double repartition(double X) override</div><div class="ttdoc">Overrides DiscreteLaw function.</div><div class="ttdef"><b>Definition:</b> <a href="uniform__discrete_8cpp_source.html#l00060">uniform_discrete.cpp:60</a></div></div>
+<div class="ttc" id="aclass_exception_html"><div class="ttname"><a href="class_exception.html">Exception</a></div><div class="ttdoc">The Exception class provides exceptions for the other classes.</div><div class="ttdef"><b>Definition:</b> <a href="exn_8hpp_source.html#l00027">exn.hpp:27</a></div></div>
 <div class="ttc" id="aclass_uniform_discrete_law_html_a9f5dc9c49ee7320c87506c7ef64468e1"><div class="ttname"><a href="class_uniform_discrete_law.html#a9f5dc9c49ee7320c87506c7ef64468e1">UniformDiscreteLaw::expectancy</a></div><div class="ttdeci">virtual double expectancy() override</div><div class="ttdoc">Overrides DiscreteLaw function.</div><div class="ttdef"><b>Definition:</b> <a href="uniform__discrete_8cpp_source.html#l00050">uniform_discrete.cpp:50</a></div></div>
 <div class="ttc" id="aclass_uniform_discrete_law_html_a2de4ec46d516568ba89ffbd196c5a6da"><div class="ttname"><a href="class_uniform_discrete_law.html#a2de4ec46d516568ba89ffbd196c5a6da">UniformDiscreteLaw::variance</a></div><div class="ttdeci">virtual double variance() override</div><div class="ttdoc">Overrides DiscreteLaw function.</div><div class="ttdef"><b>Definition:</b> <a href="uniform__discrete_8cpp_source.html#l00055">uniform_discrete.cpp:55</a></div></div>
 <div class="ttc" id="aclass_uniform_discrete_law_html_a0e77e6d368ce8a1b7df7aa00abfb934e"><div class="ttname"><a href="class_uniform_discrete_law.html#a0e77e6d368ce8a1b7df7aa00abfb934e">UniformDiscreteLaw::proba</a></div><div class="ttdeci">virtual double proba(long long int X) override</div><div class="ttdoc">Overrides DiscreteLaw function.</div><div class="ttdef"><b>Definition:</b> <a href="uniform__discrete_8cpp_source.html#l00041">uniform_discrete.cpp:41</a></div></div>

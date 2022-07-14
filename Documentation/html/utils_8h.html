@@ -78,13 +78,16 @@ $(function() {
 <p>Provides useful functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;functional&gt;</code><br />
+<code>#include &quot;exn.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for utils.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="utils_8h__incl.png" border="0" usemap="#headers_2utils_8h" alt=""/></div>
 <map name="headers_2utils_8h" id="headers_2utils_8h">
-<area shape="rect" title="Provides useful functions." alt="" coords="5,5,124,32"/>
-<area shape="rect" title=" " alt="" coords="21,80,108,107"/>
+<area shape="rect" title="Provides useful functions." alt="" coords="41,5,160,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,92,107"/>
+<area shape="rect" href="exn_8hpp_source.html" title=" " alt="" coords="117,80,191,107"/>
+<area shape="rect" title=" " alt="" coords="125,155,183,181"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -117,6 +120,21 @@ Functions</h2></td></tr>
 <tr class="memitem:ac9e57af15a6860516ffd3cc4ddf1fade"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils_1_1_operators.html#ac9e57af15a6860516ffd3cc4ddf1fade">Utils::Operators::integral</a> (const std::function&lt; double(double)&gt; &amp;f, double a, double b)</td></tr>
 <tr class="memdesc:ac9e57af15a6860516ffd3cc4ddf1fade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the integral of f between a and b.  <a href="namespace_utils_1_1_operators.html#ac9e57af15a6860516ffd3cc4ddf1fade">More...</a><br /></td></tr>
 <tr class="separator:ac9e57af15a6860516ffd3cc4ddf1fade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7303fad9d4205dae7580f905a448663f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils_1_1_operators.html#a7303fad9d4205dae7580f905a448663f">Utils::Operators::integral</a> (std::function&lt; double(double)&gt; &amp;&amp;f, double a, double b)</td></tr>
+<tr class="memdesc:a7303fad9d4205dae7580f905a448663f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the integral of f between a and b.  <a href="namespace_utils_1_1_operators.html#a7303fad9d4205dae7580f905a448663f">More...</a><br /></td></tr>
+<tr class="separator:a7303fad9d4205dae7580f905a448663f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ba75370e5ed0afeb9ff5b25862856a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils_1_1_operators.html#ac9ba75370e5ed0afeb9ff5b25862856a">Utils::Operators::integral</a> (bool positiveInfinite, const std::function&lt; double(double)&gt; &amp;f, double a)</td></tr>
+<tr class="memdesc:ac9ba75370e5ed0afeb9ff5b25862856a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the integral of f between -infinity and a, or between a and +infinity if positiveInfinite is true.  <a href="namespace_utils_1_1_operators.html#ac9ba75370e5ed0afeb9ff5b25862856a">More...</a><br /></td></tr>
+<tr class="separator:ac9ba75370e5ed0afeb9ff5b25862856a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51410c1f104de02a10a274a4b71b5b3b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils_1_1_operators.html#a51410c1f104de02a10a274a4b71b5b3b">Utils::Operators::integral</a> (bool positiveInfinite, std::function&lt; double(double)&gt; &amp;&amp;f, double a)</td></tr>
+<tr class="memdesc:a51410c1f104de02a10a274a4b71b5b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the integral of f between -infinity and a, or between a and +infinity if positiveInfinite is true.  <a href="namespace_utils_1_1_operators.html#a51410c1f104de02a10a274a4b71b5b3b">More...</a><br /></td></tr>
+<tr class="separator:a51410c1f104de02a10a274a4b71b5b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b89d2c95f8b7b44016f54608d08cd4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils_1_1_operators.html#a89b89d2c95f8b7b44016f54608d08cd4">Utils::Operators::integral</a> (const std::function&lt; double(double)&gt; &amp;f)</td></tr>
+<tr class="memdesc:a89b89d2c95f8b7b44016f54608d08cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates f on R.  <a href="namespace_utils_1_1_operators.html#a89b89d2c95f8b7b44016f54608d08cd4">More...</a><br /></td></tr>
+<tr class="separator:a89b89d2c95f8b7b44016f54608d08cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf94793f8cc3048a276537090b5a800c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils_1_1_operators.html#abf94793f8cc3048a276537090b5a800c">Utils::Operators::integral</a> (std::function&lt; double(double)&gt; &amp;&amp;f)</td></tr>
+<tr class="memdesc:abf94793f8cc3048a276537090b5a800c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates f on R.  <a href="namespace_utils_1_1_operators.html#abf94793f8cc3048a276537090b5a800c">More...</a><br /></td></tr>
+<tr class="separator:abf94793f8cc3048a276537090b5a800c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba6605ca68f7fe302aefa6be4195f839"><td class="memItemLeft" align="right" valign="top">long long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils.html#aba6605ca68f7fe302aefa6be4195f839">Utils::fact</a> (long long int n)</td></tr>
 <tr class="memdesc:aba6605ca68f7fe302aefa6be4195f839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes n!.  <a href="namespace_utils.html#aba6605ca68f7fe302aefa6be4195f839">More...</a><br /></td></tr>
 <tr class="separator:aba6605ca68f7fe302aefa6be4195f839"><td class="memSeparator" colspan="2">&#160;</td></tr>

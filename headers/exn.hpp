@@ -54,6 +54,11 @@ public:
      */
     const std::string& getMessage() const { return message; };
 
+    /**
+     * @brief Set the Message object.
+     * 
+     * @param message New message.
+     */
     void setMessage(const std::string& message) { this->message = message; };
     /**
      * @brief Get the Type object.

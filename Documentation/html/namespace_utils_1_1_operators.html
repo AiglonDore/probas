@@ -82,12 +82,195 @@ Functions</h2></td></tr>
 <tr class="memitem:ac9e57af15a6860516ffd3cc4ddf1fade"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils_1_1_operators.html#ac9e57af15a6860516ffd3cc4ddf1fade">integral</a> (const std::function&lt; double(double)&gt; &amp;f, double a, double b)</td></tr>
 <tr class="memdesc:ac9e57af15a6860516ffd3cc4ddf1fade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the integral of f between a and b.  <a href="namespace_utils_1_1_operators.html#ac9e57af15a6860516ffd3cc4ddf1fade">More...</a><br /></td></tr>
 <tr class="separator:ac9e57af15a6860516ffd3cc4ddf1fade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7303fad9d4205dae7580f905a448663f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils_1_1_operators.html#a7303fad9d4205dae7580f905a448663f">integral</a> (std::function&lt; double(double)&gt; &amp;&amp;f, double a, double b)</td></tr>
+<tr class="memdesc:a7303fad9d4205dae7580f905a448663f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the integral of f between a and b.  <a href="namespace_utils_1_1_operators.html#a7303fad9d4205dae7580f905a448663f">More...</a><br /></td></tr>
+<tr class="separator:a7303fad9d4205dae7580f905a448663f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ba75370e5ed0afeb9ff5b25862856a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils_1_1_operators.html#ac9ba75370e5ed0afeb9ff5b25862856a">integral</a> (bool positiveInfinite, const std::function&lt; double(double)&gt; &amp;f, double a)</td></tr>
+<tr class="memdesc:ac9ba75370e5ed0afeb9ff5b25862856a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the integral of f between -infinity and a, or between a and +infinity if positiveInfinite is true.  <a href="namespace_utils_1_1_operators.html#ac9ba75370e5ed0afeb9ff5b25862856a">More...</a><br /></td></tr>
+<tr class="separator:ac9ba75370e5ed0afeb9ff5b25862856a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51410c1f104de02a10a274a4b71b5b3b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils_1_1_operators.html#a51410c1f104de02a10a274a4b71b5b3b">integral</a> (bool positiveInfinite, std::function&lt; double(double)&gt; &amp;&amp;f, double a)</td></tr>
+<tr class="memdesc:a51410c1f104de02a10a274a4b71b5b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the integral of f between -infinity and a, or between a and +infinity if positiveInfinite is true.  <a href="namespace_utils_1_1_operators.html#a51410c1f104de02a10a274a4b71b5b3b">More...</a><br /></td></tr>
+<tr class="separator:a51410c1f104de02a10a274a4b71b5b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89b89d2c95f8b7b44016f54608d08cd4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils_1_1_operators.html#a89b89d2c95f8b7b44016f54608d08cd4">integral</a> (const std::function&lt; double(double)&gt; &amp;f)</td></tr>
+<tr class="memdesc:a89b89d2c95f8b7b44016f54608d08cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates f on R.  <a href="namespace_utils_1_1_operators.html#a89b89d2c95f8b7b44016f54608d08cd4">More...</a><br /></td></tr>
+<tr class="separator:a89b89d2c95f8b7b44016f54608d08cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf94793f8cc3048a276537090b5a800c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_utils_1_1_operators.html#abf94793f8cc3048a276537090b5a800c">integral</a> (std::function&lt; double(double)&gt; &amp;&amp;f)</td></tr>
+<tr class="memdesc:abf94793f8cc3048a276537090b5a800c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates f on R.  <a href="namespace_utils_1_1_operators.html#abf94793f8cc3048a276537090b5a800c">More...</a><br /></td></tr>
+<tr class="separator:abf94793f8cc3048a276537090b5a800c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides several operators (integral,...);. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="ac9ba75370e5ed0afeb9ff5b25862856a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9ba75370e5ed0afeb9ff5b25862856a">&#9670;&nbsp;</a></span>integral() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Utils::Operators::integral </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>positiveInfinite</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::function&lt; double(double)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the integral of f between -infinity and a, or between a and +infinity if positiveInfinite is true. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">false</td><td>if integral is infinite. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>Function. </td></tr>
+    <tr><td class="paramname">a</td><td>Bound. </td></tr>
+    <tr><td class="paramname">positiveInfinite</td><td>Determines the integration interval (]-infinity;a] if false or [a;+infinity[ if true). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double INntegral of the selected interval. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="utils_8cpp_source.html#l00084">84</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_utils_1_1_operators_ac9ba75370e5ed0afeb9ff5b25862856a_cgraph.png" border="0" usemap="#namespace_utils_1_1_operators_ac9ba75370e5ed0afeb9ff5b25862856a_cgraph" alt=""/></div>
+<map name="namespace_utils_1_1_operators_ac9ba75370e5ed0afeb9ff5b25862856a_cgraph" id="namespace_utils_1_1_operators_ac9ba75370e5ed0afeb9ff5b25862856a_cgraph">
+<area shape="rect" title="Returns the integral of f between &#45;infinity and a, or between a and +infinity if positiveInfinite is ..." alt="" coords="5,5,188,32"/>
+<area shape="rect" href="namespace_utils_1_1_operators.html#ac9e57af15a6860516ffd3cc4ddf1fade" title="Returns the integral of f between a and b." alt="" coords="236,5,419,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a51410c1f104de02a10a274a4b71b5b3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51410c1f104de02a10a274a4b71b5b3b">&#9670;&nbsp;</a></span>integral() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Utils::Operators::integral </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>positiveInfinite</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; double(double)&gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the integral of f between -infinity and a, or between a and +infinity if positiveInfinite is true. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">false</td><td>if integral is infinite. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>Function. </td></tr>
+    <tr><td class="paramname">a</td><td>Bound. </td></tr>
+    <tr><td class="paramname">positiveInfinite</td><td>Determines the integration interval (]-infinity;a] if false or [a;+infinity[ if true). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double INntegral of the selected interval. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="utils_8cpp_source.html#l00108">108</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_utils_1_1_operators_a51410c1f104de02a10a274a4b71b5b3b_cgraph.png" border="0" usemap="#namespace_utils_1_1_operators_a51410c1f104de02a10a274a4b71b5b3b_cgraph" alt=""/></div>
+<map name="namespace_utils_1_1_operators_a51410c1f104de02a10a274a4b71b5b3b_cgraph" id="namespace_utils_1_1_operators_a51410c1f104de02a10a274a4b71b5b3b_cgraph">
+<area shape="rect" title="Returns the integral of f between &#45;infinity and a, or between a and +infinity if positiveInfinite is ..." alt="" coords="5,5,188,32"/>
+<area shape="rect" href="namespace_utils_1_1_operators.html#ac9e57af15a6860516ffd3cc4ddf1fade" title="Returns the integral of f between a and b." alt="" coords="236,5,419,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a89b89d2c95f8b7b44016f54608d08cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89b89d2c95f8b7b44016f54608d08cd4">&#9670;&nbsp;</a></span>integral() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Utils::Operators::integral </td>
+          <td>(</td>
+          <td class="paramtype">const std::function&lt; double(double)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Integrates f on R. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">false</td><td>if integral is infinite. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>Function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double Integral of f on R. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="utils_8cpp_source.html#l00132">132</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_utils_1_1_operators_a89b89d2c95f8b7b44016f54608d08cd4_cgraph.png" border="0" usemap="#namespace_utils_1_1_operators_a89b89d2c95f8b7b44016f54608d08cd4_cgraph" alt=""/></div>
+<map name="namespace_utils_1_1_operators_a89b89d2c95f8b7b44016f54608d08cd4_cgraph" id="namespace_utils_1_1_operators_a89b89d2c95f8b7b44016f54608d08cd4_cgraph">
+<area shape="rect" title="Integrates f on R." alt="" coords="5,5,188,32"/>
+<area shape="rect" href="namespace_utils_1_1_operators.html#ac9e57af15a6860516ffd3cc4ddf1fade" title="Returns the integral of f between a and b." alt="" coords="236,5,419,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ac9e57af15a6860516ffd3cc4ddf1fade"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9e57af15a6860516ffd3cc4ddf1fade">&#9670;&nbsp;</a></span>integral()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9e57af15a6860516ffd3cc4ddf1fade">&#9670;&nbsp;</a></span>integral() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -129,16 +312,109 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>double Integral. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="utils_8cpp_source.html#l00057">57</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="utils_8cpp_source.html#l00056">56</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespace_utils_1_1_operators_ac9e57af15a6860516ffd3cc4ddf1fade_icgraph.png" border="0" usemap="#namespace_utils_1_1_operators_ac9e57af15a6860516ffd3cc4ddf1fade_icgraph" alt=""/></div>
 <map name="namespace_utils_1_1_operators_ac9e57af15a6860516ffd3cc4ddf1fade_icgraph" id="namespace_utils_1_1_operators_ac9e57af15a6860516ffd3cc4ddf1fade_icgraph">
-<area shape="rect" title="Returns the integral of f between a and b." alt="" coords="165,5,348,32"/>
-<area shape="rect" href="namespace_utils.html#a093ad8221d79bd9a08e7f413122334c7" title="Incomplete Gamma function." alt="" coords="5,5,117,32"/>
+<area shape="rect" title="Returns the integral of f between a and b." alt="" coords="457,31,640,57"/>
+<area shape="rect" href="namespace_utils.html#a1ba026efd5271209e70b2f4aaa183300" title="Gamma function." alt="" coords="262,5,374,32"/>
+<area shape="rect" href="namespace_utils_1_1_operators.html#ac9ba75370e5ed0afeb9ff5b25862856a" title="Returns the integral of f between &#45;infinity and a, or between a and +infinity if positiveInfinite is ..." alt="" coords="227,56,409,83"/>
+<area shape="rect" href="class_poisson_law.html#a380246b9d4fa4df26873fedde4e28d4c" title="Overrides DiscreteLaw function." alt="" coords="5,5,179,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="abf94793f8cc3048a276537090b5a800c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf94793f8cc3048a276537090b5a800c">&#9670;&nbsp;</a></span>integral() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Utils::Operators::integral </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; double(double)&gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Integrates f on R. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">false</td><td>if integral is infinite. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>Function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double Integral of f on R. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="utils_8cpp_source.html#l00137">137</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_utils_1_1_operators_abf94793f8cc3048a276537090b5a800c_cgraph.png" border="0" usemap="#namespace_utils_1_1_operators_abf94793f8cc3048a276537090b5a800c_cgraph" alt=""/></div>
+<map name="namespace_utils_1_1_operators_abf94793f8cc3048a276537090b5a800c_cgraph" id="namespace_utils_1_1_operators_abf94793f8cc3048a276537090b5a800c_cgraph">
+<area shape="rect" title="Integrates f on R." alt="" coords="5,5,188,32"/>
+<area shape="rect" href="namespace_utils_1_1_operators.html#ac9e57af15a6860516ffd3cc4ddf1fade" title="Returns the integral of f between a and b." alt="" coords="236,5,419,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7303fad9d4205dae7580f905a448663f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7303fad9d4205dae7580f905a448663f">&#9670;&nbsp;</a></span>integral() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Utils::Operators::integral </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; double(double)&gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the integral of f between a and b. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>Function. </td></tr>
+    <tr><td class="paramname">a</td><td>Lower bound. </td></tr>
+    <tr><td class="paramname">b</td><td>Upper bound. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double Integral. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="utils_8cpp_source.html#l00070">70</a> of file <a class="el" href="utils_8cpp_source.html">utils.cpp</a>.</p>
 
 </div>
 </div>
