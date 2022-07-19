@@ -1,5 +1,5 @@
 repo:
--any: ['*','!Dockerfile','!.dockerignore']
+- any: ['*','!Dockerfile','!.dockerignore']
 
 source:
 - any: ['src/*','!src/plot/*']
@@ -17,4 +17,4 @@ github:
 - '.github/*'
 
 docker:
--any: ['Dockerfile','.dockerignore']
+- any: ['Dockerfile','.dockerignore']
