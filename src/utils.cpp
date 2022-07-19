@@ -10,6 +10,9 @@
  */
 
 #include <cmath>
+#include <iostream>
+
+using namespace std;
 
 #include "../headers/utils.h"
 
@@ -43,6 +46,7 @@ double Utils::Gamma(double x)
     {
         throw Exception(ExceptionType::Calculus,"Gamma function is defined on positive real numbers.");
     }
+    if (abs(x - 1) <= 10e-15 || abs (x - 2) <= 10e-15) return 1.0;
     return Utils::Operators::integral(true,[&x](double t){ return std::pow(t,x - 1) * std::exp(-t); },0);
 }
 
@@ -83,7 +87,7 @@ double Utils::Operators::integral(std::function<double(double)>&& f,double a, do
 
 double Utils::Operators::integral(bool positiveInfinite,const std::function<double(double)>& f, double a)
 {
-    double b((a + 1) * pow(10,10)),deltaI,I;
+    double b((a + 1) * 10),deltaI,I;
     if (positiveInfinite)//Integral between a and +infinity
     {
         do
@@ -91,7 +95,7 @@ double Utils::Operators::integral(bool positiveInfinite,const std::function<doub
             b *= 10;
             deltaI = Utils::Operators::integral(f,b,2 * b);
             I = Utils::Operators::integral(f,a,b);
-        } while (abs(deltaI / I) >= 10e-10);
+        } while (abs(deltaI / I) >= 10e-15);
         return I;
     }
     //Integral between -infinity and a
@@ -101,13 +105,13 @@ double Utils::Operators::integral(bool positiveInfinite,const std::function<doub
         b *= 10;
         deltaI = Utils::Operators::integral(f,2 * b,b);
         I = Utils::Operators::integral(f,b,a);
-    } while (abs(deltaI / I) >= 10e-10);
+    } while (abs(deltaI / I) >= 10e-15);
     return I;
 }
 
 double Utils::Operators::integral(bool positiveInfinite,std::function<double(double)>&& f, double a)
 {
-    double b((a + 1) * pow(10,10)),deltaI,I;
+    double b((a + 1) * 10),deltaI,I;
     if (positiveInfinite)//Integral between a and +infinity
     {
         do
@@ -115,7 +119,7 @@ double Utils::Operators::integral(bool positiveInfinite,std::function<double(dou
             b *= 10;
             deltaI = Utils::Operators::integral(f,b,2 * b);
             I = Utils::Operators::integral(f,a,b);
-        } while (abs(deltaI / I) >= 10e-10);
+        } while (abs(deltaI / I) >= 10e-15);
         return I;
     }
     //Integral between -infinity and a
@@ -125,7 +129,7 @@ double Utils::Operators::integral(bool positiveInfinite,std::function<double(dou
         b *= 10;
         deltaI = Utils::Operators::integral(f,2 * b,b);
         I = Utils::Operators::integral(f,b,a);
-    } while (abs(deltaI / I) >= 10e-10);
+    } while (abs(deltaI / I) >= 10e-15);
     return I;
 }
 
