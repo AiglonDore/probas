@@ -10,6 +10,9 @@
  */
 
 #include <cmath>
+#include <iostream>
+
+using namespace std;
 
 #include "../headers/utils.h"
 
@@ -43,6 +46,7 @@ double Utils::Gamma(double x)
     {
         throw Exception(ExceptionType::Calculus,"Gamma function is defined on positive real numbers.");
     }
+    if (abs(x - 1) <= 10e-15 || abs (x - 2) <= 10e-15) return 1.0;
     return Utils::Operators::integral(true,[&x](double t){ return std::pow(t,x - 1) * std::exp(-t); },0);
 }
 
