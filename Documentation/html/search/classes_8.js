@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uniformdiscretelaw_91',['UniformDiscreteLaw',['../class_uniform_discrete_law.html',1,'']]]
+  ['poissonlaw_98',['PoissonLaw',['../class_poisson_law.html',1,'']]]
 ];

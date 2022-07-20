@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['p_165',['p',['../class_bernoulli_law.html#a09bf5e4e9d7c9a44afac7a7da48e1185',1,'BernoulliLaw']]]
+  ['densityfunction_179',['densityFunction',['../class_continuous_law.html#a29eab9e586c5f6f758a840252c978636',1,'ContinuousLaw']]]
 ];
