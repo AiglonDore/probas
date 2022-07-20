@@ -14,8 +14,11 @@ all : probas.out probas.exe
 addon : doc docker
 
 #Linux
-probas.out : obj/main.o obj/help.o obj/discretelaw.o obj/bernoulli.o obj/binomial.o obj/interface.o obj/geometric.o obj/utils.o obj/poisson.o obj/benford.o
+probas.out : obj/main.o obj/help.o obj/discretelaw.o obj/bernoulli.o obj/binomial.o obj/interface.o obj/geometric.o obj/utils.o obj/poisson.o obj/benford.o obj/continuouslaw.o
 	$(LCC) $(FLAGS) -o bin/$@ $^
+
+obj/continuouslaw.o : src/continuouslaw.cpp headers/continuouslaw.h headers/utils.h
+	$(LCC) $(FLAGS) -c -o $@ $<
 
 obj/poisson.o : src/poisson.cpp headers/poisson.h headers/utils.h headers/discretelaw.h headers/exn.hpp
 	$(LCC) $(FLAGS) -c -o $@ $<
@@ -48,8 +51,11 @@ obj/benford.o : src/benford.cpp headers/benford.h headers/discretelaw.h headers/
 	$(LCC) $(FLAGS) -c -o $@ $<
 
 #Windows
-probas.exe : obj/main.obj obj/help.obj obj/discretelaw.obj obj/bernoulli.obj obj/binomial.obj obj/interface.obj obj/geometric.obj obj/utils.obj obj/poisson.obj obj/benford.obj
+probas.exe : obj/main.obj obj/help.obj obj/discretelaw.obj obj/bernoulli.obj obj/binomial.obj obj/interface.obj obj/geometric.obj obj/utils.obj obj/poisson.obj obj/benford.obj obj/continuouslaw.obj
 	$(WCC) $(FLAGS) -o bin/$@ $^
+
+obj/continuouslaw.obj : src/continuouslaw.cpp headers/continuouslaw.h headers/utils.h
+	$(LCC) $(FLAGS) -c -o $@ $<
 
 obj/poisson.obj : src/poisson.cpp headers/poisson.h headers/utils.h headers/discretelaw.h headers/exn.hpp
 	$(WCC) $(FLAGS) -c -o $@ $<

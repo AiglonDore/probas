@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['discretelaw_2ecpp_92',['discretelaw.cpp',['../discretelaw_8cpp.html',1,'']]],
-  ['discretelaw_2eh_93',['discretelaw.h',['../discretelaw_8h.html',1,'']]]
+  ['continuouslaw_2ecpp_100',['continuouslaw.cpp',['../continuouslaw_8cpp.html',1,'']]],
+  ['continuouslaw_2eh_101',['continuouslaw.h',['../continuouslaw_8h.html',1,'']]]
 ];

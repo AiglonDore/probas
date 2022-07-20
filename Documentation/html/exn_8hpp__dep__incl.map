@@ -1,0 +1,22 @@
+<map id="headers/exn.hpp" name="headers/exn.hpp">
+<area shape="rect" id="node1" title="Holds exception classes." alt="" coords="909,5,1040,32"/>
+<area shape="rect" id="node2" href="$law_8h.html" title="Provides the abstract class Law." alt="" coords="872,80,984,107"/>
+<area shape="rect" id="node19" href="$utils_8h.html" title="Provides useful functions." alt="" coords="1043,155,1162,181"/>
+<area shape="rect" id="node3" href="$discretelaw_8h.html" title="Provides the DiscreteLaw class to deal with discrete laws." alt="" coords="475,155,639,181"/>
+<area shape="rect" id="node17" href="$continuouslaw_8h.html" title="Provides the ContinuousLaw class to deal with discrete laws." alt="" coords="837,155,1019,181"/>
+<area shape="rect" id="node4" href="$benford_8h.html" title="Provides the BenfordLaw class." alt="" coords="571,229,711,256"/>
+<area shape="rect" id="node6" href="$bernoulli_8h.html" title="Provides functions relted to the Bernoulli law." alt="" coords="400,229,547,256"/>
+<area shape="rect" id="node12" href="$poisson_8h.html" title="Provides tools for Poisson laws." alt="" coords="735,229,875,256"/>
+<area shape="rect" id="node14" href="$uniform__discrete_8h.html" title="Uniform discrete law." alt="" coords="5,229,205,256"/>
+<area shape="rect" id="node16" href="$discretelaw_8cpp.html" title="Implements discretelaw.h." alt="" coords="229,229,376,256"/>
+<area shape="rect" id="node5" href="$benford_8cpp.html" title="Implements benford.h." alt="" coords="743,304,865,331"/>
+<area shape="rect" id="node7" href="$binomial_8h.html" title="Provides the binomial law class." alt="" coords="237,304,384,331"/>
+<area shape="rect" id="node9" href="$geometric_8h.html" title="Provides tools for geometric laws." alt="" coords="562,304,718,331"/>
+<area shape="rect" id="node11" href="$bernoulli_8cpp.html" title="Implements bernoulli.h." alt="" coords="409,304,538,331"/>
+<area shape="rect" id="node8" href="$binomial_8cpp.html" title="Implements binomial.h." alt="" coords="587,379,717,405"/>
+<area shape="rect" id="node10" href="$geometric_8cpp.html" title="Implements geometric.h." alt="" coords="827,379,965,405"/>
+<area shape="rect" id="node13" href="$poisson_8cpp.html" title="Implements poisson.h." alt="" coords="889,304,1012,331"/>
+<area shape="rect" id="node15" href="$uniform__discrete_8cpp.html" title="Implements uniform_discrete.h." alt="" coords="14,304,197,331"/>
+<area shape="rect" id="node18" href="$continuouslaw_8cpp.html" title="Implements continuouslaw.h." alt="" coords="900,229,1065,256"/>
+<area shape="rect" id="node20" href="$utils_8cpp.html" title="Implements utils.h." alt="" coords="1191,229,1291,256"/>
+</map>

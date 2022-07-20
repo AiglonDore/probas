@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exception_78',['Exception',['../class_exception.html',1,'']]]
+  ['discretelaw_85',['DiscreteLaw',['../class_discrete_law.html',1,'']]]
 ];
