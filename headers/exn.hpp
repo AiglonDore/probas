@@ -18,7 +18,7 @@
  * @brief Provides a list of the type of exceptions.
  * 
  */
-enum ExceptionType {Benford, Bernoulli, Binomial, Geometric, Poisson, UniformDiscrete,Calculus};
+enum ExceptionType {Benford, Bernoulli, Binomial, Geometric, Poisson, UniformDiscrete,Calculus, Normal};
 
 /**
  * @brief The Exception class provides exceptions for the other classes.

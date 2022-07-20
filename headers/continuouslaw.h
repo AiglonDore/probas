@@ -21,7 +21,11 @@
  */
 class ContinuousLaw : public Law
 {
-private:
+protected:
+/**
+ * @brief Contains the density function of the continuous law.
+ * 
+ */
     std::function<double(double)> densityFunction;
 public:
     /**

@@ -1,0 +1,9 @@
+<map id="headers/normallaw.h" name="headers/normallaw.h">
+<area shape="rect" id="node1" title="Provides the NormalLaw class." alt="" coords="148,5,307,32"/>
+<area shape="rect" id="node2" href="$continuouslaw_8h.html" title="Provides the ContinuousLaw class to deal with discrete laws." alt="" coords="113,80,240,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="188,229,251,256"/>
+<area shape="rect" id="node3" href="$law_8h.html" title="Provides the abstract class Law." alt="" coords="5,155,129,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="153,155,240,181"/>
+<area shape="rect" id="node5" href="$exn_8hpp.html" title="Holds exception classes." alt="" coords="30,229,105,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="38,304,97,331"/>
+</map>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['poisson_2ecpp_113',['poisson.cpp',['../poisson_8cpp.html',1,'']]],
-  ['poisson_2eh_114',['poisson.h',['../poisson_8h.html',1,'']]]
+  ['normallaw_2ecpp_121',['normallaw.cpp',['../normallaw_8cpp.html',1,'']]],
+  ['normallaw_2eh_122',['normallaw.h',['../normallaw_8h.html',1,'']]]
 ];
