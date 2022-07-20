@@ -1,5 +1,5 @@
 /**
- * @file exn.h
+ * @file exn.hpp
  * @author AiglonDore
  * @brief Holds exception classes.
  * @version 0.1
