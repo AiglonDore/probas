@@ -1,7 +1,7 @@
 /**
  * @file discretelaw.h
  * @author AiglonDore
- * @brief Provides the discrete law class to deal with discrete laws.
+ * @brief Provides the {@link DiscreteLaw} class to deal with discrete laws.
  * @version 0.1
  * @date 2022-06-28
  * 
