@@ -1,5 +1,5 @@
 <map id="headers/discretelaw.h" name="headers/discretelaw.h">
-<area shape="rect" id="node1" title="Provides the discrete law class to deal with discrete laws." alt="" coords="586,5,750,32"/>
+<area shape="rect" id="node1" title="Provides the DiscreteLaw class to deal with discrete laws." alt="" coords="586,5,750,32"/>
 <area shape="rect" id="node2" href="$benford_8h.html" title="Provides the BenfordLaw class." alt="" coords="114,80,254,107"/>
 <area shape="rect" id="node4" href="$bernoulli_8h.html" title="Provides functions relted to the Bernoulli law." alt="" coords="361,80,508,107"/>
 <area shape="rect" id="node10" href="$poisson_8h.html" title="Provides tools for Poisson laws." alt="" coords="598,80,738,107"/>

@@ -1,0 +1,10 @@
+<map id="src/continuouslaw.cpp" name="src/continuouslaw.cpp">
+<area shape="rect" id="node1" title="Implements continuouslaw.h." alt="" coords="113,5,279,32"/>
+<area shape="rect" id="node2" href="$continuouslaw_8h.html" title="Provides the ContinuousLaw class to deal with discrete laws." alt="" coords="5,80,200,107"/>
+<area shape="rect" id="node8" href="$utils_8h.html" title="Provides useful functions." alt="" coords="224,80,355,107"/>
+<area shape="rect" id="node3" href="$law_8h.html" title="Provides the abstract class Law." alt="" coords="29,155,153,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="177,155,263,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="59,229,122,256"/>
+<area shape="rect" id="node5" href="$exn_8hpp.html" title="Holds exception classes." alt="" coords="205,229,280,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="213,304,272,331"/>
+</map>

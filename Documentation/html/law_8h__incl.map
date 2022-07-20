@@ -1,6 +1,6 @@
 <map id="headers/law.h" name="headers/law.h">
 <area shape="rect" id="node1" title="Provides the abstract class Law." alt="" coords="27,5,139,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,68,107"/>
-<area shape="rect" id="node3" href="$exn_8hpp_source.html" title=" " alt="" coords="93,80,167,107"/>
+<area shape="rect" id="node3" href="$exn_8hpp.html" title="Holds exception classes." alt="" coords="93,80,167,107"/>
 <area shape="rect" id="node4" title=" " alt="" coords="101,155,159,181"/>
 </map>

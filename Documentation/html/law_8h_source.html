@@ -76,7 +76,7 @@ $(function() {
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define LAW_H</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;exn.hpp&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="exn_8hpp.html">exn.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_law.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_law.html">Law</a></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
@@ -108,6 +108,7 @@ $(function() {
 <div class="ttc" id="aclass_law_html_afdc0c8bdcc45bb60c82eeaabe174cf29"><div class="ttname"><a href="class_law.html#afdc0c8bdcc45bb60c82eeaabe174cf29">Law::proba</a></div><div class="ttdeci">virtual double proba(double x)=0</div><div class="ttdoc">Computes the probability. For a discrete law, it will truncate the argument to an integer then return...</div></div>
 <div class="ttc" id="aclass_law_html_a3313abc2b2ad335c871e57be38c9663a"><div class="ttname"><a href="class_law.html#a3313abc2b2ad335c871e57be38c9663a">Law::density</a></div><div class="ttdeci">virtual double density(double X)=0</div><div class="ttdoc">Returns the density function of the law, applied at X.</div></div>
 <div class="ttc" id="aclass_law_html_a3e002f2837184a3145166e26944d6aea"><div class="ttname"><a href="class_law.html#a3e002f2837184a3145166e26944d6aea">Law::expectancy</a></div><div class="ttdeci">virtual double expectancy()=0</div><div class="ttdoc">Computes the expectancy.</div></div>
+<div class="ttc" id="aexn_8hpp_html"><div class="ttname"><a href="exn_8hpp.html">exn.hpp</a></div><div class="ttdoc">Holds exception classes.</div></div>
 <div class="ttc" id="aclass_law_html_aec327c963b92533240e38f0b30b6756a"><div class="ttname"><a href="class_law.html#aec327c963b92533240e38f0b30b6756a">Law::repartition</a></div><div class="ttdeci">virtual double repartition(double X)=0</div><div class="ttdoc">Returns the repartition function of the law, applied at X.</div></div>
 <div class="ttc" id="aclass_law_html"><div class="ttname"><a href="class_law.html">Law</a></div><div class="ttdoc">The class Law provides a generic class that will hold all the sub-classes relative to specific laws.</div><div class="ttdef"><b>Definition:</b> <a href="law_8h_source.html#l00022">law.h:22</a></div></div>
 <div class="ttc" id="aclass_law_html_a4fa6f0fb61285152c8c6d7a17b51a82b"><div class="ttname"><a href="class_law.html#a4fa6f0fb61285152c8c6d7a17b51a82b">Law::~Law</a></div><div class="ttdeci">virtual ~Law()</div><div class="ttdoc">Destroys the Law object.</div><div class="ttdef"><b>Definition:</b> <a href="law_8h_source.html#l00029">law.h:29</a></div></div>
