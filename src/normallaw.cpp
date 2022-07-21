@@ -30,7 +30,7 @@ NormalLaw::NormalLaw(double mu, double sigma2) : mu(mu), sigma2(sigma2)
         throw Exception(ExceptionType::Normal,"Variance of a normal law is always strictly positive");
     }
     densityFunction = [mu,sigma2](double t){
-        return 1 / sqrt(2 * 3.14159265359 * sigma2) * exp(- 1 / 2 * pow((t - mu) / sqrt(sigma2),2));
+        return 1 / sqrt(2 * 3.14159265359 * sigma2) * exp(- 1 / 2 * pow((t - mu),2) / sigma2);
     };
 }
 
