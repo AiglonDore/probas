@@ -99,7 +99,7 @@ double Utils::Operators::integral(bool positiveInfinite,const std::function<doub
         return I;
     }
     //Integral between -infinity and a
-    b *= -1;
+    b = -(a - 1) * 10;
     do
     {
         b *= 10;
@@ -123,7 +123,7 @@ double Utils::Operators::integral(bool positiveInfinite,std::function<double(dou
         return I;
     }
     //Integral between -infinity and a
-    b *= -1;
+    b = -(a - 1) * 10;
     do
     {
         b *= 10;
