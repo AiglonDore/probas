@@ -94,12 +94,8 @@ obj/normallaw.obj : src/normallaw.cpp headers/continuouslaw.h headers/utils.h he
 	$(WCC) $(FLAGS) -c -o $@ $<
 
 clean :
-	rm -r -f -v obj
-	mkdir obj
-	touch obj/.gitkeep
-	rm -r -f -v bin
-	mkdir bin
-	touch bin/.gitkeep
+	rm -f -v bin/*.out bin/*.exe
+	rm -f -v obj/*.o*
 	@echo "Clean done"
 
 #Addon
