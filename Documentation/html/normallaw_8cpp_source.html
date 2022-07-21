@@ -82,7 +82,7 @@ $(function() {
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_normal_law.html#a51e45bd7dacc76fb032231246b85ce9e">   19</a></span>&#160;<a class="code" href="class_normal_law.html#a51e45bd7dacc76fb032231246b85ce9e">NormalLaw::NormalLaw</a>() : mu(0), sigma2(1)</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_continuous_law.html#a29eab9e586c5f6f758a840252c978636">densityFunction</a> = [](<span class="keywordtype">double</span> t){</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> 1 / sqrt(2 * 3.14159265359) * exp(- 1 / 2 * t * t);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> 1 / sqrt(2 * 3.14159265359) * exp(- 0.5 * t * t);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    };</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
@@ -93,7 +93,7 @@ $(function() {
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_exception.html">Exception</a>(ExceptionType::Normal,<span class="stringliteral">&quot;Variance of a normal law is always strictly positive&quot;</span>);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_continuous_law.html#a29eab9e586c5f6f758a840252c978636">densityFunction</a> = [mu,sigma2](<span class="keywordtype">double</span> t){</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">return</span> 1 / sqrt(2 * 3.14159265359 * sigma2) * exp(- 1 / 2 * pow((t - mu) / sqrt(sigma2),2));</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">return</span> 1 / sqrt(2 * 3.14159265359 * sigma2) * exp(- 0.5 * pow((t - mu),2) / sigma2);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    };</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
