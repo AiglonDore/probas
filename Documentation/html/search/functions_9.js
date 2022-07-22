@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['operator_2b_157',['operator+',['../poisson_8h.html#a56b611d1770e259477a14f56d96bc35d',1,'operator+(const PoissonLaw &amp;first, const PoissonLaw &amp;second):&#160;poisson.cpp'],['../poisson_8cpp.html#a56b611d1770e259477a14f56d96bc35d',1,'operator+(const PoissonLaw &amp;first, const PoissonLaw &amp;second):&#160;poisson.cpp']]],
-  ['operator_2b_3d_158',['operator+=',['../class_poisson_law.html#a60f65453b406f649e69f83a086f56e5e',1,'PoissonLaw']]]
+  ['ncr_162',['nCr',['../namespace_utils.html#a270db5b73c4c5f27caeea91c6d62f15d',1,'Utils']]],
+  ['normallaw_163',['NormalLaw',['../class_normal_law.html#a51e45bd7dacc76fb032231246b85ce9e',1,'NormalLaw::NormalLaw()'],['../class_normal_law.html#a0fe19460c5359d885322bfd739a074f3',1,'NormalLaw::NormalLaw(double mu, double sigma2)']]],
+  ['npr_164',['nPr',['../namespace_utils.html#ac4444e936659728098be9aa2fc209475',1,'Utils']]]
 ];
