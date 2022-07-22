@@ -1,0 +1,9 @@
+<map id="headers/cauchylaw.h" name="headers/cauchylaw.h">
+<area shape="rect" id="node1" title="Provides the CauchyLaw class." alt="" coords="59,5,218,32"/>
+<area shape="rect" id="node2" href="$continuouslaw_8h.html" title="Provides the ContinuousLaw class to deal with discrete laws." alt="" coords="75,80,202,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="60,229,123,256"/>
+<area shape="rect" id="node5" href="$exn_8hpp.html" title="Holds exception classes." alt="" coords="206,229,281,256"/>
+<area shape="rect" id="node3" href="$law_8h.html" title="Provides the abstract class Law." alt="" coords="132,155,256,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="22,155,108,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="214,304,273,331"/>
+</map>

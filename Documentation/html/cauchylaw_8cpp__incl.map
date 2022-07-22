@@ -1,0 +1,11 @@
+<map id="src/cauchylaw.cpp" name="src/cauchylaw.cpp">
+<area shape="rect" id="node1" title="Implements cauchylaw.h." alt="" coords="129,5,269,32"/>
+<area shape="rect" id="node2" href="$cauchylaw_8h.html" title="Provides the CauchyLaw class." alt="" coords="189,80,360,107"/>
+<area shape="rect" id="node9" href="$utils_8h.html" title="Provides useful functions." alt="" coords="5,155,136,181"/>
+<area shape="rect" id="node3" href="$continuouslaw_8h.html" title="Provides the ContinuousLaw class to deal with discrete laws." alt="" coords="161,155,287,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="315,304,378,331"/>
+<area shape="rect" id="node6" href="$exn_8hpp.html" title="Holds exception classes." alt="" coords="188,304,263,331"/>
+<area shape="rect" id="node4" href="$law_8h.html" title="Provides the abstract class Law." alt="" coords="163,229,287,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="53,229,139,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="196,379,255,405"/>
+</map>
