@@ -109,4 +109,4 @@ doc :
 	doxygen Doxyfile
 
 docker :
-	docker build -t $(NAME) .
+	docker build -t probas:latest .
