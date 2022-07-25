@@ -9,7 +9,7 @@ else
 	FLAGS=-Wall -Wextra -std=c++2a
 endif
 
-all : probas.out probas.exe
+all : probas.out probas.exe #plot.out plot.exe
 
 addon : doc docker
 
@@ -56,6 +56,9 @@ obj/benford.o : src/benford.cpp headers/benford.h headers/discretelaw.h headers/
 obj/cauchylaw.o : src/cauchylaw.cpp headers/cauchylaw.h headers/continuouslaw.h headers/utils.h
 	$(LCC) $(FLAGS) -c -o $@ $<
 
+#bin/plot.out : src/main.py src/plot.py
+#	
+
 #Windows
 probas.exe : obj/main.obj obj/help.obj obj/discretelaw.obj obj/bernoulli.obj obj/binomial.obj obj/interface.obj obj/geometric.obj obj/utils.obj obj/poisson.obj obj/benford.obj obj/continuouslaw.obj obj/normallaw.obj obj/cauchylaw.obj
 	$(WCC) $(FLAGS) -o bin/$@ $^
@@ -98,6 +101,9 @@ obj/normallaw.obj : src/normallaw.cpp headers/continuouslaw.h headers/utils.h he
 
 obj/cauchylaw.obj : src/cauchylaw.cpp headers/cauchylaw.h headers/continuouslaw.h headers/utils.h
 	$(WCC) $(FLAGS) -c -o $@ $<
+
+#bin/plot.exe : src/main.py src/plot.py
+#	
 
 clean :
 	rm -f -v bin/*.out bin/*.exe

@@ -1,2 +1,9 @@
 import matplotlib.pyplot as plt
-import numpy as np
+
+def plotValues(X,Y,mult=False):
+    if mult:
+        for y in Y:
+            plt.plot(X,y)
+    else:
+        plt.plot(X,Y)
+    plt.show()
