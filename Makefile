@@ -9,6 +9,12 @@ else
 	FLAGS=-Wall -Wextra -std=c++2a
 endif
 
+ifneq ($(DOCKER),"")
+	DOCKER_IMAGE_NAME=$(DOCKER)
+else
+	DOCKER_IMAGE_NAME=probas:latest
+endif
+
 all : probas.out probas.exe #plot.out plot.exe
 
 addon : doc docker
@@ -115,4 +121,4 @@ doc :
 	doxygen Doxyfile
 
 docker :
-	docker build -t probas:latest .
+	docker build -t $(DOCKER_IMAGE_NAME) .
