@@ -15,5 +15,6 @@ var searchData=
   ['getp_38',['getP',['../class_bernoulli_law.html#acd57da033953d760e37271c353cce082',1,'BernoulliLaw']]],
   ['getsigma2_39',['getSigma2',['../class_normal_law.html#a8f7d5936234f63b19afa90527a783ecf',1,'NormalLaw']]],
   ['gettype_40',['getType',['../class_exception.html#a8e655d531cd40ee45d7710143cf04aba',1,'Exception']]],
-  ['getupperbound_41',['getUpperBound',['../class_uniform_discrete_law.html#a87e5cde1f838b6e677ba41dfb4109239',1,'UniformDiscreteLaw']]]
+  ['getupperbound_41',['getUpperBound',['../class_uniform_discrete_law.html#a87e5cde1f838b6e677ba41dfb4109239',1,'UniformDiscreteLaw']]],
+  ['getx0_42',['getX0',['../class_cauchy_law.html#a3c4ca60a51de1ee7e0bfd1743b9e9327',1,'CauchyLaw']]]
 ];

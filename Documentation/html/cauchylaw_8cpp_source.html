@@ -75,60 +75,63 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../headers/cauchylaw.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../headers/utils.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_cauchy_law.html#a0c9099a60595d5c713f2344937168bc2">   15</a></span>&#160;<a class="code" href="class_cauchy_law.html#a0c9099a60595d5c713f2344937168bc2">CauchyLaw::CauchyLaw</a>() : a(1)</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_cauchy_law.html#a0c9099a60595d5c713f2344937168bc2">   15</a></span>&#160;<a class="code" href="class_cauchy_law.html#a0c9099a60595d5c713f2344937168bc2">CauchyLaw::CauchyLaw</a>() : a(1), x0(0)</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_continuous_law.html#a29eab9e586c5f6f758a840252c978636">densityFunction</a> = [](<span class="keywordtype">double</span> t){</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">if</span> (t &lt;= 0) <span class="keywordflow">return</span> 0.0;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">return</span> 1 / 3.14159265359 * 1 / (t * t);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    };</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_cauchy_law.html#a2ff7077290b196544041137be04bf259">   23</a></span>&#160;<a class="code" href="class_cauchy_law.html#a0c9099a60595d5c713f2344937168bc2">CauchyLaw::CauchyLaw</a>(<span class="keywordtype">double</span> a) : a(a)</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">if</span> (a &lt;= 0)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_exception.html">Exception</a>(Cauchy,<span class="stringliteral">&quot;The parameter of a Cauchy Law is always strictly positive.&quot;</span>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_continuous_law.html#a29eab9e586c5f6f758a840252c978636">densityFunction</a> =  [a](<span class="keywordtype">double</span> t){</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">if</span> (t &lt;= 0) <span class="keywordflow">return</span> 0.0;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> a / 3.14159265359 * 1 / std::pow(t - a,2);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    };</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_cauchy_law.html#adfe4a427f61b3d2405b4087bd61bb9be">   35</a></span>&#160;<a class="code" href="class_cauchy_law.html#adfe4a427f61b3d2405b4087bd61bb9be">CauchyLaw::~CauchyLaw</a>()</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_cauchy_law.html#a7e4f1f71650b7a65a6027758c0e53150">   39</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_cauchy_law.html#a7e4f1f71650b7a65a6027758c0e53150">CauchyLaw::repartition</a>(<span class="keywordtype">double</span> X)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (X &lt;= 0) <span class="keywordflow">return</span> 0.0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespace_utils_1_1_operators.html#ac9e57af15a6860516ffd3cc4ddf1fade">Utils::Operators::integral</a>(<a class="code" href="class_continuous_law.html#a29eab9e586c5f6f758a840252c978636">densityFunction</a>,0,X);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_cauchy_law.html#a1f273ab2b8cd2ae6ce22c01bd70701fe">   45</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_cauchy_law.html#a1f273ab2b8cd2ae6ce22c01bd70701fe">CauchyLaw::stdDev</a>()</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="class_exception.html">Exception</a>(Cauchy,<span class="stringliteral">&quot;Cauchy Law doesn&#39;t have a variance so standard deviation is not defined.&quot;</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_cauchy_law.html#a46c4b93f5678b4e85b3e09b89231b855">   50</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_cauchy_law.html#a46c4b93f5678b4e85b3e09b89231b855">CauchyLaw::expectancy</a>()</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="class_exception.html">Exception</a>(Cauchy,<span class="stringliteral">&quot;Cauchy Law cannot be integrated on the positive real numbers so it has no finished expectancy.&quot;</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_cauchy_law.html#af950d4e026b7abae95947a94da4cfe38">   55</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_cauchy_law.html#af950d4e026b7abae95947a94da4cfe38">CauchyLaw::variance</a>()</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="class_exception.html">Exception</a>(Cauchy,<span class="stringliteral">&quot;Cauchy Law cannot be integrated on the positive real numbers so it has no finished variance.&quot;</span>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">return</span> 1 / 3.14159265359 * 1 / (t * t + 1);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    };</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_cauchy_law.html#a2ff7077290b196544041137be04bf259">   22</a></span>&#160;<a class="code" href="class_cauchy_law.html#a0c9099a60595d5c713f2344937168bc2">CauchyLaw::CauchyLaw</a>(<span class="keywordtype">double</span> a) : a(a), x0(0.0)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span> (a &lt;= 0)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="class_exception.html">Exception</a>(Cauchy,<span class="stringliteral">&quot;The parameter of a Cauchy Law is always strictly positive.&quot;</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_continuous_law.html#a29eab9e586c5f6f758a840252c978636">densityFunction</a> =  [a](<span class="keywordtype">double</span> t){</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> a / 3.14159265359 * 1 / (t * t + a * a);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    };</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_cauchy_law.html#ac1ece87f470f2e9c9c32253523d3858e">   33</a></span>&#160;<a class="code" href="class_cauchy_law.html#a0c9099a60595d5c713f2344937168bc2">CauchyLaw::CauchyLaw</a>(<span class="keywordtype">double</span> x,<span class="keywordtype">double</span> a0) : a(a0), x0(x)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_continuous_law.html#a29eab9e586c5f6f758a840252c978636">densityFunction</a> = [a0,x](<span class="keywordtype">double</span> t){</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> a0 / 3.14159265359 * 1 / (std::pow(t - x,2) + a0 * a0);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_cauchy_law.html#adfe4a427f61b3d2405b4087bd61bb9be">   40</a></span>&#160;<a class="code" href="class_cauchy_law.html#adfe4a427f61b3d2405b4087bd61bb9be">CauchyLaw::~CauchyLaw</a>()</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_cauchy_law.html#a7e4f1f71650b7a65a6027758c0e53150">   44</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_cauchy_law.html#a7e4f1f71650b7a65a6027758c0e53150">CauchyLaw::repartition</a>(<span class="keywordtype">double</span> X)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> 1 / 3.14159265359 * std::atan((X - x0) / a);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_cauchy_law.html#a1f273ab2b8cd2ae6ce22c01bd70701fe">   49</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_cauchy_law.html#a1f273ab2b8cd2ae6ce22c01bd70701fe">CauchyLaw::stdDev</a>()</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="class_exception.html">Exception</a>(Cauchy,<span class="stringliteral">&quot;Cauchy Law doesn&#39;t have a variance so standard deviation is not defined.&quot;</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_cauchy_law.html#a46c4b93f5678b4e85b3e09b89231b855">   54</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_cauchy_law.html#a46c4b93f5678b4e85b3e09b89231b855">CauchyLaw::expectancy</a>()</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="class_exception.html">Exception</a>(Cauchy,<span class="stringliteral">&quot;Cauchy Law cannot be integrated on the positive real numbers so it has no finished expectancy.&quot;</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_cauchy_law.html#af950d4e026b7abae95947a94da4cfe38">   59</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="class_cauchy_law.html#af950d4e026b7abae95947a94da4cfe38">CauchyLaw::variance</a>()</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="class_exception.html">Exception</a>(Cauchy,<span class="stringliteral">&quot;Cauchy Law cannot be integrated on the positive real numbers so it has no finished variance.&quot;</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_continuous_law_html_a29eab9e586c5f6f758a840252c978636"><div class="ttname"><a href="class_continuous_law.html#a29eab9e586c5f6f758a840252c978636">ContinuousLaw::densityFunction</a></div><div class="ttdeci">std::function&lt; double(double)&gt; densityFunction</div><div class="ttdoc">Contains the density function of the continuous law.</div><div class="ttdef"><b>Definition:</b> <a href="continuouslaw_8h_source.html#l00029">continuouslaw.h:29</a></div></div>
-<div class="ttc" id="aclass_cauchy_law_html_a7e4f1f71650b7a65a6027758c0e53150"><div class="ttname"><a href="class_cauchy_law.html#a7e4f1f71650b7a65a6027758c0e53150">CauchyLaw::repartition</a></div><div class="ttdeci">double repartition(double X) override</div><div class="ttdoc">Overrides ContinuousLaw function to restrain integration domain.</div><div class="ttdef"><b>Definition:</b> <a href="cauchylaw_8cpp_source.html#l00039">cauchylaw.cpp:39</a></div></div>
+<div class="ttc" id="aclass_cauchy_law_html_a7e4f1f71650b7a65a6027758c0e53150"><div class="ttname"><a href="class_cauchy_law.html#a7e4f1f71650b7a65a6027758c0e53150">CauchyLaw::repartition</a></div><div class="ttdeci">double repartition(double X) override</div><div class="ttdoc">Overrides ContinuousLaw function to restrain integration domain.</div><div class="ttdef"><b>Definition:</b> <a href="cauchylaw_8cpp_source.html#l00044">cauchylaw.cpp:44</a></div></div>
 <div class="ttc" id="aclass_cauchy_law_html_a0c9099a60595d5c713f2344937168bc2"><div class="ttname"><a href="class_cauchy_law.html#a0c9099a60595d5c713f2344937168bc2">CauchyLaw::CauchyLaw</a></div><div class="ttdeci">CauchyLaw()</div><div class="ttdoc">Construct a new Cauchy Law object.</div><div class="ttdef"><b>Definition:</b> <a href="cauchylaw_8cpp_source.html#l00015">cauchylaw.cpp:15</a></div></div>
-<div class="ttc" id="aclass_cauchy_law_html_adfe4a427f61b3d2405b4087bd61bb9be"><div class="ttname"><a href="class_cauchy_law.html#adfe4a427f61b3d2405b4087bd61bb9be">CauchyLaw::~CauchyLaw</a></div><div class="ttdeci">virtual ~CauchyLaw()</div><div class="ttdoc">Destroy the Cauchy Law object.</div><div class="ttdef"><b>Definition:</b> <a href="cauchylaw_8cpp_source.html#l00035">cauchylaw.cpp:35</a></div></div>
+<div class="ttc" id="aclass_cauchy_law_html_adfe4a427f61b3d2405b4087bd61bb9be"><div class="ttname"><a href="class_cauchy_law.html#adfe4a427f61b3d2405b4087bd61bb9be">CauchyLaw::~CauchyLaw</a></div><div class="ttdeci">virtual ~CauchyLaw()</div><div class="ttdoc">Destroy the Cauchy Law object.</div><div class="ttdef"><b>Definition:</b> <a href="cauchylaw_8cpp_source.html#l00040">cauchylaw.cpp:40</a></div></div>
 <div class="ttc" id="aclass_exception_html"><div class="ttname"><a href="class_exception.html">Exception</a></div><div class="ttdoc">The Exception class provides exceptions for the other classes.</div><div class="ttdef"><b>Definition:</b> <a href="exn_8hpp_source.html#l00027">exn.hpp:27</a></div></div>
-<div class="ttc" id="aclass_cauchy_law_html_a46c4b93f5678b4e85b3e09b89231b855"><div class="ttname"><a href="class_cauchy_law.html#a46c4b93f5678b4e85b3e09b89231b855">CauchyLaw::expectancy</a></div><div class="ttdeci">double expectancy() override</div><div class="ttdoc">Overrides Law method.</div><div class="ttdef"><b>Definition:</b> <a href="cauchylaw_8cpp_source.html#l00050">cauchylaw.cpp:50</a></div></div>
-<div class="ttc" id="aclass_cauchy_law_html_af950d4e026b7abae95947a94da4cfe38"><div class="ttname"><a href="class_cauchy_law.html#af950d4e026b7abae95947a94da4cfe38">CauchyLaw::variance</a></div><div class="ttdeci">double variance() override</div><div class="ttdoc">Overrides Law method.</div><div class="ttdef"><b>Definition:</b> <a href="cauchylaw_8cpp_source.html#l00055">cauchylaw.cpp:55</a></div></div>
-<div class="ttc" id="anamespace_utils_1_1_operators_html_ac9e57af15a6860516ffd3cc4ddf1fade"><div class="ttname"><a href="namespace_utils_1_1_operators.html#ac9e57af15a6860516ffd3cc4ddf1fade">Utils::Operators::integral</a></div><div class="ttdeci">double integral(const std::function&lt; double(double)&gt; &amp;f, double a, double b)</div><div class="ttdoc">Returns the integral of f between a and b.</div><div class="ttdef"><b>Definition:</b> <a href="utils_8cpp_source.html#l00060">utils.cpp:60</a></div></div>
-<div class="ttc" id="aclass_cauchy_law_html_a1f273ab2b8cd2ae6ce22c01bd70701fe"><div class="ttname"><a href="class_cauchy_law.html#a1f273ab2b8cd2ae6ce22c01bd70701fe">CauchyLaw::stdDev</a></div><div class="ttdeci">double stdDev() override</div><div class="ttdoc">Overrides Law method for direct access.</div><div class="ttdef"><b>Definition:</b> <a href="cauchylaw_8cpp_source.html#l00045">cauchylaw.cpp:45</a></div></div>
+<div class="ttc" id="aclass_cauchy_law_html_a46c4b93f5678b4e85b3e09b89231b855"><div class="ttname"><a href="class_cauchy_law.html#a46c4b93f5678b4e85b3e09b89231b855">CauchyLaw::expectancy</a></div><div class="ttdeci">double expectancy() override</div><div class="ttdoc">Overrides Law method.</div><div class="ttdef"><b>Definition:</b> <a href="cauchylaw_8cpp_source.html#l00054">cauchylaw.cpp:54</a></div></div>
+<div class="ttc" id="aclass_cauchy_law_html_af950d4e026b7abae95947a94da4cfe38"><div class="ttname"><a href="class_cauchy_law.html#af950d4e026b7abae95947a94da4cfe38">CauchyLaw::variance</a></div><div class="ttdeci">double variance() override</div><div class="ttdoc">Overrides Law method.</div><div class="ttdef"><b>Definition:</b> <a href="cauchylaw_8cpp_source.html#l00059">cauchylaw.cpp:59</a></div></div>
+<div class="ttc" id="aclass_cauchy_law_html_a1f273ab2b8cd2ae6ce22c01bd70701fe"><div class="ttname"><a href="class_cauchy_law.html#a1f273ab2b8cd2ae6ce22c01bd70701fe">CauchyLaw::stdDev</a></div><div class="ttdeci">double stdDev() override</div><div class="ttdoc">Overrides Law method for direct access.</div><div class="ttdef"><b>Definition:</b> <a href="cauchylaw_8cpp_source.html#l00049">cauchylaw.cpp:49</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
