@@ -24,6 +24,7 @@
 class CauchyLaw : public ContinuousLaw
 {
 private:
+    double x0;
     double a;
 public:
     /**
@@ -34,10 +35,17 @@ public:
     /**
      * @brief Construct a new Cauchy Law object.
      * 
-     * @param a Law parameter.
+     * @param a Scale parameter.
      * @throws Exception if a <= 0.
      */
     CauchyLaw(double a);
+    /**
+     * @brief Construct a new Cauchy Law object.
+     * 
+     * @param x Position parameter.
+     * @param a0 Scale parameter.
+     */
+    CauchyLaw(double x,double a0);
     /**
      * @brief Destroy the Cauchy Law object.
      * 
@@ -51,6 +59,12 @@ public:
      */
     double getA() const { return a; };
 
+    /**
+     * @brief Gets the x0 value.
+     * 
+     * @return double x0.
+     */
+    double getX0() const { return x0; };
     /**
      * @brief Overrides {@link ContinuousLaw} function to restrain integration domain.
      * 
