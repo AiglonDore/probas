@@ -24,8 +24,8 @@
 class CauchyLaw : public ContinuousLaw
 {
 private:
-    double x0;
     double a;
+    double x0;
 public:
     /**
      * @brief Construct a new Cauchy Law object.

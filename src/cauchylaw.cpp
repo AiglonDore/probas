@@ -19,9 +19,8 @@ CauchyLaw::CauchyLaw() : a(1), x0(0)
     };
 }
 
-CauchyLaw::CauchyLaw(double a) : a(a)
+CauchyLaw::CauchyLaw(double a) : a(a), x0(0.0)
 {
-    x0 = 0.0;
     if (a <= 0)
     {
         throw Exception(Cauchy,"The parameter of a Cauchy Law is always strictly positive.");
@@ -31,7 +30,7 @@ CauchyLaw::CauchyLaw(double a) : a(a)
     };
 }
 
-CauchyLaw::CauchyLaw(double x,double a0) : a(a0), x0(x0)
+CauchyLaw::CauchyLaw(double x,double a0) : a(a0), x0(x)
 {
     densityFunction = [a0,x](double t){
         return a0 / 3.14159265359 * 1 / (std::pow(t - x,2) + a0 * a0);
