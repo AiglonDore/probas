@@ -72,7 +72,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> numpy <span class="keyword">as</span> np</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">def </span>plotValues(X,Y,mult=False):</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <span class="keywordflow">if</span> mult:</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;        <span class="keywordflow">for</span> y <span class="keywordflow">in</span> Y:</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;            plt.plot(X,y)</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordflow">else</span>:</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        plt.plot(X,Y)</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    plt.show()</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
