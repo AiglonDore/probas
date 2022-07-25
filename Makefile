@@ -64,7 +64,7 @@ probas.exe : obj/main.obj obj/help.obj obj/discretelaw.obj obj/bernoulli.obj obj
 	$(WCC) $(FLAGS) -o bin/$@ $^
 
 obj/continuouslaw.obj : src/continuouslaw.cpp headers/continuouslaw.h headers/utils.h
-	$(LCC) $(FLAGS) -c -o $@ $<
+	$(WCC) $(FLAGS) -c -o $@ $<
 
 obj/poisson.obj : src/poisson.cpp headers/poisson.h headers/utils.h headers/discretelaw.h headers/exn.hpp
 	$(WCC) $(FLAGS) -c -o $@ $<
