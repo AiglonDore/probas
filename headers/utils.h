@@ -22,6 +22,23 @@
  */
 namespace Utils {
     /**
+     * @brief Provides constants.
+     * 
+     */
+    namespace Constants {
+        /**
+         * @brief Value of pi.
+         * 
+         */
+        const double pi = 3.14159265359;
+
+        /**
+         * @brief Value of e.
+         * 
+         */
+        const double e = std::exp(1);
+    };
+    /**
      * @brief Provides several operators (integral,...);
      * 
      */

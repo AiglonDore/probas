@@ -9,6 +9,8 @@
  * 
  */
 
+#define double_SPREAD 10e-15
+
 #include <cmath>
 #include <iostream>
 
@@ -46,7 +48,7 @@ double Utils::Gamma(double x)
     {
         throw Exception(ExceptionType::Calculus,"Gamma function is defined on positive real numbers.");
     }
-    if (abs(x - 1) <= 10e-15 || abs (x - 2) <= 10e-15) return 1.0;
+    if (abs(x - 1) <= double_SPREAD || abs (x - 2) <= double_SPREAD) return 1.0;
     return Utils::Operators::integral(true,[&x](double t){ return std::pow(t,x - 1) * std::exp(-t); },0);
 }
 
@@ -95,7 +97,7 @@ double Utils::Operators::integral(bool positiveInfinite,const std::function<doub
             b *= 10;
             deltaI = Utils::Operators::integral(f,b,2 * b);
             I = Utils::Operators::integral(f,a,b);
-        } while (abs(deltaI / I) >= 10e-15);
+        } while (abs(deltaI / I) >= double_SPREAD);
         return I;
     }
     //Integral between -infinity and a
@@ -105,7 +107,7 @@ double Utils::Operators::integral(bool positiveInfinite,const std::function<doub
         b *= 10;
         deltaI = Utils::Operators::integral(f,2 * b,b);
         I = Utils::Operators::integral(f,b,a);
-    } while (abs(deltaI / I) >= 10e-15);
+    } while (abs(deltaI / I) >= double_SPREAD);
     return I;
 }
 
@@ -119,7 +121,7 @@ double Utils::Operators::integral(bool positiveInfinite,std::function<double(dou
             b *= 10;
             deltaI = Utils::Operators::integral(f,b,2 * b);
             I = Utils::Operators::integral(f,a,b);
-        } while (abs(deltaI / I) >= 10e-15);
+        } while (abs(deltaI / I) >= double_SPREAD);
         return I;
     }
     //Integral between -infinity and a
@@ -129,7 +131,7 @@ double Utils::Operators::integral(bool positiveInfinite,std::function<double(dou
         b *= 10;
         deltaI = Utils::Operators::integral(f,2 * b,b);
         I = Utils::Operators::integral(f,b,a);
-    } while (abs(deltaI / I) >= 10e-15);
+    } while (abs(deltaI / I) >= double_SPREAD);
     return I;
 }
 
