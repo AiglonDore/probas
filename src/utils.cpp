@@ -9,6 +9,9 @@
  * 
  */
 
+/**
+ * @brief Value to compare doubles. If less, then doubles are considered equal.
+ */
 #define double_SPREAD 10e-15
 
 #include <cmath>
