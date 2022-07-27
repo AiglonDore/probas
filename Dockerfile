@@ -14,4 +14,4 @@ EXPOSE 2368/udp
 
 VOLUME /app/logs
 
-CMD ["make","probas.out","RELEASE=TRUE"]
+CMD ["./docker_script.sh"]
