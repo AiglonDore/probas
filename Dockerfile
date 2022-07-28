@@ -2,8 +2,7 @@ FROM ubuntu:latest
 
 RUN apt-get update \
     && apt-get upgrade -y \
-    && apt-get install apt-utils make g++ python3 pip -y \
-    && python3 -m pip install numpy matplotlib scipy pyinstaller
+    && apt-get install apt-utils make g++
 
 ADD . /app
 

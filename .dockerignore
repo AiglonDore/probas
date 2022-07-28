@@ -15,3 +15,4 @@ Doxyfile
 
 *.ps1
 *.md
+src/plot
