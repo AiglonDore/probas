@@ -1,5 +1,5 @@
 # This file is licenced under the GNU General Public License v3.0
-foreach ($item in %*)
+foreach ($item in $args)
 {
     if ($($item -eq '--docker' -or $item -eq '-d'))
     {
@@ -9,4 +9,4 @@ foreach ($item in %*)
         exit 0
     }
 }
-.\bin\probas.exe %*
+.\bin\probas.exe $args
