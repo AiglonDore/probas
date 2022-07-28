@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['discretelaw_102',['DiscreteLaw',['../class_discrete_law.html',1,'']]]
+  ['discretelaw_104',['DiscreteLaw',['../class_discrete_law.html',1,'']]]
 ];
