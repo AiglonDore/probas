@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 RUN apt-get update \
     && apt-get upgrade -y \
-    && apt-get install apt-utils make g++
+    && apt-get install apt-utils make g++ -y
 
 ADD . /app
 
