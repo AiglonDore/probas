@@ -11,7 +11,7 @@ endif
 
 all : probas.out probas.exe #plot.out plot.exe
 
-addon : doc docker
+addon : doc docker container_watcher.out
 
 #Linux
 probas.out : obj/main.o obj/help.o obj/discretelaw.o obj/bernoulli.o obj/binomial.o obj/interface.o obj/geometric.o obj/utils.o obj/poisson.o obj/benford.o obj/continuouslaw.o obj/normallaw.o obj/cauchylaw.o
@@ -116,3 +116,7 @@ doc :
 
 docker : Dockerfile
 	docker build -t "probas:latest" .
+
+#Container watcher
+container_watcher.out : src/container_watcher/container_watcher.cpp
+	$(LCC) $(FLAGS) -o bin/$@ $<
