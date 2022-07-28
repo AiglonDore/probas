@@ -67,7 +67,7 @@ jobs:
     - name: Autobuild
       run: |
        echo "Building with make"
-       make probas.out
+       make probas.out container_watcher.out
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2

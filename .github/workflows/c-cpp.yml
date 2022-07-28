@@ -14,4 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: make
-      run: make probas.out
+      run: make probas.out container_watcher.out
